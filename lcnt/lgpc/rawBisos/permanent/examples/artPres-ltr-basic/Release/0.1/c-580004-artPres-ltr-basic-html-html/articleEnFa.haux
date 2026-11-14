@@ -1,0 +1,4 @@
+\@titleaux{artPres-ltr-basic}
+\bibstyle{plain}
+\@@addtocsec{htoc}{sec2}{0}{\@print{1}\quad{}Article Format Of This Document Is A Place Holder -- See The Presentaion Format{}}
+\bibdata{/lcnt/outputs/all/plpcUrl,/usr/local/lib/bib/rfcs}
