@@ -19,7 +19,7 @@
 
 %%%#+BEGIN: bx:dblock:global:this-file :disabledP "false" :mode "auto"
 \begin{whenOrg}
-*  #This File: /lcnt/lgpc/rawBisos/permanent/examples/artPres-ltr-basic/articleEnFa.ttytex
+*  #This File: /bxRepos/bxlcnt/bro_lcntBases-rawBisos/lcnt/lgpc/rawBisos/permanent/examples/artPres-ltr-basic/articleEnFa.ttytex
 
 \end{whenOrg}
 %%%#+END:
@@ -30,7 +30,7 @@
 *  [[elisp:(beginning-of-buffer)][Top]] ################  [[elisp:(delete-other-windows)][(1)]]   /*PLPC-580004 -- LCNT Panel -- lcntProc.sh, presProc.sh and Mailings*/
 *  [[elisp:(beginning-of-buffer)][Top]] ################  [[elisp:(delete-other-windows)][(1)]]   *artPres-ltr-basic*
 *  [[elisp:(beginning-of-buffer)][Top]] ################  [[elisp:(delete-other-windows)][(1)]]   http://rawbisos.net/PLPC/580004
-*  [[elisp:(beginning-of-buffer)][Top]] ################  [[elisp:(delete-other-windows)][(1)]]   [[elisp:(find-file "articleEnFa.ttytex")][Visit ./articleEnFa.ttytex]] || [[elisp:(find-file "presentationEnFa.ttytex")][Visit ./presentationEnFa.ttytex]] || [[elisp:(find-file "presArtEnFa.ttytex")][Visit ./presArtEnFa.ttytex]] ||
+*  [[elisp:(beginning-of-buffer)][Top]] ################  [[elisp:(delete-other-windows)][(1)]]   [[elisp:(find-file "articleEnFa.ttytex")][Visit ./articleEnFa.ttytex]] || [[elisp:(find-file "presentationEnFa.ttytex")][Visit ./presentationEnFa.ttytex]] || [[elisp:(find-file "presArtEnFa.ttytex")][Visit ./presArtEnFa.ttytex]] || 
 
 * [[elisp:(org-shifttab)][<)]] [[elisp:(describe-function 'org-dblock-write:bx:dblock:lcnt:latex:inputed-title)][dbFunc)]]  E|
 
@@ -68,7 +68,7 @@
 \begin{whenOrg}
 *  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_ _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_ [[elisp:(outline-show-branches+toggle)][|=]] [[elisp:(bx:orgm:indirectBufOther)][|>]] *[[elisp:(blee:ppmm:org-mode-toggle)][|N]]*  PkgsEarly  [[elisp:(outline-show-subtree+toggle)][||]]  early-common-packages ---   [[elisp:(org-cycle)][| ]]
 \end{whenOrg}
-\usepackage{hevea}
+\usepackage{hevea} 
 %HEVEA\usepackage[utf8]{inputenc}
 
 \htmlhead{
@@ -90,7 +90,7 @@
 \usepackage{makeidx}
 \usepackage{supertabular}
 \usepackage{lscape}
-\usepackage{array}
+\usepackage{array} 
 \usepackage{framed}
 \usepackage{listings}
 
