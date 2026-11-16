@@ -1,0 +1,2008 @@
+WEBVTT captioned by mohsen
+
+00:00:05.760 --> 00:00:08.159
+Greetings. Salaam.
+
+00:00:08.160 --> 00:00:10.159
+This is Mohsen Banan.
+
+00:00:10.160 --> 00:00:12.839
+I am a software and internet engineer.
+
+00:00:12.840 --> 00:00:14.679
+The title of this presentation
+
+00:00:14.680 --> 00:00:18.839
+is "Blee-LCNT: An Emacs Centered
+
+00:00:18.840 --> 00:00:23.659
+Content Production and Self-Publication Framework".
+
+00:00:23.660 --> 00:00:25.559
+Blee stands for
+
+00:00:25.560 --> 00:00:29.279
+ByStar Libre-Halaal Emacs Environment.
+
+00:00:29.280 --> 00:00:31.799
+In last year's EmacsConf,
+
+00:00:31.800 --> 00:00:36.079
+I introduced Blee, BISOS and ByStar
+
+00:00:36.080 --> 00:00:39.439
+as concepts and as foundations.
+
+00:00:39.440 --> 00:00:41.079
+This year I want to focus
+
+00:00:41.080 --> 00:00:43.879
+on one concrete capability.
+
+00:00:43.880 --> 00:00:47.959
+Content Production and Self-Publication
+
+00:00:47.960 --> 00:00:54.119
+is a foundational Blee and BISOS Capability Bundle.
+
+00:00:54.120 --> 00:00:55.759
+Both this presentation
+
+00:00:55.760 --> 00:00:59.079
+and the Nature of Polyexistentials book
+
+00:00:59.080 --> 00:01:02.879
+were developed with Blee-LCNT.
+
+00:01:02.880 --> 00:01:06.759
+In this presentation I want to look at Emacs
+
+00:01:06.760 --> 00:01:08.519
+as a central ingredient
+
+00:01:08.520 --> 00:01:10.959
+for a usage environment
+
+00:01:10.960 --> 00:01:14.919
+that we can use to orchestrate production of
+
+00:01:14.920 --> 00:01:20.079
+quite fancy multi-media presentations.
+
+00:01:20.080 --> 00:01:23.079
+Let's consider two different scopes.
+
+00:01:23.080 --> 00:01:27.919
+First, the scope of Blee-LCNT Capabilities Bundle,
+
+00:01:27.920 --> 00:01:29.919
+which is that of a complete
+
+00:01:29.920 --> 00:01:32.599
+multi-media content authorship,
+
+00:01:32.600 --> 00:01:34.799
+generation, publication
+
+00:01:34.800 --> 00:01:37.639
+and distribution framework.
+
+00:01:37.640 --> 00:01:40.999
+That complete scope is presented in this slide
+
+00:01:41.000 --> 00:01:44.239
+and it spans both black ink
+
+00:01:44.240 --> 00:01:46.639
+and violet ink.
+
+00:01:46.640 --> 00:01:49.799
+Second, the scope of this presentation,
+
+00:01:49.800 --> 00:01:52.119
+which is more limited.
+
+00:01:52.120 --> 00:01:54.919
+In this presentation I confine myself
+
+00:01:54.920 --> 00:01:58.519
+to the bullets is violet ink.
+
+00:01:58.520 --> 00:02:01.159
+Here, I focus on presentation
+
+00:02:01.160 --> 00:02:03.599
+and video as content types
+
+00:02:03.600 --> 00:02:05.999
+and their authorship and generation
+
+00:02:06.000 --> 00:02:10.319
+and their federated re-publication.
+
+00:02:10.320 --> 00:02:12.559
+This is a common topic.
+
+00:02:12.560 --> 00:02:14.839
+It makes good sense for us to start with
+
+00:02:14.840 --> 00:02:19.079
+a review of prior art and similar art.
+
+00:02:19.080 --> 00:02:21.959
+I went through the past EmacsConf talks
+
+00:02:21.960 --> 00:02:23.919
+and found a good number of them
+
+00:02:23.920 --> 00:02:25.999
+that also deal with the topic
+
+00:02:26.000 --> 00:02:28.839
+of content generation.
+
+00:02:28.840 --> 00:02:30.319
+A few of these are included
+
+00:02:30.320 --> 00:02:33.359
+in black ink in this slide.
+
+00:02:33.360 --> 00:02:35.599
+Many of these have chosen the Babel,
+
+00:02:35.600 --> 00:02:40.719
+in other words Org-Mode+LaTeX as primary input.
+
+00:02:40.720 --> 00:02:43.599
+I prefer the inverse of that.
+
+00:02:43.600 --> 00:02:45.839
+I also looked for past talks
+
+00:02:45.840 --> 00:02:49.999
+which have used Reveal.js and LaTeX-Beamer.
+
+00:02:50.000 --> 00:02:53.399
+For example, Sacha's use of Reveal.js
+
+00:02:53.400 --> 00:02:56.959
+is shown in violet inK.
+
+00:02:56.960 --> 00:03:02.419
+And Ihor's use of Beamer is in teal ink.
+
+00:03:02.420 --> 00:03:05.399
+This presentation is about a combination
+
+00:03:05.400 --> 00:03:08.639
+of Reveal.js and LaTeX-Beamer.
+
+00:03:08.640 --> 00:03:10.599
+For those who may not be familiar
+
+00:03:10.600 --> 00:03:12.619
+with Beamer and Reveal,
+
+00:03:12.620 --> 00:03:14.799
+here is a quick intro.
+
+00:03:14.800 --> 00:03:19.039
+Among academics, LaTeX-Beamer is the go-to tool
+
+00:03:19.040 --> 00:03:22.159
+for producing presentations.
+
+00:03:22.160 --> 00:03:24.239
+Reveal.js is recognized
+
+00:03:24.240 --> 00:03:25.919
+as the best of breed
+
+00:03:25.920 --> 00:03:29.919
+for dispensing HTML slide decks.
+
+00:03:29.920 --> 00:03:32.439
+For many, Reveal and Beamer
+
+00:03:32.440 --> 00:03:35.959
+live in different universes.
+
+00:03:35.960 --> 00:03:38.679
+Beamer is pdf oriented
+
+00:03:38.680 --> 00:03:42.019
+and Reveal is html oriented.
+
+00:03:42.020 --> 00:03:44.519
+Combining two powerful tools
+
+00:03:44.520 --> 00:03:48.359
+makes for an even more powerful tool.
+
+00:03:48.360 --> 00:03:51.879
+This Blee-LCNT Presentations combines
+
+00:03:51.880 --> 00:03:57.159
+the best of LaTeX-Beamer with Reveal.js.
+
+00:03:57.160 --> 00:04:00.679
+Beamer primarily functions as producer
+
+00:04:00.680 --> 00:04:03.099
+and Reveal functions as dispenser
+
+00:04:03.100 --> 00:04:05.579
+and multi-media enhancer.
+
+00:04:05.580 --> 00:04:08.299
+Here is how the combination works.
+
+00:04:08.300 --> 00:04:10.439
+LaTeX Beamer pdf result
+
+00:04:10.440 --> 00:04:13.839
+is disected into named frame images
+
+00:04:13.840 --> 00:04:18.799
+which can then be inserted in Reveal.js.
+
+00:04:18.800 --> 00:04:21.239
+LaTeX Beamer frames can also be
+
+00:04:21.240 --> 00:04:24.799
+translated into html with HeVeA
+
+00:04:24.800 --> 00:04:28.999
+which can also be inserted in Reveal.js.
+
+00:04:29.000 --> 00:04:31.119
+Voice-overs for Beamer frames
+
+00:04:31.120 --> 00:04:34.039
+can be correlated to frame names
+
+00:04:34.040 --> 00:04:37.119
+and applied to image or html frames.
+
+00:04:37.120 --> 00:04:42.079
+Screen captures and image narrations as videos
+
+00:04:42.080 --> 00:04:44.359
+can be directly dispensed
+
+00:04:44.360 --> 00:04:46.379
+through Reveal.
+
+00:04:46.380 --> 00:04:49.439
+There are various additional novel concepts
+
+00:04:49.440 --> 00:04:50.599
+with regard to the way
+
+00:04:50.600 --> 00:04:54.559
+that we have integrated all of this together.
+
+00:04:54.560 --> 00:04:57.599
+Instead of Org-Mode+LaTeX,
+
+00:04:57.600 --> 00:05:00.999
+we do LaTeX+Org-Mode.
+
+00:05:01.000 --> 00:05:03.999
+Instead of Babel, we do COMEEGA,
+
+00:05:04.000 --> 00:05:05.999
+instead of the Literate model
+
+00:05:06.000 --> 00:05:08.839
+we introduce the Surrounded model.
+
+00:05:08.840 --> 00:05:10.839
+You shall see various examples
+
+00:05:10.840 --> 00:05:12.519
+of these shortly.
+
+00:05:12.520 --> 00:05:15.639
+All of this is part of a bigger picture.
+
+00:05:15.640 --> 00:05:17.619
+A much bigger picture.
+
+00:05:17.620 --> 00:05:23.599
+My talks at EmacsConf 2021, 2022
+
+00:05:23.600 --> 00:05:26.519
+and 2024 are related.
+
+00:05:26.520 --> 00:05:31.399
+This 2025 talk builds on those.
+
+00:05:31.400 --> 00:05:34.719
+Last year's talk "About Blee:
+
+00:05:34.720 --> 00:05:36.839
+enveloping our own autonomy
+
+00:05:36.840 --> 00:05:38.999
+directed digital ecosystem
+
+00:05:39.000 --> 00:05:42.199
+with Emacs" in particular,
+
+00:05:42.200 --> 00:05:44.979
+lays the foundations for this talk.
+
+00:05:44.980 --> 00:05:47.119
+If you have not seen that,
+
+00:05:47.120 --> 00:05:51.159
+it would make good sense to review it.
+
+00:05:51.160 --> 00:05:54.279
+In my previous talks I have been criticized
+
+00:05:54.280 --> 00:05:58.359
+of having a "prophetic" style.
+
+00:05:58.360 --> 00:06:02.059
+The scope of ByStar is lofty and immense.
+
+00:06:02.060 --> 00:06:04.879
+In many ways it is unbelievable.
+
+00:06:04.880 --> 00:06:09.139
+And EmacsConf talks are meant to be short.
+
+00:06:09.140 --> 00:06:11.839
+So, as a result, sometimes
+
+00:06:11.840 --> 00:06:13.959
+I end up being cryptic.
+
+00:06:13.960 --> 00:06:17.499
+Having accepted the "prophetic" criticism
+
+00:06:17.500 --> 00:06:19.399
+as legitimate,
+
+00:06:19.400 --> 00:06:23.599
+I now need to put a book on the table.
+
+00:06:23.600 --> 00:06:26.839
+With that book in place, moving forward,
+
+00:06:26.840 --> 00:06:29.339
+when needing to be cryptic,
+
+00:06:29.340 --> 00:06:32.559
+I shall cite Chapter and Verse.
+
+00:06:32.560 --> 00:06:34.879
+I am delighted to announce
+
+00:06:34.880 --> 00:06:37.559
+the availability of my recent book,
+
+00:06:37.560 --> 00:06:40.199
+"Nature of Polyexistentials".
+
+00:06:40.200 --> 00:06:42.959
+The full title of my book is:
+
+00:06:42.960 --> 00:06:45.039
+Nature Of Polyexistentials---
+
+00:06:45.040 --> 00:06:48.239
+Basis For Abolishment Of The Western
+
+00:06:48.240 --> 00:06:51.219
+Intellectual Property Rights Regime---
+
+00:06:51.220 --> 00:06:53.899
+And Introduction Of The Libre-Halaal
+
+00:06:53.900 --> 00:06:56.999
+ByStar Digital Ecosystem.
+
+00:06:57.000 --> 00:06:59.199
+Knowledge, know-how, uses of know-how,
+
+00:06:59.200 --> 00:07:02.879
+ideas, formulas, software and information
+
+00:07:02.880 --> 00:07:05.519
+are inherently non-scarce.
+
+00:07:05.520 --> 00:07:08.439
+They are *polyexistentials*.
+
+00:07:08.440 --> 00:07:10.239
+Unlike monoexistentials
+
+00:07:10.240 --> 00:07:12.259
+which exist in singular,
+
+00:07:12.260 --> 00:07:17.539
+polyexistentials naturally exist in multiples.
+
+00:07:17.540 --> 00:07:19.559
+What is abundant in nature
+
+00:07:19.560 --> 00:07:22.599
+is being made artificially scarce
+
+00:07:22.600 --> 00:07:25.399
+through man-made ownership rules
+
+00:07:25.400 --> 00:07:28.599
+called copyright and patents.
+
+00:07:28.600 --> 00:07:31.239
+These mistaken ownership rules,
+
+00:07:31.240 --> 00:07:34.959
+the so called Western IPR regime,
+
+00:07:34.960 --> 00:07:37.319
+has immense ramifications
+
+00:07:37.320 --> 00:07:38.839
+on the shape and the direction
+
+00:07:38.840 --> 00:07:42.619
+of the American Digital Ecosystem.
+
+00:07:42.620 --> 00:07:45.119
+It would be an understatement to say
+
+00:07:45.120 --> 00:07:47.779
+that the American Digital Ecosystem
+
+00:07:47.780 --> 00:07:50.599
+has put humanity in danger.
+
+00:07:50.600 --> 00:07:53.099
+Two parts of the book, in particular
+
+00:07:53.100 --> 00:07:55.679
+are of immediate relevance.
+
+00:07:55.680 --> 00:07:58.219
+Part III, the ethics layer,
+
+00:07:58.220 --> 00:08:01.119
+focuses on contours of cures.
+
+00:08:01.120 --> 00:08:02.839
+Having dismissed the Western
+
+00:08:02.840 --> 00:08:06.119
+intellectual property rights (IPR) regime
+
+00:08:06.120 --> 00:08:11.739
+as an erroneous governance model for polyexistentials,
+
+00:08:11.740 --> 00:08:14.319
+I propose the Libre-Halaal model
+
+00:08:14.320 --> 00:08:17.199
+of governance of polyexistentials
+
+00:08:17.200 --> 00:08:22.779
+towards facilitating conviviality of tools.
+
+00:08:22.780 --> 00:08:25.359
+Part IV, the engineering layer,
+
+00:08:25.360 --> 00:08:29.599
+introduces the Libre-Halaal ByStar Digital Ecosystem.
+
+00:08:29.600 --> 00:08:32.399
+as an ethical alternative
+
+00:08:32.400 --> 00:08:34.239
+to the prevailing proprietary
+
+00:08:34.240 --> 00:08:37.499
+American digital ecosystem.
+
+00:08:37.500 --> 00:08:40.479
+The book also provides additional details
+
+00:08:40.480 --> 00:08:42.919
+about the content generation
+
+00:08:42.920 --> 00:08:44.919
+and publication facilities
+
+00:08:44.920 --> 00:08:46.839
+that I am presenting here.
+
+00:08:46.840 --> 00:08:50.079
+And the book itself, as content,
+
+00:08:50.080 --> 00:08:53.439
+was generated and published
+
+00:08:53.440 --> 00:08:55.319
+using the facilities
+
+00:08:55.320 --> 00:08:57.239
+that I am presenting here.
+
+00:08:57.240 --> 00:08:59.199
+You can think of this book
+
+00:08:59.200 --> 00:09:01.159
+as being in two volumes.
+
+00:09:01.160 --> 00:09:05.919
+Our focus are Blee and BISOS in Volume II.
+
+00:09:05.920 --> 00:09:10.239
+Volume I deals with the general concept
+
+00:09:10.240 --> 00:09:13.879
+of polyexistence and invalidity
+
+00:09:13.880 --> 00:09:18.679
+of IPR and our terminoloy of Libre-Halaal---
+
+00:09:18.680 --> 00:09:23.519
+instead of the common but ill directed vocabulary
+
+00:09:23.520 --> 00:09:28.239
+of Free Software and Open-Source and FOSS.
+
+00:09:28.240 --> 00:09:31.239
+In Chapter 11, I introduce
+
+00:09:31.240 --> 00:09:34.759
+the very sensitive and potent vocabulary
+
+00:09:34.760 --> 00:09:37.719
+of Halaal and Libre-Halaal.
+
+00:09:37.720 --> 00:09:39.079
+The contents of this book
+
+00:09:39.080 --> 00:09:41.659
+belong to all of humanity
+
+00:09:41.660 --> 00:09:45.519
+and verbatim copying of it is unrestricted.
+
+00:09:45.520 --> 00:09:49.479
+If you want to read it, this book is yours.
+
+00:09:49.480 --> 00:09:51.839
+The "Nature of Polyexistentials" book
+
+00:09:51.840 --> 00:09:56.659
+is available both online and in print.
+
+00:09:56.660 --> 00:09:59.439
+This book is available as two editions.
+
+00:09:59.440 --> 00:10:03.819
+The US Edition and the International edition.
+
+00:10:03.820 --> 00:10:05.959
+The US Edition is written
+
+00:10:05.960 --> 00:10:10.079
+with a slightly milder Western unfriendly tone,
+
+00:10:10.080 --> 00:10:12.399
+while the International Edition
+
+00:10:12.400 --> 00:10:17.619
+includes additional original content in Farsi.
+
+00:10:17.620 --> 00:10:20.399
+I consider the International Edition
+
+00:10:20.400 --> 00:10:22.979
+to be the authoritative version.
+
+00:10:22.980 --> 00:10:25.319
+However, many readers in
+
+00:10:25.320 --> 00:10:27.319
+the US and Western countries
+
+00:10:27.320 --> 00:10:31.199
+may prefer the US Edition.
+
+00:10:31.200 --> 00:10:33.999
+I maintain separate Git repositories
+
+00:10:34.000 --> 00:10:36.039
+for each edition on GitHub:
+
+00:10:36.040 --> 00:10:42.839
+US Edition is at bxplpc/120033
+
+00:10:42.840 --> 00:10:51.419
+and International Edition: bxplpc/120074
+
+00:10:51.420 --> 00:10:53.679
+Cloning these repositories
+
+00:10:53.680 --> 00:10:56.399
+will give you access to the book
+
+00:10:56.400 --> 00:11:00.039
+in PDF format (suitable for both
+
+00:11:00.040 --> 00:11:04.039
+A4 and US Letter printing)
+
+00:11:04.040 --> 00:11:06.379
+and in EPUB format.
+
+00:11:06.380 --> 00:11:08.559
+Alternatively, the content
+
+00:11:08.560 --> 00:11:12.039
+can be downloaded directly from your browser
+
+00:11:12.040 --> 00:11:17.259
+without needing to clone the repositories.
+
+00:11:17.260 --> 00:11:19.079
+To ensure broader online
+
+00:11:19.080 --> 00:11:21.899
+availability and stability,
+
+00:11:21.900 --> 00:11:26.159
+I have also published the book on Zenodo,
+
+00:11:26.160 --> 00:11:31.779
+complete with a DOI (Digital Object Identifier).
+
+00:11:31.780 --> 00:11:34.439
+You can download both the A4
+
+00:11:34.440 --> 00:11:39.639
+and 8.5 x 11 PDFs from there as well.
+
+00:11:39.640 --> 00:11:44.119
+The book is also available in print on Amazon
+
+00:11:44.120 --> 00:11:46.239
+and at most major bookstores
+
+00:11:46.240 --> 00:11:49.379
+in the US and Western regions.
+
+00:11:49.380 --> 00:11:51.519
+The ISBNs for both editions
+
+00:11:51.520 --> 00:11:54.139
+are included in this slide.
+
+00:11:54.140 --> 00:11:56.319
+Additionally, I have published
+
+00:11:56.320 --> 00:12:00.719
+this book in Iran through Jangal Publishers.
+
+00:12:00.720 --> 00:12:03.079
+I did not write this book for profit.
+
+00:12:03.080 --> 00:12:05.359
+My aim is to share my thoughts
+
+00:12:05.360 --> 00:12:10.599
+and encourage readers to engage with my views and ideas.
+
+00:12:10.600 --> 00:12:12.499
+Your feedback is welcome,
+
+00:12:12.500 --> 00:12:14.119
+and I am genuinely interested
+
+00:12:14.120 --> 00:12:17.199
+in hearing your perspectives.
+
+00:12:17.200 --> 00:12:20.879
+In Western markets, I have priced the print edition
+
+00:12:20.880 --> 00:12:24.339
+somewhat above production costs.
+
+00:12:24.340 --> 00:12:26.639
+If you find value in the book
+
+00:12:26.640 --> 00:12:28.599
+and the ByStar project,
+
+00:12:28.600 --> 00:12:32.759
+purchasing a copy will help support my work.
+
+00:12:32.760 --> 00:12:37.459
+Thanks in advance for your support.
+
+00:12:37.460 --> 00:12:39.479
+And here are the same links
+
+00:12:39.480 --> 00:12:42.179
+as a native Reveal slide.
+
+00:12:42.180 --> 00:12:43.839
+If instead of a video,
+
+00:12:43.840 --> 00:12:47.759
+you are viewing this presentation as a Reveal web page,
+
+00:12:47.760 --> 00:12:52.639
+you can just click on the pointers and URLs.
+
+00:12:52.640 --> 00:12:55.079
+Instead of the traditional model
+
+00:12:55.080 --> 00:12:59.559
+of giving you recipes in a DIY context
+
+00:12:59.560 --> 00:13:01.479
+towards the goal of creating
+
+00:13:01.480 --> 00:13:04.559
+content processing capabilities
+
+00:13:04.560 --> 00:13:07.659
+on top of what you may already have,
+
+00:13:07.660 --> 00:13:09.959
+I am doing the opposite.
+
+00:13:09.960 --> 00:13:15.159
+I am saying: take this whole BISOS and Blee thing,
+
+00:13:15.160 --> 00:13:17.559
+and in there you will also have
+
+00:13:17.560 --> 00:13:20.239
+the content processing capabil ities
+
+00:13:20.240 --> 00:13:22.579
+that I am speaking of here.
+
+00:13:22.580 --> 00:13:24.919
+So, at the top level we have
+
+00:13:24.920 --> 00:13:27.519
+our own autonomy and privacy
+
+00:13:27.520 --> 00:13:30.199
+directed digital ecosystem,
+
+00:13:30.200 --> 00:13:32.839
+which in contrast to the center oriented
+
+00:13:32.840 --> 00:13:35.659
+American digital ecosystem,
+
+00:13:35.660 --> 00:13:38.479
+is edge oriented.
+
+00:13:38.480 --> 00:13:40.919
+We call it: "The Libre-Halaal
+
+00:13:40.920 --> 00:13:43.919
+ByStar Digital Ecosystem".
+
+00:13:43.920 --> 00:13:45.799
+All the systems in ByStar,
+
+00:13:45.800 --> 00:13:50.699
+run BISOS (By* Internet Services OS),
+
+00:13:50.700 --> 00:13:53.759
+which is a layer on top of Debian.
+
+00:13:53.760 --> 00:13:58.199
+The usage environment of ByStar and BISOS is Blee
+
+00:13:58.200 --> 00:14:01.579
+which is a layer on top of Emacs.
+
+00:14:01.580 --> 00:14:04.919
+With those in place, we then create
+
+00:14:04.920 --> 00:14:10.139
+a capability bundle called Blee-LCNT.
+
+00:14:10.140 --> 00:14:13.039
+So, when you buy into Blee and BISOS,
+
+00:14:13.040 --> 00:14:15.199
+you will naturally also get
+
+00:14:15.200 --> 00:14:18.719
+these content processing capabilities---
+
+00:14:18.720 --> 00:14:23.119
+without a need for any recipies or DIY effort.
+
+00:14:23.120 --> 00:14:24.879
+If you were to look at the model
+
+00:14:24.880 --> 00:14:29.119
+that I introduced as containment hierarchies,
+
+00:14:29.120 --> 00:14:31.279
+it would look like this.
+
+00:14:31.280 --> 00:14:33.779
+We love Emacs and we love Unix
+
+00:14:33.780 --> 00:14:36.759
+because their design is convivial.
+
+00:14:36.760 --> 00:14:39.199
+By convivial, I am referring
+
+00:14:39.200 --> 00:14:40.759
+to Ivan Illich's concept
+
+00:14:40.760 --> 00:14:45.319
+and terminology of "Tools for Conviviality".
+
+00:14:45.320 --> 00:14:48.679
+It was first published in 1973.
+
+00:14:48.680 --> 00:14:50.959
+It's a must read.
+
+00:14:50.960 --> 00:14:52.639
+A goal of the design
+
+00:14:52.640 --> 00:14:54.799
+of the ByStar Digital Ecosystem
+
+00:14:54.800 --> 00:14:57.479
+is to enlarge the aggregated
+
+00:14:57.480 --> 00:15:01.719
+conviviality of its capabilities.
+
+00:15:01.720 --> 00:15:04.719
+What distinguishes Blee-LCNT
+
+00:15:04.720 --> 00:15:08.959
+from other content processing tools and frameworks,
+
+00:15:08.960 --> 00:15:12.439
+is our emphasis on enhancing
+
+00:15:12.440 --> 00:15:15.659
+the aggregated conviviality.
+
+00:15:15.660 --> 00:15:19.259
+These tools let you express yourself.
+
+00:15:19.260 --> 00:15:21.999
+They let you be in charge.
+
+00:15:22.000 --> 00:15:24.499
+Here is our parts list.
+
+00:15:24.500 --> 00:15:25.839
+These are the components
+
+00:15:25.840 --> 00:15:27.959
+that we have chosen to bring together
+
+00:15:27.960 --> 00:15:32.779
+towards our goal of creating convivial tools.
+
+00:15:32.780 --> 00:15:36.039
+In this slide we are using black ink
+
+00:15:36.040 --> 00:15:38.519
+to denote exisiting tools
+
+00:15:38.520 --> 00:15:41.339
+and we use violet ink
+
+00:15:41.340 --> 00:15:44.419
+to denote pieces that we have developed
+
+00:15:44.420 --> 00:15:47.100
+towards cohesive integration.
+
+00:15:46.560 --> 00:15:47.867
+[This] video,
+
+00:15:47.868 --> 00:15:51.479
+the video is just one of the outputs.
+
+00:15:51.480 --> 00:15:54.499
+There are other outputs as well.
+
+00:15:54.500 --> 00:15:56.359
+In this figure, the outputs
+
+00:15:56.360 --> 00:15:58.859
+are shown in the top layer.
+
+00:15:58.860 --> 00:16:02.279
+Using this video as an example,
+
+00:16:02.280 --> 00:16:05.599
+this presentation's output also include
+
+00:16:05.600 --> 00:16:07.599
+the "Presentation Form"
+
+00:16:07.600 --> 00:16:10.999
+and the "Article-Presentation Form".
+
+00:16:11.000 --> 00:16:13.719
+Let's look at these more closely.
+
+00:16:13.720 --> 00:16:17.259
+For Presentations, there are 3 different forms.
+
+00:16:17.260 --> 00:16:19.559
+The Video Form, the Presentation From
+
+00:16:19.560 --> 00:16:22.819
+and the Article-Presentation Form.
+
+00:16:22.820 --> 00:16:27.439
+The Presentation Form produces both a pdf output
+
+00:16:27.440 --> 00:16:29.079
+and Reveal output.
+
+00:16:29.080 --> 00:16:32.879
+Next we will walkthrough some of the benefits
+
+00:16:32.880 --> 00:16:35.519
+that availability of these forms
+
+00:16:35.520 --> 00:16:38.099
+and formats provide.
+
+00:16:38.100 --> 00:16:41.959
+The video presentation that you are watching
+
+00:16:41.960 --> 00:16:44.599
+is just one of the outputs
+
+00:16:44.600 --> 00:16:48.479
+of the Blee-LCNT machinery.
+
+00:16:48.480 --> 00:16:52.679
+There are two PDF format outputs
+
+00:16:52.680 --> 00:16:56.439
+and two HTML outputs
+
+00:16:56.440 --> 00:16:58.859
+that are also quite useful.
+
+00:16:58.860 --> 00:17:02.119
+The primary output of Beamer
+
+00:17:02.120 --> 00:17:04.239
+is a set of slides
+
+00:17:04.240 --> 00:17:10.439
+that people use to give their talks with.
+
+00:17:10.440 --> 00:17:12.479
+Typically that's done live.
+
+00:17:12.480 --> 00:17:19.179
+In my case I dissect the images of each frame
+
+00:17:19.180 --> 00:17:21.639
+and do a voiceover on it
+
+00:17:21.640 --> 00:17:28.839
+and then dispense it through reveal.
+
+00:17:28.840 --> 00:17:33.379
+In a second you will see that as well.
+
+00:17:33.380 --> 00:17:36.959
+This PDF output is very useful.
+
+00:17:36.960 --> 00:17:39.279
+You get the table of contents of course
+
+00:17:39.280 --> 00:17:42.279
+and in addition to that Beam er
+
+00:17:42.280 --> 00:17:46.319
+generates navigations for you
+
+00:17:46.320 --> 00:17:49.599
+where on any part you get
+
+00:17:49.600 --> 00:17:51.839
+a small table of content as well.
+
+00:17:51.840 --> 00:17:57.119
+This is heavily used amongst academics
+
+00:17:57.120 --> 00:18:00.959
+and it's a good output on its own
+
+00:18:00.960 --> 00:18:03.319
+and I'm augmenting it
+
+00:18:03.320 --> 00:18:05.399
+in a variety of ways.
+
+00:18:05.400 --> 00:18:09.719
+In addition to the presentation PDF format
+
+00:18:09.720 --> 00:18:15.359
+there is also an article-presentation PDF format
+
+00:18:15.360 --> 00:18:18.799
+which gives you the same content
+
+00:18:18.800 --> 00:18:25.159
+but it gives it to you in a textual form
+
+00:18:25.160 --> 00:18:30.939
+with the table of content and the rest.
+
+00:18:30.940 --> 00:18:34.759
+This is a good form to use
+
+00:18:34.760 --> 00:18:39.919
+when you are giving for example class lectures
+
+00:18:39.920 --> 00:18:45.719
+and the students often prefer this format.
+
+00:18:45.720 --> 00:18:49.079
+Now for the HTML format
+
+00:18:49.080 --> 00:18:51.839
+outputs the most relevant
+
+00:18:51.840 --> 00:18:55.599
+of course is the reveal itself.
+
+00:18:55.600 --> 00:19:05.679
+If you have not used reveal before.
+
+00:19:05.680 --> 00:19:10.559
+In my view it's a HTML slide dispenser.
+
+00:19:10.560 --> 00:19:15.479
+I don't look at it as a presentation framework.
+
+00:19:15.480 --> 00:19:22.599
+I use, as you are seeing, we use Beamer to feed into it
+
+00:19:22.600 --> 00:19:25.759
+and we use it to dispense the information.
+
+00:19:25.760 --> 00:19:33.439
+It has all the typical navigation
+
+00:19:33.440 --> 00:19:39.959
+capabilities that you would expect
+
+00:19:39.960 --> 00:19:44.319
+and most of what I have as slides are images
+
+00:19:44.320 --> 00:19:48.239
+but occasionally particularly when there is a need
+
+00:19:48.240 --> 00:19:52.999
+to provide pointers, HTML pointers.
+
+00:19:53.000 --> 00:20:01.439
+I then also include a textual output.
+
+00:20:01.440 --> 00:20:05.559
+This is also produced
+
+00:20:05.560 --> 00:20:09.839
+from the Beamer latex source
+
+00:20:09.840 --> 00:20:14.959
+but it's HTML through textual HTML
+
+00:20:14.960 --> 00:20:19.019
+through HeVeA not the image.
+
+00:20:19.020 --> 00:20:22.499
+You can... you get a table of contents.
+
+00:20:22.500 --> 00:20:28.079
+You can navigate and there are a whole lot of other features
+
+00:20:28.080 --> 00:20:31.979
+that reveal also provides.
+
+00:20:31.980 --> 00:20:35.879
+So to generate the video,
+
+00:20:35.880 --> 00:20:40.980
+what I do is I come to
+
+00:20:40.981 --> 00:20:49.459
+the very beginning of the presentation.
+
+00:20:49.460 --> 00:20:51.519
+I turn on the screen capture recorder
+
+00:20:51.520 --> 00:20:54.159
+and then I start playing
+
+00:20:54.160 --> 00:20:58.239
+the voiceover for each slide
+
+00:20:58.240 --> 00:21:02.519
+and at the very end you get a video
+
+00:21:02.520 --> 00:21:08.759
+but what you just did is you dispensed every frame
+
+00:21:08.760 --> 00:21:11.279
+one at a time through reveal.
+
+00:21:11.280 --> 00:21:15.319
+In addition to this HTML form
+
+00:21:15.320 --> 00:21:22.239
+you also get a article presentation form of it
+
+00:21:22.240 --> 00:21:24.159
+with a full table of content
+
+00:21:24.160 --> 00:21:27.759
+and the videos are there and the notes are there
+
+00:21:27.760 --> 00:21:33.479
+and this is also quite useful.
+
+00:21:33.480 --> 00:21:36.519
+Now, let's look at the one single input file
+
+00:21:36.520 --> 00:21:38.879
+that produced all of the outputs
+
+00:21:38.880 --> 00:21:39.879
+that we just saw.
+
+00:21:39.880 --> 00:21:43.079
+I have put both the input file
+
+00:21:43.080 --> 00:21:45.119
+and some of the output files
+
+00:21:45.120 --> 00:21:48.299
+for this presentation on github.
+
+00:21:48.300 --> 00:21:49.839
+Here are some links
+
+00:21:49.840 --> 00:21:51.679
+to these repos and files.
+
+00:21:51.680 --> 00:21:54.679
+And here are the same links
+
+00:21:54.680 --> 00:21:57.119
+as a native Reveal slide.
+
+00:21:57.120 --> 00:21:59.879
+This figure gives us an overview
+
+00:21:59.880 --> 00:22:02.759
+of how one set of inputs
+
+00:22:02.760 --> 00:22:04.959
+encapsulted in a single file
+
+00:22:04.960 --> 00:22:08.759
+can produce all of the outputs that we saw.
+
+00:22:08.760 --> 00:22:11.439
+The main TeX file shown at the bottom
+
+00:22:11.440 --> 00:22:15.659
+is processed by both XeLaTeX and by HeVeA.
+
+00:22:15.660 --> 00:22:18.279
+That main TeX file, in addition
+
+00:22:18.280 --> 00:22:19.679
+to LaTeX syntax
+
+00:22:19.680 --> 00:22:22.999
+also include org-mode constructs
+
+00:22:23.000 --> 00:22:27.039
+that facilitate addition of audio and video files.
+
+00:22:27.040 --> 00:22:34.879
+Later, I'll walkthrough the bodyPresArtEnFa.tex file
+
+00:22:34.880 --> 00:22:39.179
+that generated this very presentation with you.
+
+00:22:39.180 --> 00:22:42.679
+When you construct that primary TeX file,
+
+00:22:42.680 --> 00:22:44.679
+there are several abstractions
+
+00:22:44.680 --> 00:22:46.899
+that you need to keep in mind.
+
+00:22:46.900 --> 00:22:49.119
+Is my presentation going to go
+
+00:22:49.120 --> 00:22:52.739
+from Left-To-Right or from Right-To-Left?
+
+00:22:52.740 --> 00:22:57.039
+Perso-Arabic presentations go from Right-To-Left.
+
+00:22:57.040 --> 00:22:59.679
+Another consideration is the types
+
+00:22:59.680 --> 00:23:03.119
+of forms of results that you want.
+
+00:23:03.120 --> 00:23:05.019
+Just the presentation
+
+00:23:05.020 --> 00:23:08.999
+or Article-Presentation as well?
+
+00:23:09.000 --> 00:23:10.879
+With those choices in place
+
+00:23:10.880 --> 00:23:13.399
+you can produce condition based text
+
+00:23:13.400 --> 00:23:16.199
+for each of your desired outputs.
+
+00:23:16.200 --> 00:23:18.919
+Think of this video presentation
+
+00:23:18.920 --> 00:23:20.879
+as a sequence of frames.
+
+00:23:20.880 --> 00:23:26.119
+Each frame is controlled by an org-mode dynamic block.
+
+00:23:26.120 --> 00:23:29.039
+This table lists available dblocks
+
+00:23:29.040 --> 00:23:31.559
+from which you can choose.
+
+00:23:31.560 --> 00:23:34.039
+For example, this particular frame
+
+00:23:34.040 --> 00:23:34.839
+that we are watching
+
+00:23:34.840 --> 00:23:41.979
+is controlled by b:lcnt:pres:frame/derivedImage.
+
+00:23:41.980 --> 00:23:44.639
+Beamer creates a pdf file
+
+00:23:44.640 --> 00:23:47.879
+that includes the image of this slide.
+
+00:23:47.880 --> 00:23:51.459
+That image is then injected into Reveal.
+
+00:23:51.460 --> 00:23:55.359
+And in the end a video of that image is produced
+
+00:23:55.360 --> 00:23:57.239
+with the narrations
+
+00:23:57.240 --> 00:23:59.259
+that I am uttering right now.
+
+00:23:59.260 --> 00:24:02.199
+All of this has similarly been applied
+
+00:24:02.200 --> 00:24:03.599
+to each and every frame
+
+00:24:03.600 --> 00:24:05.919
+that you have been watching.
+
+00:24:05.920 --> 00:24:08.399
+Similar to Frame Controls,
+
+00:24:08.400 --> 00:24:10.719
+there are org-mode dynamic blocks
+
+00:24:10.720 --> 00:24:13.519
+for "Frame Body Types".
+
+00:24:13.520 --> 00:24:15.839
+You can easily insert an image
+
+00:24:15.840 --> 00:24:19.639
+which is typically created by OpenOffice Draw
+
+00:24:19.640 --> 00:24:21.619
+into a frame.
+
+00:24:21.620 --> 00:24:24.359
+Same with say a screen capture video.
+
+00:24:24.360 --> 00:24:29.319
+Now that we have looked at the "Outputs" and the "Inputs",
+
+00:24:29.320 --> 00:24:31.679
+let's look at how the Outputs
+
+00:24:31.680 --> 00:24:35.919
+are generated from the Inputs.
+
+00:24:35.920 --> 00:24:39.399
+Let's bootstrap Raw-BISOS and Raw-Blee.
+
+00:24:39.400 --> 00:24:41.719
+Starting from scratch,
+
+00:24:41.720 --> 00:24:45.799
+get yourself a fresh copy of Debian 12.
+
+00:24:45.800 --> 00:24:52.719
+Then go to https://github.com/bxGenesis/ start
+
+00:24:52.720 --> 00:24:55.079
+The README.org file
+
+00:24:55.080 --> 00:24:57.119
+of that github repo
+
+00:24:57.120 --> 00:24:58.639
+is same as Chapter 18,
+
+00:24:58.640 --> 00:25:01.959
+"Engineering Adoption of BISOS and ByStar" of the book.
+
+00:25:01.960 --> 00:25:05.359
+We will next run "raw-bisos.sh",
+
+00:25:05.360 --> 00:25:09.959
+but prior to that let's take a quick look.
+
+00:25:09.960 --> 00:25:14.759
+This bootstrap scripts will do a lot as root
+
+00:25:14.760 --> 00:25:16.479
+on your Fresh-Debian.
+
+00:25:16.480 --> 00:25:18.599
+It is best to first try it
+
+00:25:18.600 --> 00:25:21.179
+on a disposable VM.
+
+00:25:21.180 --> 00:25:27.159
+raw-bisos.sh adds the current debian user to sudoers.
+
+00:25:27.160 --> 00:25:30.399
+Then it installs pipx.
+
+00:25:30.400 --> 00:25:34.199
+And then with pipx it installs
+
+00:25:34.200 --> 00:25:37.999
+from PyPI bisos.provision.
+
+00:25:38.000 --> 00:25:43.279
+bisos.provision includes additional bash scripts
+
+00:25:43.280 --> 00:25:45.359
+that are then executed.
+
+00:25:45.360 --> 00:25:48.159
+Full installation involves
+
+00:25:48.160 --> 00:25:51.039
+setting up various accounts, groups,
+
+00:25:51.040 --> 00:25:53.279
+various directory hierarchies,
+
+00:25:53.280 --> 00:25:55.439
+lots of apt packages
+
+00:25:55.440 --> 00:25:57.979
+and lots of python packages
+
+00:25:57.980 --> 00:26:01.499
+from the bisos namespace.
+
+00:26:01.500 --> 00:26:03.879
+If you are ready, copy and paste
+
+00:26:03.880 --> 00:26:06.599
+this line and run it.
+
+00:26:06.600 --> 00:26:08.039
+You will be prompted
+
+00:26:08.040 --> 00:26:09.619
+for the root password.
+
+00:26:09.620 --> 00:26:11.279
+Then be patient.
+
+00:26:11.280 --> 00:26:12.559
+Full installation
+
+00:26:12.560 --> 00:26:14.519
+can take 15 minutes or so.
+
+00:26:14.520 --> 00:26:17.079
+The logs of this script
+
+00:26:17.080 --> 00:26:18.519
+are also captured
+
+00:26:18.520 --> 00:26:25.199
+in ~/raw-bisos-${dateTag}-log.org
+
+00:26:25.200 --> 00:26:28.959
+Now that we have Raw-BISOS and Raw-Blee installed,
+
+00:26:28.960 --> 00:26:31.039
+we are ready to walk through
+
+00:26:31.040 --> 00:26:32.319
+the unified source
+
+00:26:32.320 --> 00:26:34.439
+of the very presentation
+
+00:26:34.440 --> 00:26:36.259
+that you are watching.
+
+00:26:36.260 --> 00:26:40.959
+The "bodyPresArtEnFa.tex" file
+
+00:26:40.960 --> 00:26:42.439
+that we will visit
+
+00:26:42.440 --> 00:26:45.059
+is in COMEEGA-LaTeX syntax
+
+00:26:45.060 --> 00:26:47.699
+with lots of org-mode dblocks
+
+00:26:47.700 --> 00:26:50.479
+which generate Beamer-LaTeX frames
+
+00:26:50.480 --> 00:26:54.139
+and conditioned LaTeX bodies.
+
+00:26:54.140 --> 00:26:55.599
+After the walkthrough,
+
+00:26:55.600 --> 00:27:00.359
+I'll describe dblocks and COMEEGA in more detail.
+
+00:27:00.360 --> 00:27:02.239
+At the tail end of the walkthrough,
+
+00:27:02.240 --> 00:27:05.319
+we will also go through the generation process
+
+00:27:05.320 --> 00:27:10.859
+which runs XeLaTeX and HeVeA and a lot more.
+
+00:27:10.860 --> 00:27:13.619
+Let's look at our input file.
+
+00:27:13.620 --> 00:27:17.019
+It's a LaTeX file in LaTeX mode
+
+00:27:17.020 --> 00:27:24.279
+and it has org syntax org-mode included in it
+
+00:27:24.280 --> 00:27:29.559
+and I can toggle between LaTeX and org-mode
+
+00:27:29.560 --> 00:27:33.599
+so, now I'm gonna be in org-mode
+
+00:27:33.600 --> 00:27:37.839
+and org-mode gives me everything
+
+00:27:37.840 --> 00:27:39.399
+that org has to offer
+
+00:27:39.400 --> 00:27:46.479
+including a very convenient navigation framework.
+
+00:27:46.480 --> 00:27:54.279
+So let's take one slide and take a look at how it was done.
+
+00:27:54.280 --> 00:27:58.679
+So I would come to this scope slide
+
+00:27:58.680 --> 00:28:03.999
+and while I am there I'm gonna click on N.
+
+00:28:04.000 --> 00:28:09.759
+N takes me to the native LaTeX form back
+
+00:28:09.760 --> 00:28:16.359
+so that I'll be looking at it not in org but in LaTeX.
+
+00:28:16.360 --> 00:28:24.199
+So we're back in LaTeX and as you can see it
+
+00:28:24.200 --> 00:28:25.999
+uses a dynamic block
+
+00:28:26.000 --> 00:28:30.799
+starting with the comments and the BEGIN
+
+00:28:30.800 --> 00:28:34.839
+and it uses a dynamic block
+
+00:28:34.840 --> 00:28:38.079
+named a framedDrive image
+
+00:28:38.080 --> 00:28:45.399
+which means the content of this frame
+
+00:28:45.400 --> 00:28:50.439
+will be dispensed as an image not as text
+
+00:28:50.440 --> 00:28:56.899
+and it also automatically creates for me
+
+00:28:56.900 --> 00:29:00.439
+a name, a label, that can be used
+
+00:29:00.440 --> 00:29:05.119
+for voiceover augmentation.
+
+00:29:05.120 --> 00:29:08.119
+So a file in the audio directory
+
+00:29:08.120 --> 00:29:13.039
+called ScopeOfBleeLcnt.mp3
+
+00:29:13.040 --> 00:29:19.319
+is this audio that will come on top of this slide
+
+00:29:19.320 --> 00:29:24.079
+and then the rest is the LaTeX itself.
+
+00:29:24.080 --> 00:29:29.679
+The concept of "Org Dynamic Blocks"
+
+00:29:29.680 --> 00:29:31.519
+is very powerful.
+
+00:29:31.520 --> 00:29:33.599
+I think of them as universal
+
+00:29:33.600 --> 00:29:35.179
+visible macros.
+
+00:29:35.180 --> 00:29:41.359
+But, why should they be primarily used in just Org-Mode.
+
+00:29:41.360 --> 00:29:43.639
+I say let's generalize them
+
+00:29:43.640 --> 00:29:46.059
+to "Emacs Dynamic Blocks".
+
+00:29:46.060 --> 00:29:49.959
+Have defaults for org-dblock-start-re
+
+00:29:49.960 --> 00:29:52.159
+in every relevant mode
+
+00:29:52.160 --> 00:29:55.099
+and use them everywhere.
+
+00:29:55.100 --> 00:29:56.319
+Blee does that.
+
+00:29:56.320 --> 00:30:01.719
+In COMEEGA-LaTeX, Dynamic Blocks create Frame Controls
+
+00:30:01.720 --> 00:30:05.519
+and insert Image and Video contents.
+
+00:30:05.520 --> 00:30:07.519
+Much of Blee and BISOS
+
+00:30:07.520 --> 00:30:09.959
+are implemented in COMEEGA.
+
+00:30:09.960 --> 00:30:13.599
+Almost all of our Elisp, Python, Bash
+
+00:30:13.600 --> 00:30:17.199
+and LaTeX work uses COMEEGA.
+
+00:30:17.200 --> 00:30:19.299
+COMEEGA stands for Collaborative
+
+00:30:19.300 --> 00:30:21.679
+Org-Mode
+
+00:30:21.680 --> 00:30:24.759
+Enhanced Emacs Generalized Authorship.
+
+00:30:24.760 --> 00:30:27.879
+It is the inverse of org-babel.
+
+00:30:27.880 --> 00:30:29.999
+COMEEGA adds org-mode
+
+00:30:30.000 --> 00:30:33.099
+to your programming mode.
+
+00:30:33.100 --> 00:30:35.079
+Full and proper use of COMEEGA,
+
+00:30:35.080 --> 00:30:38.299
+requires Polymode.
+
+00:30:38.300 --> 00:30:41.359
+Let's call that Poly-COMEEGA.
+
+00:30:41.360 --> 00:30:43.319
+But Emacs's Polymode
+
+00:30:43.320 --> 00:30:45.679
+is work-in-progress,
+
+00:30:45.680 --> 00:30:49.199
+particularly now with the new tree-sitter.
+
+00:30:49.200 --> 00:30:53.199
+So, in the interim, my usage of COMEEGA
+
+00:30:53.200 --> 00:30:55.919
+has been in the form of Toggle-COMEEGA.
+
+00:30:55.920 --> 00:30:59.479
+Where I manually switch between
+
+00:30:59.480 --> 00:31:02.359
+the programming-mode and org-mode.
+
+00:31:02.360 --> 00:31:04.199
+For me this has proved to be
+
+00:31:04.200 --> 00:31:05.799
+a fine interim solution.
+
+00:31:05.800 --> 00:31:09.679
+Naturally, content processing
+
+00:31:09.680 --> 00:31:11.239
+should be multi-lingual
+
+00:31:11.240 --> 00:31:14.159
+and internationalized.
+
+00:31:14.160 --> 00:31:15.839
+Let's look at that dimension.
+
+00:31:15.840 --> 00:31:21.019
+I am Iranian and much of what I write is in Farsi.
+
+00:31:21.020 --> 00:31:23.519
+Getting Perso-Arabic text right
+
+00:31:23.520 --> 00:31:25.519
+is often a challenge,
+
+00:31:25.520 --> 00:31:30.059
+as it involves Bi-Directional text (BIDI)
+
+00:31:30.060 --> 00:31:32.999
+and shaping of characters.
+
+00:31:33.000 --> 00:31:36.039
+In the context of our content generation
+
+00:31:36.040 --> 00:31:39.819
+these need to span all relevant tools,
+
+00:31:39.820 --> 00:31:41.759
+not just emacs.
+
+00:31:41.760 --> 00:31:43.759
+For emacs, I have created
+
+00:31:43.760 --> 00:31:46.239
+my own input method
+
+00:31:46.240 --> 00:31:49.419
+called farsi-transliterate-banan.
+
+00:31:49.420 --> 00:31:54.139
+My EmacsConf 2021 talk was about that.
+
+00:31:54.140 --> 00:31:57.199
+Now let's look at some examples
+
+00:31:57.200 --> 00:32:01.699
+and spice it up a bit with semantics.
+
+00:32:01.700 --> 00:32:05.279
+As and example of proper BIDI text,
+
+00:32:05.280 --> 00:32:07.899
+here is the orignal Farsi text
+
+00:32:07.900 --> 00:32:10.359
+along with English translation
+
+00:32:10.360 --> 00:32:12.519
+of Imam Khomeini's text
+
+00:32:12.520 --> 00:32:15.479
+with respect to invalidity
+
+00:32:15.480 --> 00:32:20.399
+of Western Intellectual Proprty Rights regime.
+
+00:32:20.400 --> 00:32:23.039
+And as another example
+
+00:32:23.040 --> 00:32:24.479
+of proper BIDI text,
+
+00:32:24.480 --> 00:32:29.919
+here is Ayatollah Mothari's take on Western IPR
+
+00:32:29.920 --> 00:32:35.159
+not being private property. Note that these predate
+
+00:32:35.160 --> 00:32:36.919
+by more than half a century
+
+00:32:36.920 --> 00:32:43.239
+Jack Dorsey and Elon Musk's tweets of April 11, 2025
+
+00:32:43.240 --> 00:32:47.199
+saying "Delete all IP law".
+
+00:32:47.200 --> 00:32:49.159
+This topic is too important
+
+00:32:49.160 --> 00:32:50.399
+and too sensitive
+
+00:32:50.400 --> 00:32:53.639
+to be left to American Billionaires
+
+00:32:53.640 --> 00:32:55.639
+and their tweets.
+
+00:32:55.640 --> 00:32:58.199
+Let me again refer you to the logic
+
+00:32:58.200 --> 00:33:00.599
+of polyexistentials in my book.
+
+00:33:00.600 --> 00:33:06.359
+Chapter 14 of the book is dedicated to
+
+00:33:06.360 --> 00:33:08.579
+Ethics and ownership in Religions.
+
+00:33:08.580 --> 00:33:10.919
+With respect to my preference
+
+00:33:10.920 --> 00:33:12.719
+for Ethics over Freedom,
+
+00:33:12.720 --> 00:33:16.519
+let me refer you to Section 12. 4
+
+00:33:16.520 --> 00:33:19.079
+"A Cynical Perspective
+
+00:33:19.080 --> 00:33:22.859
+on Freedom Orientation of Americans"
+
+00:33:22.860 --> 00:33:25.999
+in which I describe where the FOSS labels
+
+00:33:26.000 --> 00:33:29.039
+and the likes of Stallman, Raymond,
+
+00:33:29.040 --> 00:33:31.599
+Moglen and Lessig have gone wrong.
+
+00:33:31.600 --> 00:33:34.239
+If you are one of their followers,
+
+00:33:34.240 --> 00:33:36.599
+perhaps Chapter 12 is for you.
+
+00:33:36.600 --> 00:33:42.279
+My emphasis thus far has been on content generation.
+
+00:33:42.280 --> 00:33:44.999
+Let's very briefly also look at
+
+00:33:45.000 --> 00:33:47.159
+Autonomous Self-Publication
+
+00:33:47.160 --> 00:33:52.279
+and Federated Re-Publications of our content.
+
+00:33:52.280 --> 00:33:55.759
+From the very beginning the Debian folks
+
+00:33:55.760 --> 00:33:59.039
+understood the importance of "Universality"
+
+00:33:59.040 --> 00:34:03.359
+and coined the "Universal Debian" label.
+
+00:34:03.360 --> 00:34:05.919
+This means that we can base
+
+00:34:05.920 --> 00:34:08.619
+our entire digital ecosystem
+
+00:34:08.620 --> 00:34:13.499
+on just the Libre-Halaal Debian distro.
+
+00:34:13.500 --> 00:34:17.299
+And that is what we have done with ByStar.
+
+00:34:17.300 --> 00:34:20.039
+In ByStar everything is based on
+
+00:34:20.040 --> 00:34:24.119
+just the Universal Debian everywhere.
+
+00:34:24.120 --> 00:34:26.999
+This has made our Usage Environment
+
+00:34:27.000 --> 00:34:31.319
+totally harmonious with our Service Environment
+
+00:34:31.320 --> 00:34:38.059
+allowing for very powerful software-service continuums.
+
+00:34:38.060 --> 00:34:41.479
+Of course, all of this is immediatly applicable
+
+00:34:41.480 --> 00:34:46.019
+to our ByStar Content Bundle as well.
+
+00:34:46.020 --> 00:34:50.519
+Some have asked, why don't you also include Ubuntu?
+
+00:34:50.520 --> 00:34:53.679
+I think the opposite makes more sense.
+
+00:34:53.680 --> 00:34:56.699
+Ubuntu should converge with Debian.
+
+00:34:56.700 --> 00:34:59.639
+I tried to explain this to Mark Shuttleworth
+
+00:34:59.640 --> 00:35:02.479
+in an email a while back.
+
+00:35:02.480 --> 00:35:04.119
+I have included that email
+
+00:35:04.120 --> 00:35:07.719
+in Section 12.1.5.
+
+00:35:07.720 --> 00:35:10.439
+In this presentation, we have stopped
+
+00:35:10.440 --> 00:35:13.159
+at the "Raw-BISOS" stage.
+
+00:35:13.160 --> 00:35:15.759
+We can further evolve Raw-BISOS
+
+00:35:15.760 --> 00:35:17.959
+and make it be "Sited"
+
+00:35:17.960 --> 00:35:22.239
+and provide autonomous publication services.
+
+00:35:22.240 --> 00:35:25.679
+But here by going through EmacsConf and youtube
+
+00:35:25.680 --> 00:35:30.959
+we are using the "Federated Re-Publications" model.
+
+00:35:30.960 --> 00:35:32.479
+Something this large,
+
+00:35:32.480 --> 00:35:35.479
+should be well documented.
+
+00:35:35.480 --> 00:35:37.079
+In Emacs, the way that
+
+00:35:37.080 --> 00:35:39.319
+we have been dealing with documentation
+
+00:35:39.320 --> 00:35:43.439
+and information retrieval is archaic.
+
+00:35:43.440 --> 00:35:46.079
+Man-pages, TeXInfo, Helpful-Mode
+
+00:35:46.080 --> 00:35:51.599
+and convention based Doc-Strings are old and limited.
+
+00:35:51.600 --> 00:35:55.279
+In BISOS and Blee, we use Blee-Panels
+
+00:35:55.280 --> 00:35:57.739
+for all kinds of documentation.
+
+00:35:57.740 --> 00:36:02.559
+Let me show you some examples.
+
+00:36:02.560 --> 00:36:05.199
+So, what next?
+
+00:36:05.200 --> 00:36:10.599
+If Blee, BISOS, ByStar, Libre-Halaal, Polyexistentials
+
+00:36:10.600 --> 00:36:14.159
+and these Content Processing capabilities
+
+00:36:14.160 --> 00:36:16.639
+have piqued your interest,
+
+00:36:16.640 --> 00:36:19.379
+please feel welcome to contact me.
+
+00:36:19.380 --> 00:36:22.239
+These Emacs Conferences have proven
+
+00:36:22.240 --> 00:36:25.379
+to be very useful and productive.
+
+00:36:25.380 --> 00:36:27.199
+I look forward to your thoughts,
+
+00:36:27.200 --> 00:36:29.599
+feedback and questions.
+
+00:36:29.600 --> 00:36:35.359
+I want to thank all the EmacsConf 2025 Organizers
+
+00:36:35.360 --> 00:36:37.199
+for their great work,
+
+00:36:37.200 --> 00:36:41.640
+and Sacha in particular.

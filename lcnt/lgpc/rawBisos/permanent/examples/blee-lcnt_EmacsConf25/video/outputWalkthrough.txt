@@ -1,0 +1,25 @@
+The video presentation that you are watching is just one of the outputs of the BLEe LCNT
+machinery. There are two PDF format outputs and two HTML outputs that are also quite useful.
+The primary output of Beamer is a set of slides that people use to give their talks with.
+Typically that's done live. In my case I dissect the images of each frame and do a voiceover on it
+and then dispense it through reveal. In a second you will see that as well.
+This PDF output is very useful. You get the table of contents of course and in addition to that
+Beamer generates navigations for you where on any part you get a small table of content
+as well. This is heavily used amongst academics and it's a good output on its own and I'm augmenting
+it in a variety of ways. In addition to the presentation PDF format there is also an article
+presentation PDF format which gives you the same content but it gives it to you in
+a textual form with the table of content and the rest. This is a good form to use when you are giving
+for example class lectures and the students often prefer this format.
+Now for the HTML format outputs the most relevant of course is the reveal itself. If you have not used reveal
+before. In my view it's a HTML slide dispenser. I don't look at it as a presentation framework.
+I use as you are seeing we use Beamer to feed into it and we use it to dispense the information.
+It has all the typical navigation capabilities that you would expect and most of
+what I have as slides are images but occasionally particularly when there is a need to provide
+pointers HTML pointers. I then also include a textual output. This is also produced from the Beamer
+latex source but it's HTML through textual HTML through heavier not the image.
+You can you get a table of contents. You can navigate and there are a whole lot of other features
+that reveal also provides. So to generate the video what I do is I come to the very beginning of
+the presentation. I turn on the screen capture recorder and then I start playing the voice over for each
+slide and at the very end you get a video but what you just did is you dispensed every frame
+one at a time through reveal. In addition to this HTML form you also get a article presentation form of it
+with a full table of content and the videos are there and the notes are there and this is also quite useful.

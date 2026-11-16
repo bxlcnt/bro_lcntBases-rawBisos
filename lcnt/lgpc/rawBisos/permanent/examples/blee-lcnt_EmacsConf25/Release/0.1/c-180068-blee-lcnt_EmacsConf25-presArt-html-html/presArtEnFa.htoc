@@ -1,0 +1,70 @@
+\begin{tocenv}
+\tocitem \@locref{sec2}{\begin{@norefs}\@print{1}\quad{}Introduction{}\end{@norefs}}
+\tocitem \@locref{sec3}{\begin{@norefs}\@print{2}\quad{}Scope: A Complete Multi-Media Content Authorship, Generation, Publication and Distribution Framework{}\end{@norefs}}
+\tocitem \@locref{sec4}{\begin{@norefs}\@print{3}\quad{}Prior Art, Similar Art and Some Examples{}\end{@norefs}}
+\tocitem \@locref{sec5}{\begin{@norefs}\@print{4}\quad{}LaTeX-Beamer + Reveal.js With Blee and BISOS{}\end{@norefs}}
+\tocitem \@locref{sec6}{\begin{@norefs}\@print{5}\quad{}Blee-LCNT Novel Concepts{}\end{@norefs}}
+\tocitem \@locref{sec7}{\begin{@norefs}\@print{6}\quad{}Part of a Bigger Picture -- Part of a Series{}\end{@norefs}}
+\end{tocenv}
+\begin{tocenv}
+\tocitem \@locref{sec8}{\begin{@norefs}\@print{Part I}\quad{}The ``Nature of Polyexistentials'' Book{}\end{@norefs}}
+\begin{tocenv}
+\tocitem \@locref{sec9}{\begin{@norefs}\@print{7}\quad{}The ``Nature of Polyexistentials'' Book and The Full ByStar Story{}\end{@norefs}}
+\tocitem \@locref{sec10}{\begin{@norefs}\@print{8}\quad{}A Layered Overview of The Polyexistentials Book{}\end{@norefs}}
+\tocitem \@locref{sec11}{\begin{@norefs}\@print{9}\quad{}Nature of Polyexistentials Book -- Vol I and II Key Concepts{}\end{@norefs}}
+\tocitem \@locref{sec12}{\begin{@norefs}\@print{10}\quad{}Obtaining the Nature of Polyexistentials Book{}\end{@norefs}}
+\end{tocenv}
+\tocitem \@locref{sec13}{\begin{@norefs}\@print{Part II}\quad{}Content Processing -- A ByStar/BISOS/Blee Capability Bundle{}\end{@norefs}}
+\begin{tocenv}
+\tocitem \@locref{sec14}{\begin{@norefs}\@print{11}\quad{}ByStar/BISOS/Blee Capability: Content Production and Publication{}\end{@norefs}}
+\tocitem \@locref{sec15}{\begin{@norefs}\@print{12}\quad{}ByStar Containment Hierarchy and ByStar Capability Bundles{}\end{@norefs}}
+\tocitem \@locref{sec16}{\begin{@norefs}\@print{13}\quad{}Aggregate Conviviality of ByStar Capabilities{}\end{@norefs}}
+\tocitem \@locref{sec17}{\begin{@norefs}\@print{14}\quad{}Parts List: Integrated Components{}\end{@norefs}}
+\end{tocenv}
+\tocitem \@locref{sec18}{\begin{@norefs}\@print{Part III}\quad{}Resulting Contents -- Output Forms and Formats{}\end{@norefs}}
+\begin{tocenv}
+\tocitem \@locref{sec19}{\begin{@norefs}\@print{15}\quad{}Content Processing and Output Forms and Formats{}\end{@norefs}}
+\tocitem \@locref{sec20}{\begin{@norefs}\@print{16}\quad{}Resulting Output Formats{}\end{@norefs}}
+\tocitem \@locref{sec21}{\begin{@norefs}\@print{17}\quad{}Output Forms Walkthrough{}\end{@norefs}}
+\end{tocenv}
+\tocitem \@locref{sec22}{\begin{@norefs}\@print{Part IV}\quad{}A Unified Single Input -- A Sequence of Frames{}\end{@norefs}}
+\begin{tocenv}
+\tocitem \@locref{sec23}{\begin{@norefs}\@print{18}\quad{}Obtaining Sources Of This Document -- Pointers To Git Repos{}\end{@norefs}}
+\tocitem \@locref{sec24}{\begin{@norefs}\@print{19}\quad{}Overview Of ByStar Multi-Media Document Authorship and Generation{}\end{@norefs}}
+\tocitem \@locref{sec25}{\begin{@norefs}\@print{20}\quad{}Unified Source -- Combinations Of Abstract Forms And Concrete Outputs{}\end{@norefs}}
+\tocitem \@locref{sec26}{\begin{@norefs}\@print{21}\quad{}Frame Control Types{}\end{@norefs}}
+\tocitem \@locref{sec27}{\begin{@norefs}\@print{22}\quad{}Frame Body Types{}\end{@norefs}}
+\end{tocenv}
+\tocitem \@locref{sec28}{\begin{@norefs}\@print{Part V}\quad{}Generating and Processing the Content{}\end{@norefs}}
+\begin{tocenv}
+\tocitem \@locref{sec29}{\begin{@norefs}\@print{23}\quad{}From Fresh Debian to Raw-BISOS and Raw-Blee{}\end{@norefs}}
+\tocitem \@locref{sec30}{\begin{@norefs}\@print{24}\quad{}Context for Unified Source Walkthrough{}\end{@norefs}}
+\tocitem \@locref{sec31}{\begin{@norefs}\@print{25}\quad{}A Quick Tour of BISOS and Blee{}\end{@norefs}}
+\tocitem \@locref{sec32}{\begin{@norefs}\@print{26}\quad{}Blee Org Dynamic Blocks --- Everywhere{}\end{@norefs}}
+\tocitem \@locref{sec33}{\begin{@norefs}\@print{27}\quad{}COMEEGA{}\end{@norefs}}
+\end{tocenv}
+\tocitem \@locref{sec34}{\begin{@norefs}\@print{Part VI}\quad{}Internationalization --- A Non-Americanist Perspective{}\end{@norefs}}
+\begin{tocenv}
+\tocitem \@locref{sec35}{\begin{@norefs}\@print{28}\quad{}Perso-Arabic Input Methods, bidi and shaping --- Fully Integrated{}\end{@norefs}}
+\tocitem \@locref{sec36}{\begin{@norefs}\@print{29}\quad{}Ayatollah Khomeini: The so-called Western Intelectual Property is Utterly Invalid{}\end{@norefs}}
+\tocitem \@locref{sec37}{\begin{@norefs}\@print{30}\quad{}Ayatollah Motahari: Intellectual Property Is Public Property{}\end{@norefs}}
+\tocitem \@locref{sec38}{\begin{@norefs}\@print{31}\quad{}Nature of Polyexistentials Citations: Ethical and Religious Cures{}\end{@norefs}}
+\tocitem \@locref{sec39}{\begin{@norefs}\@print{32}\quad{}Nature of Polyexistentials Citations: Non Americanist Perspectives{}\end{@norefs}}
+\end{tocenv}
+\tocitem \@locref{sec40}{\begin{@norefs}\@print{Part VII}\quad{}Autonomous Self-Publication and Federated Re-Publications{}\end{@norefs}}
+\begin{tocenv}
+\tocitem \@locref{sec41}{\begin{@norefs}\@print{33}\quad{}Just The Universal Debian Everywhere{}\end{@norefs}}
+\tocitem \@locref{sec42}{\begin{@norefs}\@print{34}\quad{}Nature of Polyexistentials Citations: Convergence of Debian and Ubuntu{}\end{@norefs}}
+\tocitem \@locref{sec43}{\begin{@norefs}\@print{35}\quad{}From Raw-BISOS To Your Own Site and Your Own PALS{}\end{@norefs}}
+\end{tocenv}
+\tocitem \@locref{sec44}{\begin{@norefs}\@print{Part VIII}\quad{}Blee-Panels --- BISOS and Blee's Self-Documentation Facilities{}\end{@norefs}}
+\begin{tocenv}
+\tocitem \@locref{sec45}{\begin{@norefs}\@print{36}\quad{}Content Processing Blee Panels --- Screen Captures{}\end{@norefs}}
+\end{tocenv}
+\tocitem \@locref{sec46}{\begin{@norefs}\@print{Part IX}\quad{}Moving Forward{}\end{@norefs}}
+\begin{tocenv}
+\tocitem \@locref{sec47}{\begin{@norefs}\@print{37}\quad{}Your Participation{}\end{@norefs}}
+\tocitem \@locref{sec48}{\begin{@norefs}\@print{38}\quad{}Emacs Conf is Great{}\end{@norefs}}
+\tocitem \@locref{sec49}{\begin{@norefs}\@print{39}\quad{}Thanks{}\end{@norefs}}
+\end{tocenv}
+\end{tocenv}

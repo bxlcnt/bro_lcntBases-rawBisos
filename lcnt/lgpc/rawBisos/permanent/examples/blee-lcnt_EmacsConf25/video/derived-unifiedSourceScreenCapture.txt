@@ -1,0 +1,11 @@
+Let's look at our input file. It's a LaTeX file in LaTeX mode and it has org syntax org mode
+included in it and I can toggle between LaTeX and org mode so now I'm gonna be in org mode
+and org mode gives me everything that org has to offer including a very convenient navigation
+framework. So let's take one slide and take a look at how it was done. So I would come to this
+scope slide and while I am there I'm gonna click on N. N takes me to the native LaTeX form
+back so that I'll be looking at it not in org but in LaTeX. So we're back in LaTeX and as
+you can see it uses a dynamic block starting with the comments and the begin and it uses
+the dynamic a dynamic block named a frame drive image which means the content of this frame
+will be dispensed as an image not as text and it also automatically creates for me a name
+a label that can be used for voiceover augmentation. So a file in the audio directory called scope
+of bleelcmt.mp3 is this audio that will come on top of this slide and then the rest is the LaTeX itself.

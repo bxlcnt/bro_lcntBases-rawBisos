@@ -1,0 +1,51 @@
+\@titleaux{Blee-LCNT: An Emacs-Centered Content Production Framework}
+\bibstyle{plain}
+\@@addtocsec{htoc}{sec2}{0}{\@print{1}\quad{}Introduction{}}
+\@@addtocsec{htoc}{sec3}{0}{\@print{2}\quad{}Scope: A Complete Multi-Media Content Authorship, Generation, Publication and Distribution Framework{}}
+\@@addtocsec{htoc}{sec4}{0}{\@print{3}\quad{}Prior Art, Similar Art and Some Examples{}}
+\@@addtocsec{htoc}{sec5}{0}{\@print{4}\quad{}LaTeX-Beamer + Reveal.js With Blee and BISOS{}}
+\@@addtocsec{htoc}{sec6}{0}{\@print{5}\quad{}Blee-LCNT Novel Concepts{}}
+\@@addtocsec{htoc}{sec7}{0}{\@print{6}\quad{}Part of a Bigger Picture -- Part of a Series{}}
+\@@addtocsec{htoc}{sec8}{-1}{\@print{Part I}\quad{}The ``Nature of Polyexistentials'' Book{}}
+\@@addtocsec{htoc}{sec9}{0}{\@print{7}\quad{}The ``Nature of Polyexistentials'' Book and The Full ByStar Story{}}
+\@@addtocsec{htoc}{sec10}{0}{\@print{8}\quad{}A Layered Overview of The Polyexistentials Book{}}
+\@@addtocsec{htoc}{sec11}{0}{\@print{9}\quad{}Nature of Polyexistentials Book -- Vol I and II Key Concepts{}}
+\@@addtocsec{htoc}{sec12}{0}{\@print{10}\quad{}Obtaining the Nature of Polyexistentials Book{}}
+\@@addtocsec{htoc}{sec13}{-1}{\@print{Part II}\quad{}Content Processing -- A ByStar/BISOS/Blee Capability Bundle{}}
+\@@addtocsec{htoc}{sec14}{0}{\@print{11}\quad{}ByStar/BISOS/Blee Capability: Content Production and Publication{}}
+\@@addtocsec{htoc}{sec15}{0}{\@print{12}\quad{}ByStar Containment Hierarchy and ByStar Capability Bundles{}}
+\@@addtocsec{htoc}{sec16}{0}{\@print{13}\quad{}Aggregate Conviviality of ByStar Capabilities{}}
+\@@addtocsec{htoc}{sec17}{0}{\@print{14}\quad{}Parts List: Integrated Components{}}
+\@@addtocsec{htoc}{sec18}{-1}{\@print{Part III}\quad{}Resulting Contents -- Output Forms and Formats{}}
+\@@addtocsec{htoc}{sec19}{0}{\@print{15}\quad{}Content Processing and Output Forms and Formats{}}
+\@@addtocsec{htoc}{sec20}{0}{\@print{16}\quad{}Resulting Output Formats{}}
+\@@addtocsec{htoc}{sec21}{0}{\@print{17}\quad{}Output Forms Walkthrough{}}
+\@@addtocsec{htoc}{sec22}{-1}{\@print{Part IV}\quad{}A Unified Single Input -- A Sequence of Frames{}}
+\@@addtocsec{htoc}{sec23}{0}{\@print{18}\quad{}Obtaining Sources Of This Document -- Pointers To Git Repos{}}
+\@@addtocsec{htoc}{sec24}{0}{\@print{19}\quad{}Overview Of ByStar Multi-Media Document Authorship and Generation{}}
+\@@addtocsec{htoc}{sec25}{0}{\@print{20}\quad{}Unified Source -- Combinations Of Abstract Forms And Concrete Outputs{}}
+\@@addtocsec{htoc}{sec26}{0}{\@print{21}\quad{}Frame Control Types{}}
+\@@addtocsec{htoc}{sec27}{0}{\@print{22}\quad{}Frame Body Types{}}
+\@@addtocsec{htoc}{sec28}{-1}{\@print{Part V}\quad{}Generating and Processing the Content{}}
+\@@addtocsec{htoc}{sec29}{0}{\@print{23}\quad{}From Fresh Debian to Raw-BISOS and Raw-Blee{}}
+\@@addtocsec{htoc}{sec30}{0}{\@print{24}\quad{}Context for Unified Source Walkthrough{}}
+\@@addtocsec{htoc}{sec31}{0}{\@print{25}\quad{}A Quick Tour of BISOS and Blee{}}
+\@@addtocsec{htoc}{sec32}{0}{\@print{26}\quad{}Blee Org Dynamic Blocks --- Everywhere{}}
+\@@addtocsec{htoc}{sec33}{0}{\@print{27}\quad{}COMEEGA{}}
+\@@addtocsec{htoc}{sec34}{-1}{\@print{Part VI}\quad{}Internationalization --- A Non-Americanist Perspective{}}
+\@@addtocsec{htoc}{sec35}{0}{\@print{28}\quad{}Perso-Arabic Input Methods, bidi and shaping --- Fully Integrated{}}
+\@@addtocsec{htoc}{sec36}{0}{\@print{29}\quad{}Ayatollah Khomeini: The so-called Western Intelectual Property is Utterly Invalid{}}
+\@@addtocsec{htoc}{sec37}{0}{\@print{30}\quad{}Ayatollah Motahari: Intellectual Property Is Public Property{}}
+\@@addtocsec{htoc}{sec38}{0}{\@print{31}\quad{}Nature of Polyexistentials Citations: Ethical and Religious Cures{}}
+\@@addtocsec{htoc}{sec39}{0}{\@print{32}\quad{}Nature of Polyexistentials Citations: Non Americanist Perspectives{}}
+\@@addtocsec{htoc}{sec40}{-1}{\@print{Part VII}\quad{}Autonomous Self-Publication and Federated Re-Publications{}}
+\@@addtocsec{htoc}{sec41}{0}{\@print{33}\quad{}Just The Universal Debian Everywhere{}}
+\@@addtocsec{htoc}{sec42}{0}{\@print{34}\quad{}Nature of Polyexistentials Citations: Convergence of Debian and Ubuntu{}}
+\@@addtocsec{htoc}{sec43}{0}{\@print{35}\quad{}From Raw-BISOS To Your Own Site and Your Own PALS{}}
+\@@addtocsec{htoc}{sec44}{-1}{\@print{Part VIII}\quad{}Blee-Panels --- BISOS and Blee's Self-Documentation Facilities{}}
+\@@addtocsec{htoc}{sec45}{0}{\@print{36}\quad{}Content Processing Blee Panels --- Screen Captures{}}
+\@@addtocsec{htoc}{sec46}{-1}{\@print{Part IX}\quad{}Moving Forward{}}
+\@@addtocsec{htoc}{sec47}{0}{\@print{37}\quad{}Your Participation{}}
+\@@addtocsec{htoc}{sec48}{0}{\@print{38}\quad{}Emacs Conf is Great{}}
+\@@addtocsec{htoc}{sec49}{0}{\@print{39}\quad{}Thanks{}}
+\bibdata{/lcnt/outputs/all/plpcUrl,/usr/local/lib/bib/rfcs}

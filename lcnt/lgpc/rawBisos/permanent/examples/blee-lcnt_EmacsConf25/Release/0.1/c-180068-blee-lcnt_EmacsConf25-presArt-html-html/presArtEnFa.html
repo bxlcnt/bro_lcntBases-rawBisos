@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="generator" content="hevea 2.36">
+<style type="text/css">
+.equationcontainer{position:relative;}
+.equationnumber{float:right;left:auto;position:absolute;right:0}
+.equationnumber-valign{float:right;left:auto;position:absolute;right:0;margin-top:-0.5em;}
+.floatrule{background-color: black; border: none; height: 1px; width: 80%}
+.phantom{display: inline-block; visibility: hidden}
+.hphantom{display: inline-block; height: 0; visibility: hidden}
+.vphantom{display: inline-block; visibility: hidden; width: 0}
+.smash{display: inline-block; height: 0; line-height: 0}
+.li-itemize{margin:1ex 0ex;}
+.li-enumerate{margin:1ex 0ex;}
+.dd-description{margin:0ex 0ex 1ex 4ex;}
+.dt-description{margin:0ex;}
+.toc{list-style:none;}
+.footnotetext{margin:0ex; padding:0ex;}
+div.footnotetext P{margin:0px; text-indent:1em;}
+.thefootnotes{text-align:left;margin:0ex;}
+.dt-thefootnotes{margin:0em;}
+.dd-thefootnotes{margin:0em 0em 0em 2em;}
+.footnoterule{background-color: black; border: none; height: 1px; margin: 1em auto 1em 0px; width: 40%}
+.caption{padding-left:2ex; padding-right:2ex; margin-left:auto; margin-right:auto}
+.title{margin:2ex auto;text-align:center}
+.titlemain{margin:1ex 2ex 2ex 1ex;}
+.titlerest{margin:0ex 2ex;}
+.center{text-align:center;margin-left:auto;margin-right:auto;}
+.flushleft{text-align:left;margin-left:0ex;margin-right:auto;}
+.flushright{text-align:right;margin-left:auto;margin-right:0ex;}
+div table{margin-left:inherit;margin-right:inherit;margin-bottom:2px;margin-top:2px}
+td table{margin:auto;}
+table{border-collapse:collapse;}
+td{padding:0;}
+.cellpadding0 tr td{padding:0;}
+.cellpadding1 tr td{padding:1px;}
+pre{text-align:left;margin-left:0ex;margin-right:auto;}
+blockquote{margin-left:4ex;margin-right:4ex;text-align:left;}
+td p{margin:0px;}
+.quote{margin-left:3em;margin-right:3em;text-align:inherit;text-indent:0pt}
+.quotation{margin-left:3em;margin-right:3em;text-align:inherit;text-indent:1.5em}
+.verse{margin-left:3em;margin-right:3em;text-indent:1.5em hanging each-line}
+.parbox{box-sizing: border-box;
+display: inline-block;
+text-indent: 0;
+}
+.rule-rect{fill: black;}
+.lrbox{box-sizing:border-box;display:inline-block;overflow:visible;white-space:nowrap;}
+.center-lrbox{display:inline-block;margin-left:50%;transform:translateX(-50%);}
+.makebox{}
+.framebox{border:1px solid black;padding:0.25em;}
+.vertical-rule{border:none;width:2px;background-color:black;}
+.horizontal-rule{border:none;background-color:black;}
+.hrule{border:none;height:2px;width:100%;background-color:black;}
+.hfill{border:none;height:1px;width:200%;background-color:black;}
+.vdisplay{border-collapse:separate;border-spacing:2px;line-height:1.1;width:auto; empty-cells:show; border:2px solid red;}
+.vdcell{white-space:nowrap;padding:0px; border:2px solid green;}
+.display{border-collapse:separate;border-spacing:2px;line-height:1.1;width:auto; border:none;}
+.dcell{white-space:nowrap;padding:0px; border:none;}
+.dcenter{margin:0ex auto;}
+.vdcenter{border:solid #FF8000 2px; margin:0ex auto;}
+.minipage{text-align:left; margin-left:0em; margin-right:auto;}
+.marginpar{border:solid thin black; margin-bottom:1ex; width:20%; text-align:left;}
+.marginparleft{float:left; clear:left; margin-left:0ex; margin-right:1ex;}
+.marginparright{float:right; clear:right; margin-left:1ex; margin-right:0ex;}
+.theorem{text-align:left;margin:1ex auto 1ex 0ex;}
+.framed{border: 1px solid black; 
+padding-left: 8pt;
+padding-right: 8pt;
+padding-top: 0pt;
+padding-bottom: 0pt;
+}
+.leftbar{border-left: 4px solid black; 
+padding-left: 6pt;
+padding-right: 6pt;
+padding-top: 0pt;
+padding-bottom: 0pt;
+}
+.part{margin:2ex auto;text-align:center}
+.framed{border: 1px solid black; 
+padding-left: 8pt;
+padding-right: 8pt;
+padding-top: 0pt;
+padding-bottom: 0pt;
+}
+.leftbar{border-left: 4px solid black; 
+padding-left: 6pt;
+padding-right: 6pt;
+padding-top: 0pt;
+padding-bottom: 0pt;
+}
+.lstlisting{font-family:monospace;white-space:pre;margin-right:auto;margin-left:0pt;text-align:left}
+</style>
+<title>Blee-LCNT: An Emacs-Centered Content Production Framework
+</title>
+</head>
+<body >
+<!--HEVEA command line is: hevea -o heveaHtml-presArtEnFa/presArtEnFa.html -I /bisos/apps/bxtex/hevea/macros bx-fixups.hva bx-enfa.hva bx-faen.hva framed.hva presArtEnFa.ttytex -->
+<!--CUT STYLE article--><!--HTMLHEAD-->
+
+<br>
+<br>
+
+<!--ENDHTML-->
+<!--CUT DEF section 1 --><div class="center">
+<span style="font-size:xx-large"><span style="font-weight:bold">Blee-LCNT:<br>
+<br>
+
+An Emacs-Centered Content Production and Self-Publication Framework<br>
+</span></span>
+</div><p><br>
+</p><p><br>
+<br>
+<br>
+<br>
+
+</p><div class="center">
+<span style="font-size:large">Document #PLPC-180068<br>
+Version 0.1<br>
+December 8, 2024</span>
+</div><div class="center">
+<span style="font-size:large">This Document is Available on-line at:<br>
+</span><a href="http://www.by-star.net/PLPC/180068"><span style="font-size:large">http://www.by-star.net/PLPC/180068</span></a>
+</div><p><br>
+</p><div class="center">
+<span style="font-size:large"><span style="font-weight:bold">Mohsen Banan — </span></span><span style="font-size:large"><span style="font-weight:bold">محسن بنان</span></span><span style="font-size:large"><br>
+ Email: </span><a href="emacs@mohsen.1.banan.byname.net"><span style="font-size:large">emacs@mohsen.1.banan.byname.net</span></a><span style="font-size:large"><br>
+</span></div><p><br>
+<br>
+</p><!--TOC section id="sec1" Contents-->
+<h2 id="sec1" class="section">Contents</h2><!--SEC END --><ul class="toc"><li class="li-toc"><a href="#sec2">1 Introduction</a>
+</li><li class="li-toc"><a href="#sec3">2 Scope: A Complete Multi-Media Content Authorship, Generation, Publication and Distribution Framework</a>
+</li><li class="li-toc"><a href="#sec4">3 Prior Art, Similar Art and Some Examples</a>
+</li><li class="li-toc"><a href="#sec5">4 LaTeX-Beamer + Reveal.js With Blee and BISOS</a>
+</li><li class="li-toc"><a href="#sec6">5 Blee-LCNT Novel Concepts</a>
+</li><li class="li-toc"><a href="#sec7">6 Part of a Bigger Picture – Part of a Series</a>
+</li></ul><ul class="toc"><li class="li-toc"><a href="#sec8">Part I The “Nature of Polyexistentials” Book</a>
+<ul class="toc"><li class="li-toc"><a href="#sec9">7 The “Nature of Polyexistentials” Book and The Full ByStar Story</a>
+</li><li class="li-toc"><a href="#sec10">8 A Layered Overview of The Polyexistentials Book</a>
+</li><li class="li-toc"><a href="#sec11">9 Nature of Polyexistentials Book – Vol I and II Key Concepts</a>
+</li><li class="li-toc"><a href="#sec12">10 Obtaining the Nature of Polyexistentials Book</a>
+</li></ul>
+</li><li class="li-toc"><a href="#sec13">Part II Content Processing – A ByStar/BISOS/Blee Capability Bundle</a>
+<ul class="toc"><li class="li-toc"><a href="#sec14">11 ByStar/BISOS/Blee Capability: Content Production and Publication</a>
+</li><li class="li-toc"><a href="#sec15">12 ByStar Containment Hierarchy and ByStar Capability Bundles</a>
+</li><li class="li-toc"><a href="#sec16">13 Aggregate Conviviality of ByStar Capabilities</a>
+</li><li class="li-toc"><a href="#sec17">14 Parts List: Integrated Components</a>
+</li></ul>
+</li><li class="li-toc"><a href="#sec18">Part III Resulting Contents – Output Forms and Formats</a>
+<ul class="toc"><li class="li-toc"><a href="#sec19">15 Content Processing and Output Forms and Formats</a>
+</li><li class="li-toc"><a href="#sec20">16 Resulting Output Formats</a>
+</li><li class="li-toc"><a href="#sec21">17 Output Forms Walkthrough</a>
+</li></ul>
+</li><li class="li-toc"><a href="#sec22">Part IV A Unified Single Input – A Sequence of Frames</a>
+<ul class="toc"><li class="li-toc"><a href="#sec23">18 Obtaining Sources Of This Document – Pointers To Git Repos</a>
+</li><li class="li-toc"><a href="#sec24">19 Overview Of ByStar Multi-Media Document Authorship and Generation</a>
+</li><li class="li-toc"><a href="#sec25">20 Unified Source – Combinations Of Abstract Forms And Concrete Outputs</a>
+</li><li class="li-toc"><a href="#sec26">21 Frame Control Types</a>
+</li><li class="li-toc"><a href="#sec27">22 Frame Body Types</a>
+</li></ul>
+</li><li class="li-toc"><a href="#sec28">Part V Generating and Processing the Content</a>
+<ul class="toc"><li class="li-toc"><a href="#sec29">23 From Fresh Debian to Raw-BISOS and Raw-Blee</a>
+</li><li class="li-toc"><a href="#sec30">24 Context for Unified Source Walkthrough</a>
+</li><li class="li-toc"><a href="#sec31">25 A Quick Tour of BISOS and Blee</a>
+</li><li class="li-toc"><a href="#sec32">26 Blee Org Dynamic Blocks — Everywhere</a>
+</li><li class="li-toc"><a href="#sec33">27 COMEEGA</a>
+</li></ul>
+</li><li class="li-toc"><a href="#sec34">Part VI Internationalization — A Non-Americanist Perspective</a>
+<ul class="toc"><li class="li-toc"><a href="#sec35">28 Perso-Arabic Input Methods, bidi and shaping — Fully Integrated</a>
+</li><li class="li-toc"><a href="#sec36">29 Ayatollah Khomeini: The so-called Western Intelectual Property is Utterly Invalid</a>
+</li><li class="li-toc"><a href="#sec37">30 Ayatollah Motahari: Intellectual Property Is Public Property</a>
+</li><li class="li-toc"><a href="#sec38">31 Nature of Polyexistentials Citations: Ethical and Religious Cures</a>
+</li><li class="li-toc"><a href="#sec39">32 Nature of Polyexistentials Citations: Non Americanist Perspectives</a>
+</li></ul>
+</li><li class="li-toc"><a href="#sec40">Part VII Autonomous Self-Publication and Federated Re-Publications</a>
+<ul class="toc"><li class="li-toc"><a href="#sec41">33 Just The Universal Debian Everywhere</a>
+</li><li class="li-toc"><a href="#sec42">34 Nature of Polyexistentials Citations: Convergence of Debian and Ubuntu</a>
+</li><li class="li-toc"><a href="#sec43">35 From Raw-BISOS To Your Own Site and Your Own PALS</a>
+</li></ul>
+</li><li class="li-toc"><a href="#sec44">Part VIII Blee-Panels — BISOS and Blee’s Self-Documentation Facilities</a>
+<ul class="toc"><li class="li-toc"><a href="#sec45">36 Content Processing Blee Panels — Screen Captures</a>
+</li></ul>
+</li><li class="li-toc"><a href="#sec46">Part IX Moving Forward</a>
+<ul class="toc"><li class="li-toc"><a href="#sec47">37 Your Participation</a>
+</li><li class="li-toc"><a href="#sec48">38 Emacs Conf is Great</a>
+</li><li class="li-toc"><a href="#sec49">39 Thanks</a>
+</li></ul>
+</li></ul>
+<!--TOC section id="sec2" Introduction-->
+<h2 id="sec2" class="section">1 Introduction</h2><!--SEC END --><p>
+<section>
+<h3></h3></p><p>
+
+
+      <!-- data-autoplay  controls -->
+    <p>
+    <video  controls   preload="auto"  src="./video/mbIntro.mp4"  height="50%%" width="50%%">
+    </video>
+    </p>
+  
+
+</p><p>Greetings. Salaam.</p><p>This is Mohsen Banan.</p><p>I am a software and internet engineer.</p><p>The title of this presentation is
+“Blee-LCNT: An Emacs Centered Content Production
+and Self-Publication Framework”.</p><p>Blee stands for ByStar Libre-Halaal Emacs Environment.
+In last year’s EmacsConf, I introduced Blee,
+BISOS and ByStar as concepts and as foundations.</p><p>This year I want to focus on one concrete capability.
+Content Production and Self-Publication is
+a foundational Blee and BISOS Capability Bundle.</p><p>Both this presentation and the Nature of Polyexistentials
+book were developed with Blee-LCNT.</p><p>In this presentation I want to look at Emacs as a
+central ingredient for a usage
+environment that we can use to orchestrate production
+of quite fancy multi-media presentations.</p><p>
+</section></p>
+<!--TOC section id="sec3" Scope: A Complete Multi-Media Content Authorship, Generation, Publication and Distribution Framework-->
+<h2 id="sec3" class="section">2 Scope: A Complete Multi-Media Content Authorship, Generation, Publication and Distribution Framework</h2><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/ScopeOfBleeLcnt.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/ScopeOfBleeLcnt/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec4" Prior Art, Similar Art and Some Examples-->
+<h2 id="sec4" class="section">3 Prior Art, Similar Art and Some Examples</h2><!--SEC END --><p>
+
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/priorArt.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/priorArt/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec5" LaTeX-Beamer + Reveal.js With Blee and BISOS-->
+<h2 id="sec5" class="section">4 LaTeX-Beamer + Reveal.js With Blee and BISOS</h2><!--SEC END --><p>
+
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/beamerPlusReveal.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/beamerPlusReveal/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec6" Blee-LCNT Novel Concepts-->
+<h2 id="sec6" class="section">5 Blee-LCNT Novel Concepts</h2><!--SEC END --><p>
+
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/novelConcepts.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/novelConcepts/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec7" Part of a Bigger Picture – Part of a Series-->
+<h2 id="sec7" class="section">6 Part of a Bigger Picture – Part of a Series</h2><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/PartOfByStar.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/PartOfByStar/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p><p>All of this is part of a bigger picture. A much bigger picture.
+My talks at EmacsConf 2021, 2022 and 2024 are related. This 2025 talk builds on those.</p><p>Last year’s talk “About Blee: enveloping our own autonomy directed digital ecosystem
+with Emacs” in particular, lays the foundations for this talk. If you have not seen
+that, it would make good send to review it.</p><p>In my previous talks I have been criticized of having a “prophetic” style.
+The scope of ByStar is lofty and immense. In many ways it is unbelievable.
+And EmacsConf talks are meant to be short. So, as a result, sometimes I end up being cryptic.
+</p>
+<!--TOC part id="sec8" The “Nature of Polyexistentials” Book-->
+<table class="center"><tr><td><h1 id="sec8" class="part">Part I<br>
+The “Nature of Polyexistentials” Book</h1></td></tr>
+</table><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/part_polyexistentialsBook.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/part_polyexistentialsBook/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec9" The “Nature of Polyexistentials” Book and The Full ByStar Story-->
+<h2 id="sec9" class="section">7 The “Nature of Polyexistentials” Book and The Full ByStar Story</h2><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/fullBystarStory.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/fullBystarStory/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec10" A Layered Overview of The Polyexistentials Book-->
+<h2 id="sec10" class="section">8 A Layered Overview of The Polyexistentials Book</h2><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/polyBookLayers.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/polyBookLayers/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec11" Nature of Polyexistentials Book – Vol I and II Key Concepts-->
+<h2 id="sec11" class="section">9 Nature of Polyexistentials Book – Vol I and II Key Concepts</h2><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/twoVolumesConcepts.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/twoVolumesConcepts/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec12" Obtaining the Nature of Polyexistentials Book-->
+<h2 id="sec12" class="section">10 Obtaining the Nature of Polyexistentials Book</h2><!--SEC END --><p>
+<section>
+<h3></h3></p><p>
+<h5></h5>
+</p><p>
+
+    <!-- data-autoplay  controls -->
+    <p>
+    <video controls  preload="auto" src="./video/derived-obtainingPolyBook.mp4" height="50%%" width="50%%">
+    </video>
+    </p>
+     
+
+</p><p>The contents of this book belong to all of humanity and verbatim copying of it is
+unrestricted. If you want to read it, this book is yours.</p><p>The “Nature of Polyexistentials” book is available both online and in print.</p><p>This book is available as two editions. The US Edition and the International edition. The
+US Edition is written with a slightly milder Western unfriendly tone, while the International Edition
+includes additional original content in Farsi. I consider the International Edition to
+be the authoritative version. However, many readers in the US and Western countries may
+prefer the US Edition.</p><p>I maintain separate Git repositories for each edition on GitHub:
+US Edition is at bxplpc/120033 and International Edition: bxplpc/120074</p><p>Cloning these repositories will give you access to the book in PDF format (suitable for
+both A4 and US Letter printing) and in EPUB format. Alternatively, the content can be
+downloaded directly from your browser without needing to clone the repositories.</p><p>To ensure broader online availability and stability, I have also published the book on
+Zenodo, complete with a DOI (Digital Object Identifier). You can download both the A4 and
+8.5 x 11 PDFs from there as well.</p><p>The book is also available in print on Amazon and at most major bookstores in the US and
+Western regions. The ISBNs for both editions are included in this slide.
+Additionally, I have published this book in Iran through Jangal Publishers.</p><p>I did not write this book for profit. My aim is to share my thoughts and encourage
+readers to engage with my views and ideas. Your feedback is welcome, and I am genuinely
+interested in hearing your perspectives.</p><p>In Western markets, I have priced the print edition somewhat above production costs. If
+you find value in the book and the ByStar project, purchasing a copy will help support
+my work. Thanks in advance for your support.</p><p>
+
+</section></p><p>
+
+<section>
+<h3>Obtaining the Nature of Polyexistentials Book</h3></p><p>
+
+<audio controls>
+ <source src="audio/obtainingPolyBook.mp3" >
+</audio>
+
+<h5></h5>
+
+</p><div class="center">
+<span style="font-weight:bold">Online:</span>
+</div><ul class="itemize"><li class="li-itemize">At Github: (Pdf, EPUB, Html) <br>
+ US Edition: <a href="https://github.com/bxplpc/120033"><span style="font-family:monospace">https://github.com/bxplpc/120033</span></a> - <a href="https://github.com/bxplpc/120033/blob/main/pdf/c-120033-1_05-book-a4-col-emb-pub.pdf">pdf-A4</a> -
+<a href="https://github.com/bxplpc/120033/blob/main/pdf/c-120033-1_05-book-8.5x11-col-emb-pub.pdf">pdf-US</a><br>
+ International: <a href="https://github.com/bxplpc/120074"><span style="font-family:monospace">https://github.com/bxplpc/120074</span></a> - <a href="https://github.com/bxplpc/120074/blob/main/pdf/c-120074-1_05-book-a4-col-emb-pub.pdf">pdf-A4</a> - <a href="https://github.com/bxplpc/120074/blob/main/pdf/c-120074-1_05-book-8.5x11-col-emb-pub.pdf">pdf-US</a><br>
+ </li><li class="li-itemize">DOI at Zenodo: (Pdf)<br>
+ US Edition: <a href="https://zenodo.org/records/11100505">zenodo.org/records/11100505</a> - <a href="https://zenodo.org/records/11100527">pdf-A4</a><br>
+ International: <a href="https://zenodo.org/records/11100543">zenodo.org/records/11100543</a> - <a href="https://zenodo.org/records/11100551">pdf-8.5x11</a><br>
+ </li></ul><div class="center">
+<span style="background-color:black"><span style="color:white"> </span></span><span style="background-color:black"><span style="color:white"><span style="font-weight:bold">In Print:</span></span></span>
+</div><ul class="itemize"><li class="li-itemize">At Amazon, Wallmart, etc: (ISBNs 978-1-960957-01-6 978-1-960957-11-5)<br>
+ US Edition: <a href="https://www.amazon.com/dp/1960957015"><span style="font-family:monospace">https://www.amazon.com/dp/1960957015</span></a><br>
+ International Edition: <a href="https://www.amazon.com/dp/1960957112"><span style="font-family:monospace">https://www.amazon.com/dp/1960957112</span></a><br>
+ </li><li class="li-itemize">In Iran at Jangal Publishers (International) – ISBN 978-622-238-588-0:<br>
+ <a href="https://jangal.com/fa/product/252689/nature-of-polyexistentials">jangal.com/fa/product/252689/nature-of-polyexistentials</a>
+</li></ul><p>
+And here are the same links as a native Reveal slide.</p><p>If instead of a video, you are viewing this presentation as a Reveal web page,
+you can just click on the pointers and URLs.
+
+
+</section></p>
+<!--TOC part id="sec13" Content Processing – A ByStar/BISOS/Blee Capability Bundle-->
+<table class="center"><tr><td><h1 id="sec13" class="part">Part II<br>
+Content Processing – A ByStar/BISOS/Blee Capability Bundle</h1></td></tr>
+</table><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/part_bystarCapability.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/part_bystarCapability/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec14" ByStar/BISOS/Blee Capability: Content Production and Publication-->
+<h2 id="sec14" class="section">11 ByStar/BISOS/Blee Capability: Content Production and Publication</h2><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/lcntCapability.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/lcntCapability/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec15" ByStar Containment Hierarchy and ByStar Capability Bundles-->
+<h2 id="sec15" class="section">12 ByStar Containment Hierarchy and ByStar Capability Bundles</h2><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/bxContainmentHierarchy.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/bxContainmentHierarchy/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec16" Aggregate Conviviality of ByStar Capabilities-->
+<h2 id="sec16" class="section">13 Aggregate Conviviality of ByStar Capabilities</h2><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/aggregateConviviality.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/aggregateConviviality/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec17" Parts List: Integrated Components-->
+<h2 id="sec17" class="section">14 Parts List: Integrated Components</h2><!--SEC END --><p>
+
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/partsList.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/partsList/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC part id="sec18" Resulting Contents – Output Forms and Formats-->
+<table class="center"><tr><td><h1 id="sec18" class="part">Part III<br>
+Resulting Contents – Output Forms and Formats</h1></td></tr>
+</table><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/part_outputFormats.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/part_outputFormats/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec19" Content Processing and Output Forms and Formats-->
+<h2 id="sec19" class="section">15 Content Processing and Output Forms and Formats</h2><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/figmmDocOutputForms.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/figmmDocOutputForms/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec20" Resulting Output Formats-->
+<h2 id="sec20" class="section">16 Resulting Output Formats</h2><!--SEC END --><p>
+
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/resultingOutputs.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/resultingOutputs/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec21" Output Forms Walkthrough-->
+<h2 id="sec21" class="section">17 Output Forms Walkthrough</h2><!--SEC END --><p>
+<section>
+<h3></h3></p><p>
+
+
+      <!-- data-autoplay  controls -->
+    <p>
+    <video  controls   preload="auto"  src="./video/outputWalkthrough.mp4"  height="50%%" width="50%%">
+    </video>
+    </p>
+  
+
+</p><p>The video presentation that you are watching is just one of the outputs of the Blee-LCNT
+machinery. There are two PDF format outputs and two HTML outputs that are also quite useful.</p><p>The primary output of Beamer is a set of slides that people use to give their talks with.
+Typically that’s done live. In my case I dissect the images of each frame and do a voiceover on it
+and then dispense it through reveal. In a second you will see that as well.</p><p>This PDF output is very useful. You get the table of contents of course and in addition to that
+Beamer generates navigations for you where on any part you get a small table of content
+as well.</p><p>This is heavily used amongst academics and it’s a good output on its own and I’m augmenting
+it in a variety of ways. In addition to the presentation PDF format there is also an
+article-presentation PDF format which gives you the same content but it gives it to you in
+a textual form with the table of content and the rest. This is a good form to use when you are giving
+for example class lectures and the students often prefer this format.
+Now for the HTML format outputs the most relevant of course is the reveal itself. If you have not used reveal
+before. In my view it’s a HTML slide dispenser. I don’t look at it as a presentation framework.
+I use, as you are seeing, we use Beamer to feed into it and we use it to dispense the information.
+It has all the typical navigation capabilities that you would expect and most of
+what I have as slides are images but occasionally particularly when there is a need to provide
+pointers, HTML pointers. I then also include a textual output. This is also produced from the Beamer
+latex source but it’s HTML through textual HTML through HeVeA not the image.
+You can you get a table of contents. You can navigate and there are a whole lot of other features
+that reveal also provides. So to generate the video, what I do is I come to the very beginning of
+the presentation. I turn on the screen capture recorder and then I start playing the voiceover for each
+slide and at the very end you get a video but what you just did is you dispensed every frame
+one at a time through reveal. In addition to this HTML form you also get a article presentation form of it
+with a full table of content and the videos are there and the notes are there and this is also quite useful.</p><p>
+</section></p>
+<!--TOC part id="sec22" A Unified Single Input – A Sequence of Frames-->
+<table class="center"><tr><td><h1 id="sec22" class="part">Part IV<br>
+A Unified Single Input – A Sequence of Frames</h1></td></tr>
+</table><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/part_inputFormats.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/part_inputFormats/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec23" Obtaining Sources Of This Document – Pointers To Git Repos-->
+<h2 id="sec23" class="section">18 Obtaining Sources Of This Document – Pointers To Git Repos</h2><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/obtainingSourcesInsert.mp3" >
+</audio>
+
+<h5></h5>
+</p><p> 
+<div class="center">
+<img src="./disposition.gened/obtainingSources/slide-1.png" height="500">
+</div>
+    
+</p><p>I have put both the input file and some of the output files for this presentation on github.</p><p>Here are some links to these repos and files.</p><p>
+</section></p><p>
+
+<section>
+<h3>Obtaining Sources Of This Document – Pointers To Git Repos</h3></p><p>
+
+<audio controls>
+ <source src="audio/obtainingSources.mp3" >
+</audio>
+
+<h5></h5>
+
+</p><p><a href="https://github.com/bxplpc/180068"><span style="font-family:monospace">https://github.com/bxplpc/180068</span></a></p><p><br>
+<br>
+</p><p><a href="https://github.com/bxGenesis/start"><span style="font-family:monospace">https://github.com/bxGenesis/start</span></a></p><p><a href="https://github.com/bxlcnt"><span style="font-family:monospace">https://github.com/bxlcnt</span></a></p><p><a href="https://github.com/bx-blee"><span style="font-family:monospace">https://github.com/bx-blee</span></a></p><p><a href="https://github.com/bisos-pip"><span style="font-family:monospace">https://github.com/bisos-pip</span></a></p><p><br>
+<br>
+</p><p><a href="https://github.com/mohsenBanan"><span style="font-family:monospace">https://github.com/mohsenBanan</span></a></p><p><a href="http://www.by-star.net"><span style="font-family:monospace">http://www.by-star.net</span></a></p><p>And here are the same links as a native Reveal slide.</p><p>
+</section></p>
+<!--TOC section id="sec24" Overview Of ByStar Multi-Media Document Authorship and Generation-->
+<h2 id="sec24" class="section">19 Overview Of ByStar Multi-Media Document Authorship and Generation</h2><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/figmmDocProduction.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/figmmDocProduction/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec25" Unified Source – Combinations Of Abstract Forms And Concrete Outputs-->
+<h2 id="sec25" class="section">20 Unified Source – Combinations Of Abstract Forms And Concrete Outputs</h2><!--SEC END --><p>
+
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/UnifiedSourceControllingAllResults.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/UnifiedSourceControllingAllResults/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec26" Frame Control Types-->
+<h2 id="sec26" class="section">21 Frame Control Types</h2><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/frameControlTypes.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/frameControlTypes/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec27" Frame Body Types-->
+<h2 id="sec27" class="section">22 Frame Body Types</h2><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/frameBodyTypes.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/frameBodyTypes/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC part id="sec28" Generating and Processing the Content-->
+<table class="center"><tr><td><h1 id="sec28" class="part">Part V<br>
+Generating and Processing the Content</h1></td></tr>
+</table><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/part_processingContent.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/part_processingContent/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec29" From Fresh Debian to Raw-BISOS and Raw-Blee-->
+<h2 id="sec29" class="section">23 From Fresh Debian to Raw-BISOS and Raw-Blee</h2><!--SEC END --><p>
+<section>
+<h3></h3></p><p>
+<h5></h5>
+
+</p><p>
+
+    <!-- data-autoplay  controls -->
+    <p>
+    <video controls  preload="auto" src="./video/derived-rawBleeBootstrap.mp4" height="50%%" width="50%%">
+    </video>
+    </p>
+     
+
+
+</section>
+</p>
+<!--TOC section id="sec30" Context for Unified Source Walkthrough-->
+<h2 id="sec30" class="section">24 Context for Unified Source Walkthrough</h2><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/figmmDocProductionContext.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/figmmDocProductionContext/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec31" A Quick Tour of BISOS and Blee-->
+<h2 id="sec31" class="section">25 A Quick Tour of BISOS and Blee</h2><!--SEC END --><p>
+<section>
+<h3></h3></p><p>
+<h5></h5>
+
+</p><p>
+
+    <!-- data-autoplay  controls -->
+    <p>
+    <video controls  preload="auto" src="./video/derived-unifiedSourceScreenCapture.mp4" height="50%%" width="50%%">
+    </video>
+    </p>
+     
+
+
+</section>
+</p>
+<!--TOC section id="sec32" Blee Org Dynamic Blocks — Everywhere-->
+<h2 id="sec32" class="section">26 Blee Org Dynamic Blocks — Everywhere</h2><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/dblocksEverywhere.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/dblocksEverywhere/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec33" COMEEGA-->
+<h2 id="sec33" class="section">27 COMEEGA</h2><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/comeega.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/comeega/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC part id="sec34" Internationalization — A Non-Americanist Perspective-->
+<table class="center"><tr><td><h1 id="sec34" class="part">Part VI<br>
+Internationalization — A Non-Americanist Perspective</h1></td></tr>
+</table><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/part_internationalization.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/part_internationalization/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec35" Perso-Arabic Input Methods, bidi and shaping — Fully Integrated-->
+<h2 id="sec35" class="section">28 Perso-Arabic Input Methods, bidi and shaping — Fully Integrated</h2><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/persoArabic.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/persoArabic/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec36" Ayatollah Khomeini: The so-called Western Intelectual Property is Utterly Invalid-->
+<h2 id="sec36" class="section">29 Ayatollah Khomeini: The so-called Western Intelectual Property is Utterly Invalid</h2><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/ayatollahKhomeini.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/ayatollahKhomeini/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec37" Ayatollah Motahari: Intellectual Property Is Public Property-->
+<h2 id="sec37" class="section">30 Ayatollah Motahari: Intellectual Property Is Public Property</h2><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/ayatollahMotahari.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/ayatollahMotahari/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec38" Nature of Polyexistentials Citations: Ethical and Religious Cures-->
+<h2 id="sec38" class="section">31 Nature of Polyexistentials Citations: Ethical and Religious Cures</h2><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/citation_ethicalCures.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/citation_ethicalCures/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec39" Nature of Polyexistentials Citations: Non Americanist Perspectives-->
+<h2 id="sec39" class="section">32 Nature of Polyexistentials Citations: Non Americanist Perspectives</h2><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/citation_nonAmericanist.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/citation_nonAmericanist/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC part id="sec40" Autonomous Self-Publication and Federated Re-Publications-->
+<table class="center"><tr><td><h1 id="sec40" class="part">Part VII<br>
+Autonomous Self-Publication and Federated Re-Publications</h1></td></tr>
+</table><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/part_publications.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/part_publications/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec41" Just The Universal Debian Everywhere-->
+<h2 id="sec41" class="section">33 Just The Universal Debian Everywhere</h2><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/JustDebian.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/JustDebian/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec42" Nature of Polyexistentials Citations: Convergence of Debian and Ubuntu-->
+<h2 id="sec42" class="section">34 Nature of Polyexistentials Citations: Convergence of Debian and Ubuntu</h2><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/citation_debuntu.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/citation_debuntu/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec43" From Raw-BISOS To Your Own Site and Your Own PALS-->
+<h2 id="sec43" class="section">35 From Raw-BISOS To Your Own Site and Your Own PALS</h2><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/bisosPlatformProgression.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/bisosPlatformProgression/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC part id="sec44" Blee-Panels — BISOS and Blee’s Self-Documentation Facilities-->
+<table class="center"><tr><td><h1 id="sec44" class="part">Part VIII<br>
+Blee-Panels — BISOS and Blee’s Self-Documentation Facilities</h1></td></tr>
+</table><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/part_bleePanels.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/part_bleePanels/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec45" Content Processing Blee Panels — Screen Captures-->
+<h2 id="sec45" class="section">36 Content Processing Blee Panels — Screen Captures</h2><!--SEC END --><p>
+<section>
+<h3></h3></p><p>
+<h5></h5>
+
+</p><p>
+
+    <!-- data-autoplay  controls -->
+    <p>
+    <video controls  preload="auto" src="./video/derived-lcntBleePanelsVideo.mp4" height="50%%" width="50%%">
+    </video>
+    </p>
+     
+
+
+</section>
+</p>
+<!--TOC part id="sec46" Moving Forward-->
+<table class="center"><tr><td><h1 id="sec46" class="part">Part IX<br>
+Moving Forward</h1></td></tr>
+</table><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/part_movingForward.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/part_movingForward/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec47" Your Participation-->
+<h2 id="sec47" class="section">37 Your Participation</h2><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/yourParticipation.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/yourParticipation/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec48" Emacs Conf is Great-->
+<h2 id="sec48" class="section">38 Emacs Conf is Great</h2><!--SEC END --><p>
+
+<section>
+<h3></h3></p><p>
+
+<audio controls>
+ <source src="audio/emacsConfIsGreat.mp3" >
+</audio>
+
+<h5></h5>
+
+
+<div class="center">
+<img src="./disposition.gened/emacsConfIsGreat/slide-1.png" height="500">
+</div>
+    
+
+</section>
+</p>
+<!--TOC section id="sec49" Thanks-->
+<h2 id="sec49" class="section">39 Thanks</h2><!--SEC END --><p>
+<section>
+<h3></h3></p><p>
+
+
+      <!-- data-autoplay  controls -->
+    <p>
+    <video  controls   preload="auto"  src="./video/endVideo.mp4"  height="50%%" width="50%%">
+    </video>
+    </p>
+  
+
+</p><p>I want to thank all the EmacsConf 2025 Organizers
+for their great work.
+And Sacha in particular.</p><p>
+</section></p><!--TOC section id="sec50" References-->
+<h2 id="sec50" class="section">References</h2><!--SEC END --><dl class="thebibliography">
+</dl><!--CUT END -->
+<!--HTMLFOOT-->
+
+<br>
+<br>
+<!--ENDHTML-->
+<!--FOOTER-->
+<hr class="horizontal-rule" style="height:2px"><blockquote class="quote"><em>This document was translated from L<sup>A</sup>T<sub>E</sub>X by
+</em><a href="http://hevea.inria.fr/index.html"><em>H</em><em><span style="font-size:small"><sup>E</sup></span></em><em>V</em><em><span style="font-size:small"><sup>E</sup></span></em><em>A</em></a><em>.</em></blockquote></body>
+</html>

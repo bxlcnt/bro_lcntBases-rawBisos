@@ -1,0 +1,485 @@
+Greetings. Salaam. This is Mohsen Banan. I am a
+software and internet engineer.
+The title of this presentation is ``Blee-LCNT:
+An Emacs Centered Content Production and
+Self-Publication Framework''.
+Blee stands for ByStar Libre-Halaal
+Emacs Environment. In last year's EmacsConf, I
+introduced Blee, BISOS and ByStar as concepts and
+as foundations. This year I want to focus on one
+concrete capability. Content Production and
+Self-Publication is a foundational Blee and BISOS
+Capability Bundle. Both this presentation and the
+Nature of Polyexistentials book were developed
+with Blee-LCNT. In this presentation I want to
+look at Emacs as a central ingredient for a usage
+environment that we can use to orchestrate
+production of quite fancy multi-media
+presentations. Let's consider two different
+scopes. First, the scope of Blee-LCNT
+Capabilities Bundle, which is that of a complete
+multi-media content authorship, generation,
+publication and distribution framework. That
+complete scope is presented in this slide and it
+spans both black ink and violet ink. Second, the
+scope of this presentation, which is more
+limited. In this presentation I confine myself to
+the bullets is violet ink. Here, I focus on
+presentation and video as content types and their
+authorship and generation and their federated
+re-publication. This is a common topic. It makes
+good sense for us to start with a review of prior
+art and similar art. I went through the past
+EmacsConf talks and found a good number of them
+that also deal with the topic of content
+generation. A few of these are included in black
+ink in this slide. Many of these have chosen the
+Babel, in other words Org-Mode+LaTeX as primary
+input. I prefer the inverse of that. I also
+looked for past talks which have used Reveal.js
+and LaTeX-Beamer. For example, Sacha's use of
+Reveal.js is shown in violet inK. And Ihor's use
+of Beamer is in teal ink. This presentation is
+about a combination of Reveal.js and
+LaTeX-Beamer. For those who may not be familiar
+with Beamer and Reveal, here is a quick intro.
+Among academics, LaTeX-Beamer is the go to tool
+for producing presentations. Reveal.js is
+recognized as the best of breed for dispensing
+HTML slide decks. For many, Reveal and Beamer
+live in different universes. Beamer is pdf
+oriented and Reveal is html oriented. Combining
+two powerful tools makes for an even more
+powerful tool. This Blee-LCNT Presentations
+combines the best of LaTeX-Beamer with Reveal.js.
+Beamer primarily functions as producer and Reveal
+functions as dispenser and multi-media enhancer.
+Here is how the combination works. LaTeX Beamer
+pdf result is disected into named frame images
+which can then be inserted in Reveal.js. LaTeX
+Beamer frames can also be translated into html
+with HeVeA which can also be inserted in
+Reveal.js. Voice-overs for Beamer frames can be
+correlated to frame names and applied to image or
+html frames. Screen captures and image narrations
+as videos can be directly dispensed through
+Reveal. There are various additional novel
+concepts with regard to the way that we have
+integrated all of this together. Instead of
+Org-Mode+LaTeX, we do LaTeX+Org-Mode. Instead of
+Babel, we do COMEEGA, instead of the Literate
+model we introduce the Surrounded model. You
+shall see various examples of these shortly. All
+of this is part of a bigger picture. A much
+bigger picture. My talks at EmacsConf 2021, 2022
+and 2024 are related. This 2025 talk builds on
+those. Last year's talk ``About Blee: enveloping
+our own autonomy directed digital ecosystem with
+Emacs'' in particular, lays the foundations for
+this talk. If you have not seen that, it would
+make good send to review it. In my previous talks
+I have been criticized of having a ``prophetic''
+style. The scope of ByStar is lofty and immense.
+In many ways it is unbelievable. And EmacsConf
+talks are meant to be short. So, as a result,
+sometimes I end up being cryptic. Having accepted
+the ``prophetic'' criticism as legitimate, I now
+need to put a book on the table. With that book
+in place, moving forward, when needing to be
+cryptic, I shall cite Chapter and Verse. I am
+delighted to announce the availability of my
+recent book, ``Nature of Polyexistentials''. The
+full title of my book is: Nature Of
+Polyexistentials --- Basis For Abolishment Of The
+Western Intellectual Property Rights Regime ---
+And Introduction Of The Libre-Halaal ByStar
+Digital Ecosystem. Knowledge, know-how, uses of
+know-how, ideas, formulas, software and
+information are inherently non-scarce. They are
+\textbf {polyexistentials}. Unlike
+monoexistentials which exist in singular,
+polyexistentials naturally exist in multiples.
+What is abundant in nature is being made
+artificially scarce through man-made ownership
+rules called copyright and patents. These
+mistaken ownership rules, the so called Western
+IPR regime, has immense ramifications on the
+shape the direction of the American Digital
+Ecosystem. It would be an understatement to say
+that the American Digital Ecosystem has put
+humanity in danger. Two parts of the book, in
+particular are of immediate relevance. Part III,
+the ethics layer, focuses on contours of cures.
+Having dismissed the Western intellectual
+property rights (IPR) regime as an erroneous
+governance model for polyexistentials, I propose
+the Libre-Halaal model of governance of
+polyexistentials towards facilitating
+conviviality of tools. Part IV, the engineering
+layer, introduces the Libre-Halaal ByStar Digital
+Ecosystem. as an ethical alternative to the
+prevailing proprietary American digital
+ecosystem. The book also provides additional
+details about the content generation and
+publication facilities that I am presenting here.
+And the book itself, as content, was generated
+and published using the facilities that I am
+presenting here. You can think of this book as
+being in two volumes. Our focus are Blee and
+BISOS in Volume II. Volume I deals with the
+general concept of polyexistence and invalidity
+of IPR and our terminoloy of Libre-Halaal ---
+instead of the common but ill directed vocabulary
+of Free Software and Open-Source and FOSS. In
+Chapter 11, I introduce the very sensitive and
+potent vocabulary of Halaal and Libre-Halaal. The
+contents of this book belong to all of humanity
+and verbatim copying of it is unrestricted. If
+you want to read it, this book is yours. The
+``Nature of Polyexistentials'' book is available
+both online and in print. This book is available
+as two editions. The US Edition and the
+International edition. The US Edition is written
+with a slightly milder Western unfriendly tone,
+while the International Edition includes
+additional original content in Farsi. I consider
+the International Edition to be the authoritative
+version. However, many readers in the US and
+Western countries may prefer the US Edition. I
+maintain separate Git repositories for each
+edition on GitHub: US Edition is at bxplpc/120033
+and International Edition: bxplpc/120074 Cloning
+these repositories will give you access to the
+book in PDF format (suitable for both A4 and US
+Letter printing) and in EPUB format.
+Alternatively, the content can be downloaded
+directly from your browser without needing to
+clone the repositories. To ensure broader online
+availability and stability, I have also published
+the book on Zenodo, complete with a DOI (Digital
+Object Identifier). You can download both the A4
+and 8.5 x 11 PDFs from there as well. The book is
+also available in print on Amazon and at most
+major bookstores in the US and Western regions.
+The ISBNs for both editions are included in this
+slide. Additionally, I have published this book
+in Iran through Jangal Publishers. I did not
+write this book for profit. My aim is to share my
+thoughts and encourage readers to engage with my
+views and ideas. Your feedback is welcome, and I
+am genuinely interested in hearing your
+perspectives. In Western markets, I have priced
+the print edition somewhat above production
+costs. If you find value in the book and the
+ByStar project, purchasing a copy will help
+support my work. Thanks in advance for your
+support. And here are the same links as a native
+Reveal slide. If instead of a video, you are
+viewing this presentation as a Reveal web page,
+you can just click on the pointers and URLs.
+Instead of the traditional model of giving you
+recipes in a DIY context towards the goal of
+creating content processing capabilities on top
+of what you may already have, I am doing the
+opposite. I am saying: take this whole BISOS and
+Blee thing, and in there you will also have the
+content processing capabilities that I am
+speaking of here. So, at the top level we have
+our own autonomy and privacy directed digital
+ecosystem, which in contrast to the center
+oriented American digital ecosystem, is edge
+oriented. We call it: ``The Libre-Halaal ByStar
+Digital Ecosystem''. All the systems in ByStar,
+run BISOS (By* Internet Services OS), which is a
+layer on top of Debian. The usage environment of
+ByStar and BISOS is Blee which is a layer on top
+of Emacs. With those in place, we then create a
+capability bundle called Blee-LCNT. So, when you
+buy into Blee and BISOS, you will naturally also
+get these content processing capabilities ---
+without a need for any recipies or DIY effort. If
+you were to look at the model that I introduced
+as containment hierarchies, it would look like
+this. We love Emacs and we love Unix because
+their design is convivial. By convivial, I am
+referring to Ivan Illich's concept and
+terminology of ``Tools for Conviviality''. It was
+first published in 1973. It's a must read. A goal
+of the design of the ByStar Digital Ecosystem is
+to enlarge the aggregated conviviality of its
+capabilities. What distinguishes Blee-Lcnt from
+other content processing tools and frameworks, is
+our emphasis on enhancing the aggregated
+conviviality. These tools let you express
+yourself. They let you be in charge. Here is our
+parts list. These are the components that we have
+chosen to bring together towards our goal of
+creating convivial tools. In this slide we are
+using black ink to denote exisiting tools and we
+use violet ink to denote pieces that we have
+developed towards cohesive integration. To see
+how all of this comes together let's first
+consider what gets produced. For example, for
+this video, the video is just one of the outputs.
+There are other outputs as well. In this figure,
+the outputs are shown in the top layer. Using
+this video as an example, this presentation's
+output also include the ``Presentation Form'' and
+the ``Article-Presentation Form''. Let's look at
+these more closely. For Presentations, there are
+3 different forms. The Video Form, the
+Presentation From and the Article-Presentation
+Form. The Presentation Form produces both a pdf
+output and Reveal output. Next we will
+walkthrough some of the benefits that
+availability of these forms and formats provide.
+The video presentation that you are watching is
+just one of the outputs of the Blee-LCNT
+machinery. There are two PDF format outputs and
+two HTML outputs that are also quite useful. The
+primary output of Beamer is a set of slides that
+people use to give their talks with. Typically
+that's done live. In my case I dissect the images
+of each frame and do a voiceover on it and then
+dispense it through reveal. In a second you will
+see that as well. This PDF output is very useful.
+You get the table of contents of course and in
+addition to that Beamer generates navigations for
+you where on any part you get a small table of
+content as well. This is heavily used amongst
+academics and it's a good output on its own and
+I'm augmenting it in a variety of ways. In
+addition to the presentation PDF format there is
+also an article-presentation PDF format which
+gives you the same content but it gives it to you
+in a textual form with the table of content and
+the rest. This is a good form to use when you are
+giving for example class lectures and the
+students often prefer this format. Now for the
+HTML format outputs the most relevant of course
+is the reveal itself. If you have not used reveal
+before. In my view it's a HTML slide dispenser. I
+don't look at it as a presentation framework. I
+use, as you are seeing, we use Beamer to feed
+into it and we use it to dispense the
+information. It has all the typical navigation
+capabilities that you would expect and most of
+what I have as slides are images but occasionally
+particularly when there is a need to provide
+pointers, HTML pointers. I then also include a
+textual output. This is also produced from the
+Beamer latex source but it's HTML through textual
+HTML through HeVeA not the image. You can you get
+a table of contents. You can navigate and there
+are a whole lot of other features that reveal
+also provides. So to generate the video, what I
+do is I come to the very beginning of the
+presentation. I turn on the screen capture
+recorder and then I start playing the voiceover
+for each slide and at the very end you get a
+video but what you just did is you dispensed
+every frame one at a time through reveal. In
+addition to this HTML form you also get a article
+presentation form of it with a full table of
+content and the videos are there and the notes
+are there and this is also quite useful. Now,
+let's look at the one single input file that
+produced all of the outputs that we just saw. I
+have put both the input file and some of the
+output files for this presentation on github.
+Here are some links to these repos and files. And
+here are the same links as a native Reveal slide.
+This figure gives us an overview of how one set
+of inputs encapsulted in a single file can
+produce all of the outputs that we saw. The main
+TeX file shown at the bottom is processed by both
+XeLaTeX and by HeVeA. That main TeX file, in
+addition to LaTeX syntax also include org-mode
+constructs that facilitate addition of audio and
+video files. Later, I'll walkthrough the
+bodyPresArtEnFa.tex file that generated this very
+presentation with you. When you construct that
+primary TeX file, there are several abstractions
+that you need to keep in mind. Is my presentation
+going to go from Left-To-Right or from
+Right-To-Left? Perso-Arabic presentations go from
+Right-To-Left. Another consideration is the types
+of forms of results that you want. Just the
+presentation or Article-Presentation as well?
+With those choices in place you can produce
+condition based text for each of your desired
+outputs. Think of this video presentation as a
+sequence of frames. Each frame is controlled by
+an org-mode dynamic block. This table lists
+available dblocks from which you can choose. For
+example, this particular frame that we are
+watching is controlled by
+b:lcnt:pres:frame/derivedImage. Beamer creates a
+pdf file that includes the image of this slide.
+That image is then injected into Reveal. And in
+the end a video of that image is produced with
+the narrations that I am uttering right now. All
+of this has similarly been applied to each and
+every frame that you have been watching. Similar
+to Frame Controls, there are org-mode dynamic
+blocks for ``Frame Body Types''. You can easily
+insert an image which is typically created by
+OpenOffice Draw into a frame. Same with say a
+screen capture video. Now that we have looked at
+the ``Outputs'' and the ``Inputs'', let's look at
+how the Outputs are generated from the Inputs.
+Let's bootstrap Raw-BISOS and Raw-Blee. Starting
+from scratch, get yourself a fresh copy of Debian
+12. Then go to https://github.com/bxGenesis/start
+The README.org file of that github repo is same
+as Chapter 18, ``Engineering Adoption of BISOS
+and ByStar'' of the book. We will next run
+``raw-bisos.sh'', but prior to that let's take a
+quick look. This bootstrap scripts will do a lot
+as root on your Fresh-Debian. It is best to first
+try it on a disposable VM. raw-bisos.sh adds the
+current debian user to sudoers. Then it installs
+pipx. And then with pipx it installs from PyPI
+bisos.provision. bisos.provision includes
+additional bash scripts that are then executed.
+Full installation involves setting up various
+accounts, groups, various directory hierarchies,
+lots of apt packages and lots of python packages
+from the bisos namespace. If you are ready, copy
+and paste this line and run it. You will be
+prompted for the root password. Then be patient.
+Full installation can take 15 minutes or so. The
+logs of this script are also captured in
+~/raw-bisos-${dateTag}-log.org Now that we have
+Raw-BISOS and Raw-Blee installed, we are ready to
+walkthrough the unified source of the very
+presentation that you are watching. The
+``bodyPresArtEnFa.tex'' file that we will visit
+is in COMEEGA-LaTeX syntax with lots of org-mode
+dblocks which generate Beamer-LaTeX frames and
+conditioned LaTeX bodies. After the walkthrough
+I'll describe dblocks and COMEEGA in more detail.
+At the tail end of the walkthrough, we will also
+go through the generation process which runs
+XeLaTeX and HeVeA and a lot more. Let's look at
+our input file. It's a LaTeX file in LaTeX mode
+and it has org syntax org-mode included in it and
+I can toggle between LaTeX and org-mode so, now
+I'm gonna be in org-mode and org-mode gives me
+everything that org has to offer including a very
+convenient navigation framework. So let's take
+one slide and take a look at how it was done. So
+I would come to this scope slide and while I am
+there I'm gonna click on N. N takes me to the
+native LaTeX form back so that I'll be looking at
+it not in org but in LaTeX. So we're back in
+LaTeX and as you can see it uses a dynamic block
+starting with the comments and the BEGIN and it
+uses the dynamic a dynamic block named a
+framedDrive image which means the content of this
+frame will be dispensed as an image not as text
+and it also automatically creates for me a name,
+a label, that can be used for voiceover
+augmentation. So a file in the audio directory
+called ScopeOfBleeLcnt.mp3 is this audio that
+will come on top of this slide and then the rest
+is the LaTeX itself. The concept of ``Org Dynamic
+Blocks'' is very powerful. I think of them as
+universal visible macros. But, why should they be
+primarily used in just Org-Mode. I say let's
+generalize them to ``Emacs Dynamic Blocks''. Have
+defaults for org-dblock-start-re in every
+relevant mode and use them everywhere. Blee does
+that. In COMEEGA-LaTeX, Dynamic Blocks create
+Frame Controls and insert Image and Video
+contents. Much of Blee and BISOS are implemented
+in COMEEGA. Almost all of our Elisp, Python, Bash
+and LaTeX work uses COMEEGA. COMEEGA stands for
+Collaborative Org-Mode Enhanced Emacs Generalized
+Authorship. It is the inverse of org-babel.
+COMEEGA adds org-mode to your programming mode.
+Full and proper use of COMEEGA, requires
+Polymode. Let's call that Poly-COMEEGA. But
+Emacs's Polymode is work-in-progress,
+particularly now with the new tree-sitter. So, in
+the interim, my usage of COMEEGA has been in the
+form of Toggle-COMEEGA. Where I manually switch
+between the programming-mode and org-mode. For me
+this has proved to be a fine interim solution.
+Naturally, content processing should be
+multi-lingual and internationalized. Let's look
+at that dimension. I am Iranian and much of what
+I write is in Farsi. Getting Perso-Arabic text
+right is often a challenge, as it involves
+Bi-Directional text (BIDI) and shaping of
+characters. In the context of our content
+generation these need to span all relevant tools,
+not just emacs. For emacs, I have created my own
+input method called farsi-transliterate-banan. My
+EmacsConf 2021 talk was about that. Now let's
+look at some examples and spice it up a bit with
+semantics. As and example of proper BIDI text,
+here is the orignal Farsi text along with English
+translation of Imam Khomeini's text with respect
+to invalidity of Western Inteletual Proprty
+Rights regime. And as another example of proper
+BIDI text, here is Ayatollah Mothari's take on
+Western IPR not being private property. Note that
+these predate by more than half a century Jack
+Dorsey and Elon Musk's tweets of April 11, 2025
+saying ``Delete all IP law''. This topic is too
+important and too sensitive to be left to
+American Billionaires and their tweets. Let me
+again refer you to the logic of polyexistentials
+in my book. Chapter 14 of the book is dedicated
+to Ethics and ownership in Religions. With
+respect to my preference for Ethics over Freedom,
+let me refer you to Section 12.4 ``A Cynical
+Perspective on Freedom Orientation of Americans''
+in which I describe where the FOSS labels and the
+likes of Stallman, Raymond, Moglen and Lessig
+have gone wrong. If you are one of their
+followers, perhaps Chapter 12 is for you. My
+emphasis thus far has been on content generation.
+Let's very briefly also look at Autonomous
+Self-Publication and Federated Re-Publications of
+our content. From the very beginning the Debian
+folks understood the importance of
+``Universality'' and coined the ``Universal
+Debian'' label. This means that we can base our
+entire digital ecosystem on just the Libre-Halaal
+Debian distro. And that is what we have done with
+ByStar. In ByStar everything is based on just the
+Universal Debian everywhere. This has made our
+Usage Environment totally harmonious with our
+Service Environment allowing for very powerful
+software-service continuums. Of course, All of
+this is immediatly applicable to our ByStar
+Content Bundle as well. Some have asked, why
+don't you also include Ubuntu? I think the
+opposite makes more sense. Ubuntu should converge
+with Debian. I tried to explain this to Mark
+Shuttleworth in an email a while back. I have
+included that email in Section 12.1.5. In this
+presentation, we have stopped at the
+``Raw-BISOS'' stage. We can further evolve
+Raw-BISOS and make it be ``Sited'' and provide
+autonomous publication services. But here by
+going through EmacsConf and youtube we are using
+the ``Federated Re-Publications'' model.
+Something this large, should be well documented.
+In Emacs, the way that we have been dealing with
+documentation and information retrieval is
+archaic. Man-pages, TeXInfo, Helpful-Mode and
+convention based Doc-Strings are old and limited.
+In BISOS and Blee, we use Blee-Panels for all
+kinds of documentation. Let me show you some
+examples. So, what next? If Blee, BISOS, ByStar,
+Libre-Halaal, Polyexistentials and these Content
+Processing capabilities have piqued your
+interest, please feel welcome to contact me.
+These Emacs Conferences have proven to be very
+useful and productive. I look forward to your
+thoughts, feedback and questions. I want to thank
+all the EmacsConf 2025 Organizers for their great
+work. And Sacha in particular.

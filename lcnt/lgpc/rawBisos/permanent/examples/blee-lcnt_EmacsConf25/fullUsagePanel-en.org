@@ -1,0 +1,344 @@
+* B|
+####+BEGIN: bxPanel:common/title-plus
+#+title: pip_proj_emacs_conference/emacsconf2025
+#+roam_tags: branch
+#+roam_key: iso/pip_proj_emacs_conference/emacsconf2025
+[[roam:iso/pip_proj_emacs_conference]]
+####+END
+####+BEGIN: blee:bxPanel:topPanelControls
+*  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]]  [[elisp:(magit)][Magit]]  [[elisp:(org-cycle)][| ]]
+**  [[elisp:(bap:magit:bisos:current-bpo-repos/visit)][BPO-Repos-Magit]] ||
+**  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
+**  [[elisp:(blee:menu-sel:comeega:maintenance:popupMenu)][||Maintenance]]
+**  This File :: *= /bxo/iso/pip_proj_emacs_conference/emacsconf2025/_nodeBase_/fullUsagePanel-en.org =*
+* /file-truename:/  /bxo/r3/iso/pip_proj_emacs_conference/emacsconf2025/_nodeBase_/fullUsagePanel-en.org
+*  [[elisp:(org-cycle)][|#Select|]]  :: (Results: [[elisp:(blee:bnsm:results-here)][Here]] | [[elisp:(blee:bnsm:results-split-below)][Below]] | [[elisp:(blee:bnsm:results-split-right)][Right]] | [[elisp:(blee:bnsm:results-other)][Other]] | [[elisp:(blee:bnsm:results-popup)][Popup]]) (Select:  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh -i currentsGetThenShow")][Show Currents]]  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh")][lpCurrentsAdmin.sh]] ) [[elisp:(org-cycle)][| ]]
+**  #See:  (Window: [[elisp:(blee:bnsm:results-window-show)][?]] | [[elisp:(blee:bnsm:results-window-set 0)][0]] | [[elisp:(blee:bnsm:results-window-set 1)][1]] | [[elisp:(blee:bnsm:results-window-set 2)][2]] | [[elisp:(blee:bnsm:results-window-set 3)][3]] ) || [[elisp:(lsip-local-run-command-here "echo pushd dest")][echo pushd dir]] || [[elisp:(lsip-local-run-command-here "lsf")][lsf]] || [[elisp:(lsip-local-run-command-here "pwd")][pwd]] |
+**  [[elisp:(org-cycle)][|#Destinations|]] :: [[Evolution]] | [[Maintainers]]  [[elisp:(org-cycle)][| ]]
+**  #See:  [[elisp:(bx:bnsm:top:panel-blee)][Blee]] | [[elisp:(bx:bnsm:top:panel-listOfDocs)][All Docs]]  E|
+####+END
+####+BEGIN: blee:bxPanel:title :panelType "=bxPanel=" :title "auto"
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*   [[img-link:file:/bisos/blee/env/images/privateRedHand-50.jpeg][http://www.freeprotocols.org]]_ _   ~Node:: iso/pip_proj_emacs_conference -- emacsconf2025~   [[img-link:file:/bisos/blee/env/images/privateBlackLock-50.png][http://www.by-star.net]]
+* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
+* +
+*   =Decedents=  :: [[elisp:(dired "/bxo/iso/pip_proj_emacs_conference/emacsconf2025/wikiAnonCreds")][ ~wikiAnonCreds~ ]] *|*
+*                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
+*   *Siblings*   :: [[elisp:(dired "/bxo/iso/pip_proj_emacs_conference/bxeTree")][ ~bxeTree~ ]] *|* [[elisp:(dired "/bxo/iso/pip_proj_emacs_conference/control")][ ~control~ ]] *|* [[elisp:(dired "/bxo/iso/pip_proj_emacs_conference/data")][ ~data~ ]] *|* [[elisp:(dired "/bxo/iso/pip_proj_emacs_conference/emacsconf-wiki")][ ~emacsconf-wiki~ ]] *|* [[elisp:(blee:bnsm:panel-goto "/bxo/iso/pip_proj_emacs_conference/emacsconf2021/_nodeBase_")][ =emacsconf2021= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bxo/iso/pip_proj_emacs_conference/emacsconf2022/_nodeBase_")][ =emacsconf2022= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bxo/iso/pip_proj_emacs_conference/emacsconf2024/_nodeBase_")][ =emacsconf2024= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bxo/iso/pip_proj_emacs_conference/emacsconf2025/_nodeBase_")][ =emacsconf2025= ]] *|* [[elisp:(dired "/bxo/iso/pip_proj_emacs_conference/log")][ ~log~ ]] *|* [[elisp:(blee:bnsm:panel-goto "/bxo/iso/pip_proj_emacs_conference/panel/_nodeBase_")][ =panel= ]] *|*
+*   *Siblings*   :: [[elisp:(dired "/bxo/iso/pip_proj_emacs_conference/rbxe")][ ~rbxe~ ]] *|* [[elisp:(dired "/bxo/iso/pip_proj_emacs_conference/sys")][ ~sys~ ]] *|* [[elisp:(dired "/bxo/iso/pip_proj_emacs_conference/var")][ ~var~ ]] *|*
+*   /Ancestors/  :: [[elisp:(dired "/bxo/iso/pip_proj_emacs_conference")][ ~pip_proj_emacs_conference~ ]] *|* [[elisp:(dired "/bxo/iso")][ ~iso~ ]] *|*
+*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Cloned from previous years. This one 2025
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "TODOs And Ideas" :anchor "anchor" :extraInfo "For EmacsConf 2025"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *TODOs And Ideas:* |]] <<anchor>> For EmacsConf 2025  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** DONE Add pointer to prior years in wiki/blee.md
+** DONE Re-Do the sub title in wiki/blee.md
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "EmcasConf Wiki" :anchor "" :extraInfo "credentials and clone"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *EmcasConf Wiki:* |]]  credentials and clone  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:file:text/intro :outLevel 2 :sep t :folding nil :fileName "../wiki/anonKey/id_rsa_anon_git_emacsconf" :comment "Wiki Private Key"  :afterComment ""
+** /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /nil/ :: [[elisp:(find-file "/bxo/iso/pip_proj_emacs_conference/emacsconf2025/wiki/anonKey/id_rsa_anon_git_emacsconf")][id_rsa_anon_git_emacsconf]] || [[elisp:(find-file-other-window "/bxo/iso/pip_proj_emacs_conference/emacsconf2025/wiki/anonKey/id_rsa_anon_git_emacsconf")][Visit In Other]] *|*  =Wiki Private Key= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+** +
+** /bxo/iso/pip_proj_emacs_conference/var
+** git clone anon@anon_emacsconf:emacsconf-wiki
+** And also
+** cd /bxo/iso/pip_proj_emacs_conference/var; git clone https://git.emacsconf.org/emacsconf-el
+** B|
+####+BEGIN: blee:panel:unix:cmnd :outLevel 1 :sep t :folding? nil :label "Sh" :command "~pip_proj_emacs_conference/sys/bin/emacsConfSetup.sh" :comment "(fullUpdate) wiki git clone" :afterComment ""
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Sh/ :: [[elisp:(lsip-local-run-command "~pip_proj_emacs_conference/sys/bin/emacsConfSetup.sh")][~pip_proj_emacs_conference/sys/bin/emacsConfSetup.sh]] *|*  =(fullUpdate) wiki git clone= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 1 :sep t :folding? nil :label "Sh" :command "ls -l  ~pip_proj_emacs_conference/var/emacsconf-wiki/2024/talks/blee.md" :comment "cd to wiki talks" :afterComment ""
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Sh/ :: [[elisp:(lsip-local-run-command "ls -l  ~pip_proj_emacs_conference/var/emacsconf-wiki/2024/talks/blee.md")][ls -l  ~pip_proj_emacs_conference/var/emacsconf-wiki/2024/talks/blee.md]] *|*  =cd to wiki talks= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 1 :sep t :folding? nil :label "Sh" :command "ls -l  ~pip_proj_emacs_conference/var/emacsconf-wiki/2025/talks/blee-lcnt.md" :comment "cd to wiki talks" :afterComment ""
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Sh/ :: [[elisp:(lsip-local-run-command "ls -l  ~pip_proj_emacs_conference/var/emacsconf-wiki/2025/talks/blee-lcnt.md")][ls -l  ~pip_proj_emacs_conference/var/emacsconf-wiki/2025/talks/blee-lcnt.md]] *|*  =cd to wiki talks= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda nil :sep t :outLevel 2 :model "auto" :foldDesc "Overall Polyexistentials and ByStar Videos Production" :destDesc "auto" :dest "/bxo/r3/iso/pip_bystar/panel/polyexistentials/communicationsPlan/_nodeBase_"
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bxo/r3/iso/pip_bystar/panel/polyexistentials/communicationsPlan/_nodeBase_")][@ ~communicationsPlan~ @]]  [[elisp:(org-cycle)][| *=* |]] ::  <<Overall Polyexistentials and ByStar Videos Production>> [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** TBD
+** -B|
+####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda nil :sep t :outLevel 2 :model "auto" :foldDesc "Emacs Conf About Blee LCNT Video" :destDesc "auto" :dest "/bxo/iso/pip_lcnt_bystar/Common/lcntVideoAboutBlee"
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bxo/iso/pip_lcnt_bystar/Common/lcntVideoAboutBlee")][@ ~PROBLEM: Missing FV /bxo/iso/pip_lcnt_bystar/Common/lcntVideoAboutBlee/destDesc~ @]]  [[elisp:(org-cycle)][| *=* |]] ::  <<Emacs Conf About Blee LCNT Video>> [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** TBD.
+** -B|
+####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda nil :sep t :outLevel 2 :model "auto" :foldDesc "Revisiting Emacs Mail -- Previous Years" :destDesc "auto" :dest "/bxo/r3/iso/pip_mbProfProjs/panel/conferences/EmacsConf-2022/_nodeBase_"
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bxo/r3/iso/pip_mbProfProjs/panel/conferences/EmacsConf-2022/_nodeBase_")][@ ~EmacsConf-2022~ @]]  [[elisp:(org-cycle)][| *=* |]] ::  <<Revisiting Emacs Mail -- Previous Years>> [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Previous Years.
+** -B|
+####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda nil :sep t :outLevel 2 :model "auto" :foldDesc "About Blee -- Previous Years" :destDesc "auto" :dest "/bxo/iso/pip_proj_emacs_conference/emacsconf2024/_nodeBase_"
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bxo/iso/pip_proj_emacs_conference/emacsconf2024/_nodeBase_")][@ ~emacsconf2024~ @]]  [[elisp:(org-cycle)][| *=* |]] ::  <<About Blee -- Previous Years>> [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Previous Years.
+** -B|
+####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda nil :sep t :outLevel 2 :model "auto" :foldDesc "LCNT ScreenCasting BISOS Panel" :destDesc "auto" :dest "/bisos/panels/bisos-apps/lcnt/lcntScreencasting/_nodeBase_"
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntScreencasting/_nodeBase_")][@ ~lcntScreencasting~ @]]  [[elisp:(org-cycle)][| *=* |]] ::  <<LCNT ScreenCasting BISOS Panel>> [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** How Tos for development of this screencast.
+** -B|
+####+BEGIN: blee:panel:unix:cmnd :outLevel 1 :sep t :folding? nil :label "Sh" :command "cd /lcnt/lgpc/bystar/permanent/engineering//blee-lcnt_EmacsConf25/" :comment "cd to conf25" :afterComment ""
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Sh/ :: [[elisp:(lsip-local-run-command "cd /lcnt/lgpc/bystar/permanent/engineering//blee-lcnt_EmacsConf25/")][cd /lcnt/lgpc/bystar/permanent/engineering//blee-lcnt_EmacsConf25/]] *|*  =cd to conf25= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+* +
+* file:/lcnt/lgpc/bystar/permanent/engineering/blee-lcnt_EmacsConf25/bodyPresArtEnFa.tex
+* -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Backstage videos" :anchor "" :extraInfo "Sacha email 2024"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Backstage videos:* |]]  Sacha email 2024  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+ https://media.emacsconf.org/2025/backstage/ as the
+backstage area where you can view the videos and resources uploaded so
+far. You can access it with the username "emacsconf" and the password
+"stcgX5n7tF3". See Email of 10/12/2025.
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Backstage Info and Scripts -- 2022" :anchor "" :extraInfo "Sacha email 21 Nov 2022"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Backstage Info and Scripts -- 2022:* |]]  Sacha email 21 Nov 2022  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+Oh right, I'll look at your script and video later/tomorrow to reuse those
+chapter headings. :) I'll also post our mpv conf in an easier place - it's
+currently in https://emacsconf.org/2022/organizers-notebook/ if you look for
+mpv.conf.
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Useful Video Processing Hints" :anchor "" :extraInfo "ffmpeg"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Useful Video Processing Hints:* |]]  ffmpeg  [[elisp:(org-shifttab)][<)]] E|
+####+END
+Q=32
+CPU=8
+ffmpeg -y -i "$1" -c:v libvpx-vp9 -b:v 0 -crf $Q -an -row-mt 1 -tile-columns 2 -tile-rows 2 -cpu-used $CPU -g 240 -pass 1 -f webm -threads $CPU /dev/null &&
+ffmpeg -y -i "$1" -c:v libvpx-vp9 -b:v 0 -crf $Q -c:a libopus -row-mt 1 -tile-columns 2 -tile-rows 2 -cpu-used $CPU -pass 2 -g 240 -threads $CPU "$2"
+
+**  https://emacsconf.org/harvesting/
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Day Of The Conference" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Day Of The Conference:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Info and sched: https://emacsconf.org/2024/talks/blee
+**  Pad: https://pad.emacsconf.org/2024-blee
+**  Q&A BigBlueButton room: https://emacsconf:stcgX5n7tF3@media.emacsconf.org/2024/backstage/assets/redirects/open/bbb-blee.html
+** ---- Pre Q&A - Other Talks ----
+** Emacs Writing Studio -- Peter Prevos -- Org-Mode, then export, Working with Emacs vs Working on Emacs, Too much choice
+** Literate Programming for the 21st Century -- Mixing org-mode with programming language
+** ---- Pre Q&A - Unmentioned Topics ----
+** PyCS and Blee PyCS Players --- 
+** Native Emacs Markup Language ---
+** Polymode ---
+** ---- Q&A ----
+** Walk through
+** -
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Post Conference --- Publication Info" :anchor "" :extraInfo "Question And Answers Session"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Post Conference --- Publication Info:* |]]  Question And Answers Session  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** To be Updated
+** -
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Initial Proposal" :anchor "" :extraInfo "About Blee --- Sept 17, 2024"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Initial Proposal_: |]]  About Blee --- Sept 17, 2024  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Proposal Email" :anchor "" :extraInfo "About Blee: Towards an Integrated Emacs Environment for Surrounding our Own Autonomy Directed Digital Ecosystem"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Proposal Email:* |]]  Blee-LCNT: An Emacs Centered Content Production and Self-Publication Framework [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+From: Mohsen BANAN-emacs <emacs@mohsen.1.banan.byname.net>
+Subject: EmacsConf/2025/Proposal: Blee-LCNT: An Emacs Centered Content Production and Self-Publication Framework
+To: emacsconf-submit@gnu.org
+
+Mohsen BANAN – emacs@mohsen.1.banan.byname.net – محسن بنان
+
+pronouns: he/him, pronunciation: MO-HH-SS-EN
+
+http://mohsen.1.banan.byname.net
+
+Speaker availability and preferred Q&A approach: Live Video Preferred. I'll be flexible
+that weekend (Dec 6-7).
+
+Speaker emergency contact information: +1-425-503-9426
+
+Talk Title: Blee-LCNT: An Emacs Centered Content Production and Self-Publication Framework
+
+20 minutes session request
+
+Talk Abstract:
+
+In a sense this is yet another talk about how you can use Emacs to produce fancy presentations like this or write
+complex books and self-publish them. But our approach is fundamentally different.
+
+Many talks at previous Emacs Conferences have described how Emacs and org-mode can be extended to facilitate
+content production by adding more to Emacs. Our approach is that of putting a smaller Emacs at the core of
+something bigger. That something bigger is an autonomy oriented digital ecosystem called "ByStar" which is
+uniformly built with a layer on top of Debian called BISOS (ByStar Internet Services OS).
+
+At Emacs Conf-2024 the title of my talk was "About Blee" -- https://emacsconf.org/2024/talks/blee.
+Blee (ByStar Libre-Halaal Emacs Environment) is that
+smaller Emacs packaging that positions Emacs at the core of BISOS and ByStar. BISOS and Blee are intertwined and
+ByStar is about autonomy oriented unified platforms for developing and delivering both internet services and
+software-service continuums.
+
+This talk is about Content Production and Self-Publication capabilities of Blee and BISOS.
+
+Blee-LCNT is LaTeX centric. The original text is always in COMEEGA-LaTeX -- LaTeX augmented by Org-Mode. This is
+the inverse direction of exporting LaTeX from Org-Mode. For typesetting, the LaTeX syntax is far more powerful than
+org-mode. And with COMEEGA-LaTeX, you can also benefit from all that org-mode offers. The scope of Blee-LCNT is all
+types of content from presentations to videos to books to name-tags and business cards.
+
+LaTeX to HTML translation is done with HeVeA. For presentation/screen-casting, the original text is then augmented
+in layers by images, audio voice-overs, screen captures, videos and captions. The Beamer LaTeX file is then
+processed by both LaTeX and HeVeA. LaTeX produced slides are then absorbed in html by HeVeA as images. HeVeA output
+is destined to be dispensed by Reveal.js. The video is then just a screen capture of the autoplay of reveal file.
+Viewing presentations in their original Reveal form makes for an even richer experience.
+
+All of this involves a whole lot of integration and scripting. But all of that has been done and you can get it all
+in one shot by just running one script.
+
+To get started with BISOS, Blee, and ByStar, visit https://github.com/bxgenesis/start. From a virgin Debian 13
+installation ("Fresh-Debian"), you can bootstrap BISOS and Blee (with Emacs-30) in one step by running the
+raw-bisos.sh script. It produces "Raw-BISOS" which includes "Raw-Blee".
+
+You can then add the LaTeX sources for your content as ByStar Portable Objects (BPO) to BISOS and process
+your content with Blee-LCNT.
+
+All of this and more has been documented in a book that was produced by Blee-LCNT itself.
+The title of that book is:
+
+Nature of Polyexistentials:
+Basis for Abolishment of the Western Intellectual Property Rights Regime
+And Introduction of the Libre-Halaal ByStar Digital Ecosystem
+
+
+On Line US Edition: https://github.com/bxplpc/120033  -- Download: https://raw.github.com/bxplpc/120033/main/pdf/c-120033-1_05-book-8.5x11-col-emb-pub.pdf
+On Line International Edition: https://github.com/bxplpc/120074 -- Download: https://raw.github.com/bxplpc/120074/main/pdf/c-120074-1_05-book-a4-col-emb-pub.pdf
+DOI:  https://doi.org/10.5281/zenodo.8003846
+US Edition Book Prints At Amazon:  [[https://www.amazon.com/dp/1960957015]]
+International Edition Book Prints in Iran:  https://jangal.com/fa/product/252689/nature-of-polyexistentials
+
+I welcome your thoughts and feedback, especially if you experiment with Blee,
+BISOS, ByStar, and the model and the concept of Libre-Halaal Polyexistentials.
+
+
+---------------
+Introduction for you and your talk (<= 100 words):
+
+Mohsen Banan is a software and internet engineer. In this talk he describes how he has leveraged Emacs as an
+integration platform to create a comprehensive integrated usage environment. In his recent book "Nature of
+Polyexistentials", he introduces the Libre-Halaal ByStar Digital Ecosystem. Both in the book and this talk, he
+outlines a blueprint and presents initial implementations for BISOS (By* Internet Services OS) and Blee (ByStar
+Libre Emacs Environment). Central to his presentation is the positioning of Emacs, as the core of Blee.
+
+--------------
+speaker release:
+
+Please include this speaker release in order to indicate your agreement with it.
+
+  By submitting this proposal, I agree that my presentation at
+  EmacsConf 2025 is subject to the following terms and conditions:
+
+  The EmacsConf organizers may capture audio and video (a "Recording")
+  of my presentation and any associated materials, which may include
+  slides, notes, transcripts, and prerecording(s) of my presentation
+  that I provide to the EmacsConf organizers.
+
+  I authorize the EmacsConf organizers to distribute, reproduce,
+  publicly display, and prepare derivative works of the Recording and
+  any derivative works of the Recording (the "Licensed Materials")
+  under the terms of the Creative Commons Attribution-ShareAlike 4.0
+  International (CC BY-SA 4.0) license.
+
+  I grant to the EmacsConf organizers permission to use my name,
+  likeness, and biographic information in association with their use
+  of the Licensed Materials under the above license.
+
+  I represent that I have the authority to grant the above license to
+  the EmacsConf organizers.  If my presentation incorporates any
+  material owned by third parties, I represent that the material is
+  sublicensable to the EmacsConf organizers or that my use of them is
+  fair use.
+
+####+BEGIN: blee:bxPanel:separator :outLevel 1
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+####+END
+####+BEGIN: blee:bxPanel:evolution
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolution)][dbf]]
+*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *Maintenance:* | ]]  [[elisp:(blee:menu-sel:agenda:popupMenu)][||Agenda]]  <<Evolution>>  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :title "Notes, Ideas, Tasks, Agenda" :anchor "Tasks"
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Notes, Ideas, Tasks, Agenda:/ |]] <<Tasks>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+*** TODO Some Idea
+####+BEGIN: blee:bxPanel:evolutionMaintainers
+** [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolutionMaintainers)][dbf]]
+** [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Bug Reports, Development Team:/ | ]]  <<Maintainers>>
+***  Problem Report                       ::   [[elisp:(find-file "")][Send debbug Email]]
+***  Maintainers                          ::   [[bbdb:Mohsen.*Banan]]  :: http://mohsen.1.banan.byname.net  E|
+####+END
+* B|
+####+BEGIN: blee:bxPanel:footerPanelControls
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+* /Footer Controls/ ::  [[elisp:(blee:bnsm:menu-back)][Back]]  [[elisp:(toggle-read-only)][toggle-read-only]]  [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Cycle Glob Vis]]  [[elisp:(delete-other-windows)][1 Win]]  [[elisp:(save-buffer)][Save]]   [[elisp:(kill-buffer)][Quit]]  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:footerOrgParams
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Org-Mode Local Params: =* | ]]
+#+STARTUP: overview
+#+STARTUP: lognotestate
+#+STARTUP: inlineimages
+#+SEQ_TODO: TODO WAITING DELEGATED | DONE DEFERRED CANCELLED
+#+TAGS: @desk(d) @home(h) @work(w) @withInternet(i) @road(r) call(c) errand(e)
+#+CATEGORY: N:emacsconf2025
+
+####+END
+####+BEGIN: blee:bxPanel:footerEmacsParams :primMode "org-mode"
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Emacs Local Params: =* | ]]
+# Local Variables:
+# eval: (setq-local toc-org-max-depth 4)
+# eval: (setq-local ~selectedSubject "noSubject")
+# eval: (setq-local ~primaryMajorMode 'org-mode)
+# eval: (setq-local ~blee:panelUpdater nil)
+# eval: (setq-local ~blee:dblockEnabler nil)
+# eval: (setq-local ~blee:dblockController "interactive")
+# eval: (img-link-overlays)
+# eval: (set-fill-column 115)
+# eval: (blee:fill-column-indicator/enable)
+# eval: (bx:load-file:ifOneExists "./panelActions.el")
+# End:
+
+####+END
