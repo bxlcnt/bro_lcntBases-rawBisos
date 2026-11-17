@@ -1,1 +1,1 @@
-/bisos/git/auth/bxRepos/bxexamples/aiActivityTemplates/lcnt/AI-Activity.org
+/bisos/apps/defaults/ai-templates/lcnt/AI-Activity.org

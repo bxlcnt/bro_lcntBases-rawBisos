@@ -10,12 +10,28 @@
 #   Templates: /bisos/git/auth/bxRepos/bisos/defaults/ai-templates
 #   Command:   /bisos/venv/py3/devbin/aiActivity.cs -i initiateSub --activity=lcnt
 
+####+BEGIN: b:ai:workflow/driver
+*  [[elisp:(revert-buffer)][revert-buffer]] | [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]] [[elisp:(magit)][Magit]]
+*  [[elisp:(org-cycle)][AI Workflow Driver :: /bx- commands]]    *After |S|: submitted*
+  newStart :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bisos-pip/bisos.aiActivity/newStart/_nodeBase_")][Panel]] | [[bashRun:vscodeClaude-assemble.cs -i fullCheck][setup-check]] | [[bashRun:vscodeClaude-assemble.cs -i fullUpdate][setup]] | [[elisp:(b:vscode/init)][partner-init]] | [[elisp:(b:vscode/partnerShow)][partner-show]] | [[aiActivity:session-start][session-start]]
+  VS Code  :: [[elisp:(b:vscode/fileOpen)][Visit]] | [[elisp:(b:vscode/rootOpen)][root-window]] | [[elisp:(b:vscode:claude/dispatch)][Transient]]
+  Session  :: [[elisp:(b:vscode:claude/sessionSelect)][select-session]] | [[aiActivity:session-start][session-start]] | [[aiActivity:session-report][session-report]]  *|S|*  [[aiActivity:S=session-start][session-start]]
+  Activity :: [[aiActivity:activity-reach][activity-reach]] | [[aiActivity:activity-report][activity-report]]  *|S|*  [[aiActivity:S=activity-reach][activity-reach]]
+  Read     :: [[aiActivity:status-read][status-read]] | [[aiActivity:archive-read][archive-read]] | [[aiActivity:ai-outputs][ai-outputs]]  *|S|*  [[aiActivity:S=status-read][status-read]] | [[aiActivity:S=archive-read][archive-read]] | [[aiActivity:S=ai-outputs][ai-outputs]]
+  Work     :: [[aiActivity:todo-do][todo-do]] | [[aiActivity:todo-done][todo-done]]  *|S|*  [[aiActivity:S=todo-do][todo-do]] | [[aiActivity:S=todo-done][todo-done]]
+  Record   :: [[aiActivity:status-update][status-update]] | [[aiActivity:archive-update][archive-update]]  *|S|*  [[aiActivity:S=status-update][status-update]] | [[aiActivity:S=archive-update][archive-update]]
+  Git      :: [[aiActivity:git-commit-msg][git-commit-msg]] | [[aiActivity:git-commit-walk][git-commit-walk]]  *|S|*  [[aiActivity:S=git-commit-msg][git-commit-msg]]
+  Close    :: [[aiActivity:git-uncommitted-list][git-uncommitted-list]] | [[aiActivity:session-verify][session-verify]]  *|S|*  [[aiActivity:S=git-uncommitted-list][git-uncommitted-list]] | [[aiActivity:S=session-verify][session-verify]]
+
+####+END:
+
 ####+BEGIN: b:ai:file/particulars
 * AI Working Context
-  Working Directory: /bxo/r3/iso/pip_lcnt_bystarCommon/lcntVideo_aiActivity/lgpc/bystar/permanent/engineering/aiActivity_EmacsConf26
-  File: /bxo/r3/iso/pip_lcnt_bystarCommon/lcntVideo_aiActivity/lgpc/bystar/permanent/engineering/aiActivity_EmacsConf26/AI-WorkPlan.org
+  Working Directory: /bxRepos/bxlcnt/bro_lcntBases-rawBisos/lcnt/lgpc/rawBisos/permanent/examples/aiActivity_EmacsConf26
+  File: /bisos/git/auth/bxRepos/bxlcnt/bro_lcntBases-rawBisos/lcnt/lgpc/rawBisos/permanent/examples/aiActivity_EmacsConf26/AI-WorkPlan.org
   Activity: lcnt
-  Companion Docs: AI-Activity.org, AI-DevStatus.org
+  Companion Docs: AI-DevStatus.org
+
 ####+END:
 
 This Work Plan file drives the AI collaborative development.
@@ -55,7 +71,6 @@ Goal: A placeholder for misc ideas and TODOs
 ** TODO Something to be done or an idea to be captured
 ** -
 
-
 * Stage 2: Improve the lcnt AI-Activity.org  add additional skills when needed
 
 Goal: LCNT Development is well codified in ByStar, BISOS and Blee. These need to be captured as AI-Activity.org s and skills
@@ -63,13 +78,12 @@ Goal: LCNT Development is well codified in ByStar, BISOS and Blee. These need to
 - Most relevant scripts  are in  /bisos/core/lcnt/bin
 - Most relevant BISOS Panles are in /bisos/panels/bisos-apps/lcnt/_nodeBase_/fullUsagePanel-en.org
 - A description of LCNT is ../blee-lcnt_EmacsConf25/
-- An example of an LCNT presentation is at ./blee-lcnt_EmacsConf25/
+- An example of an LCNT presentation is at ../blee-lcnt_EmacsConf25/
 - An example of an LCNT book is at /lcnt/lgpc/mohsen/permanent/polyexistentials/usEditionEnFa
-
 
 * Stage 2 TODOs  -- In Progress
 ** +
-** TODO [#A] <<2.1>> Read the above mentioned stage 2 pointers and documents and summarize :aiAndMe:
+** LOOP [#A] <<2.1>> Continously improve this ./AI-Activity.org nad its relevant skills as we further develop LCNT :aiAndMe:
 SCHEDULED: <2026-10-23 Fri 20:24>
 :PROPERTIES:
 :ORIGIN: Mohsen
@@ -78,50 +92,121 @@ SCHEDULED: <2026-10-23 Fri 20:24>
 :BASE: this
 :FOUND: <2026-10-23 Fri 20:23>
 :END:
-Summarize your understanding and suggest how ./AI-Activity.org can be updated
-and what skils should be created.
+This is a general process reminder. No specific action is required unless refered to.
 ----- Results: ------
-Read all Stage-2 pointers: the /bisos/core/lcnt/bin toolchain (seedLcntProc.sh +
-lcnLcnt*Lib.sh), the /bisos/panels/bisos-apps/lcnt fullUsagePanel-en.org tree, the
-EmacsConf25 presentation example (in sibling ISO checkouts lcnt/ and lcntVideo_Blee-Lcnt/;
-the ./ and ../ pointers in the Stage-2 text are stale), and the usEditionEnFa book.
-
-Understanding: LCNT = XeLaTeX/HeVeA/Reveal layer; seeded-command architecture (lcntProc.sh is
-a stub over seedLcntProc.sh); metadata-driven via LCNT-INFO/ (file-vars + Builds/enabledList +
-Exports + curBuild/curExport); content type = a build decision (buildDocClass) over shared
-body*.tex; bilingual EnFa via \includecomment{when*} conditionals; MmUnite + aeneas .vtt for
-recorded talks.
-
-Deliverables (both in the bxexamples/aiTemplates-DE git tree = the lcnt activity source, so
-they propagate to ALL --activity=lcnt projects):
-- Rewrote lcnt/AI-Activity.org: 3 thin sections -> 10 (what LCNT is, seeded architecture,
-  LCNT-INFO model, command cheat-sheet, content types, bilingual, multimedia, authoritative
-  docs, skills index, unchanged "I do commits myself" rule).
-- Created 5 skills under mother/_skills/: lcnt-build-and-release, lcnt-info-authoring,
-  lcnt-ttytex-authoring (builds on dblock-authoring + comeega-authorship), lcnt-new-document,
-  lcnt-multimedia.
-
-ACTIVATION STILL NEEDED: skills exist only in DE source. (a) assemble into
-aiActivityTemplates/mother/_skills via aiActivityAssemble.cs; (b) this sub has NO
-.claude/skills -- link  .claude/skills -> <tree>/mother/_skills  by hand (known 2026-10-19 gap:
-initiateSub does not install it). Until then not loadable in a session here. All files
-git-versioned; commits left to Mohsen.
-
-** TODO [#A] <<2.2>> Content of th
-SCHEDULED: <2026-10-23 Fri 20:24>
-:PROPERTIES:
-:ORIGIN: Mohsen
-:IMPORTANCE: Medium
-:REPO: this
-:BASE: this
-:FOUND: <2026-10-23 Fri 20:23>
-:END:
-Summarize your understanding and suggest how ./AI-Activity.org can be updated
-and what skils should be created.
------ Results: ------
-
 
 ** -
+
+* Stage 3: Create a starting point for my Emacs Conf 2026 aiActivity video presentation
+
+Goal: Based on your understanding of design and implementation of bisos.aiActivity create starting points for slides and flow of the presentation
+
+Consider the following:
+
+- We will follow last year's presentation style. That is at:  ../blee-lcnt_EmacsConf25/
+  Here is the 2026 abstract that was sent to emacs-conf: ./abstract-260916.txt
+- Start with Domain, Prior Art, Scope, Layerings -- Most of that material exists in READMEs
+  -- /bxRepos/bisos-pip/aiActivity/
+  -- /bxRepos/bxObjects/ai*
+  -- /bxRepos/blee/vscode-claude/
+
+The development of the presentation will be an iterative process.
+Initials priorities are:
+   - Finding the right structure/outline
+   - Identifying the right set of slides based on existing material
+
+Initially focus on the pdf format. We would run the reveal production occasionaly to make sure that
+it works.
+
+Add the initial narrations, be terse for now.
+
+The general structure of the presentation will include:
+
+- Impact of AI on the Software Engineering Process and Profession
+   -- Individualization vs Team orientation, AI as a Nat Language Compiler,
+   
+- Absorbtion of AI into Emacs
+- Our aiActivity model of thriving for aggregate conviviality by building on emacs substrate, org-mode, dblocks ans pairing of
+  emacs and vscode
+- Walk through of design and implementation
+- ByStar/BISOS/Blee as abstracted into aiActivity (DE skills)
+- A video recording of an example session
+- Some philosophical observations about future of AI and AI-inside of emacs
+- Thank ing Emacs Conf and Sacha
+
+We dont need to get it al right in Stage 3, we will iterate.
+
+
+
+* Stage 3 TODOs  -- In Progress
+** +
+** LOOP [#A] <<3.1>> Based on [[Stage 3]] create an initial set of slides   :aiAndMe:
+SCHEDULED: <2026-11-17 Tue 18:17>
+:PROPERTIES:
+:ORIGIN: Mohsen
+:IMPORTANCE: Medium
+:REPO: this
+:BASE: this
+:FOUND: <2026-10-23 Fri 20:23>
+:END:
+Make sure that the directory is properly setup. Setup a ./figures directry.
+Copy needed exisiting images into it.
+----- Results: ------
+2026-11-17 (Claude; first iteration). Decisions by Mohsen: 20 to 40 minutes; the abstract's three
+dimensions govern the survey part; pure English, only the name in Farsi.
+
+Setup:
+- =./figures=: the symlink to =/lcnt/lgpc/bystar/permanent/common/figures= replaced by a real
+  directory of copies (pdf, png, title, caption), as in =../blee-lcnt_EmacsConf25/=:
+  - from =bisos-pip/aiActivity/py3/images/=: aiActivityFlow, aiStartupWorkflow, aiUsageWorkflow,
+    aiActivityAssembleFlow, aiGeneralTree (not used yet), aiEcosystemTree, and from its
+    =LibreOffice/=: aiActivityHomogenous, aiActivityHeterogenous (with their odg);
+  - from =blee/vscode-claude/images/=: vscodeClaudeHierarchy, vscodeClaudeChannels,
+    vscodeClaudeLayers;
+  - from EmacsConf25: bisosAndBlee and bxp-layerings (not used yet).
+  The copied pdfs were cropped (=pdfcrop --margins 4=). They are copies: they go stale when the
+  graphviz sources change.
+- =presentationEnFa.ttytex=, =presArtEnFa.ttytex= and =lcntProc.sh= replaced by EmacsConf25's
+  tuned versions (180068 -> 180072), with this talk's title, subtitle, "Emacs Conference 2026" and
+  date "December 2026" (a placeholder until the conference date is known). =articleEnFa.ttytex=
+  and =bodyArticleEnFa.tex= are untouched.
+- =LCNT-INFO=: =mainTitle=, =subTitle=, =shortTitle=, =date=; =author1= as EmacsConf25's
+  (MohsenBananEnFa); =Builds/enabledList= as EmacsConf25's (presPdf pres-reveal presArt-8.5x11
+  presArt-html).
+
+Slides: =bodyPresArtEnFa.tex= rewritten, 31 frames (32 pages with the title), in EmacsConf25's
+=b:lcnt:pres:frame/derivedImage= form, each with a label and a terse =\pnote=. Parts:
+1. Introduction: greetings, scope (the three dimensions; 3 in violet).
+2. AI and the Software Engineering Profession: natural-language compiler, individual versus team,
+   continuity across a discontinuity.
+3. AI Absorbed Into Emacs: omni-moded, three dimensions (table: gptel, aidermacs, claude-code.el;
+   claude-code-ide.el, monet; bisos.aiActivity), no layering framework yet.
+4. The aiActivity Model: not a chatbot, convivial/collaborative/cumulative, what an AI-Activity is,
+   org-mode not Markdown, engine plus templates, structure at a glance, homogeneous and
+   heterogeneous, a session's AI-Activities (this talk is itself reached as a foreign one).
+5. Walk-through: setting up, a session command by command, the =/bx-= commands, Emacs and VS Code
+   pairing, the channels, the layers, agent-neutral content.
+6. ByStar/BISOS/Blee as DE skills: workflow plus ecosystem, the ecosystem skills tree, your own
+   templates.
+7. An example session: a placeholder frame (video to be recorded).
+8. Observations and closing: observations, try it, thanks (EmacsConf organizers, Sacha).
+
+Tested: =lcntProc.sh -p extent="build" -i lcntBuild dev= (no dblock pass) for presPdf and, with
+=curBuild= pointed at it for the run and then restored, presArt-8.5x11. Both PDFs built; every
+presentation page was rendered and looked at. The presArt log has the same kinds of errors as
+EmacsConf25's (=\@oddhead=, nonstop mode), nothing new.
+
+Not done / open:
+- The dblock pass (a full =lcntBuild cur= from Blee) and the Reveal build were not run.
+- Dense figures (aiStartupWorkflow, aiUsageWorkflow, aiEcosystemTree, vscodeClaudeLayers) are
+  portrait and small on a 16:9 slide; they may need slide versions (e.g. landscape graphviz).
+- The abstract names the templates repo =github.com/bxexamples/aiActivityTemplates=; the slides use
+  =github.com/bxObjects/aiActivityTemplates= (the clone's remote). One of the two is to be settled.
+- The observations part is a stub, to be developed with Mohsen.
+- The slides were written by a generator (scratch, not kept); further edits go to the body file.
+
+** -
+
 
 
 # Local Variables:

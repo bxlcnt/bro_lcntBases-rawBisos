@@ -2,17 +2,17 @@
 #+TAGS: me ai aiAndMe
 
 # Provenance (installed once by aiActivity.cs --- not regenerated):
-#   Date:      2026-10-23T19:58:31-07:00
+#   Date:      2026-11-17T18:41:37+00:00
 #   User:      bystar
-#   Templates: /bisos/git/auth/bxRepos/bisos/defaults/ai-templates
-#   Command:   /bisos/venv/py3/devbin/aiActivity.cs -i initiateSub --activity=lcnt
+#   Templates: /bisos/apps/defaults/ai-templates
+#   Command:   /bisos/venv/py3/devbin/aiActivity.cs -i initiate --activity=lcnt
 
 ####+BEGIN: b:ai:file/particulars
 * AI Working Context
-  Working Directory: /bxo/r3/iso/pip_lcnt_bystarCommon/lcntVideo_aiActivity/lgpc/bystar/permanent/engineering/aiActivity_EmacsConf26
-  File: /bxo/r3/iso/pip_lcnt_bystarCommon/lcntVideo_aiActivity/lgpc/bystar/permanent/engineering/aiActivity_EmacsConf26/AI-DevStatus.org
+  Working Directory: /bisos/git/auth/bxRepos/bxlcnt/bro_lcntBases-rawBisos/lcnt/lgpc/rawBisos/permanent/examples/aiActivity_EmacsConf26
+  File: /bisos/git/auth/bxRepos/bxlcnt/bro_lcntBases-rawBisos/lcnt/lgpc/rawBisos/permanent/examples/aiActivity_EmacsConf26/AI-DevStatus.org
   Activity: lcnt
-  Companion Docs: AI-Activity.org, AI-DevStatus.org
+  Companion Docs: AI-WORKFLOW.org, AI-Activity.org, AI-DevStatus.org
 ####+END:
 
 This file is a working-state handoff so development can continue on another
@@ -26,50 +26,19 @@ Note to a fresh Claude: this file is intentionally sparse at project start.
 Fill in the sections below when asked to update, following the structure provided.
 
 * Current State
-
-  As of 2026-10-23: this is an LCNT bilingual (EnFa) presentation/article project for
-  EmacsConf'26 (=_objectType_= =bxt.lcnt.latex.pres+art.en+fa=, =curBuild= -> =presPdf=,
-  =curExport= -> =ploneProc=). It is an =initiateSub= on the =lcnt= activity (repo root is
-  =basic=); both use the same templates tree =/bisos/apps/defaults/ai-templates=
-  (= =bxexamples/aiActivityTemplates=), so it is homogeneous --- only the activity differs. The
-  =lcnt= =AI-Activity.org= and skills originate in =bxexamples/aiTemplates-DE=. This directory is
-  NOT under git.
-
-  WorkPlan Stage 2 (improve the lcnt activity guidance) is underway; 2.1 is done, 2.2 is being
-  drafted by Mohsen.
+  [To be filled in by Claude after first substantive interaction]
 
 * Architecture
-
-  Standard LCNT layout: =lcntProc.sh= stub over =/bisos/core/lcnt/bin/seedLcntProc.sh=;
-  metadata in =LCNT-INFO/= (file-vars + =Builds/enabledList= + =Exports= + =curBuild=/=curExport=);
-  sources =presentationEnFa.ttytex= / =articleEnFa.ttytex= / =presArtEnFa.ttytex= share
-  =body*EnFa.tex=; outputs to =Results/= then =Release/=.
+  [Key components, file structure, entry points]
 
 * What Works
-
-  [Not yet exercised this session --- no build was run here.]
+  [Verified functionality]
 
 * What Is Untested
-
-  [LCNT build/release of this specific project was not run during the 2.1 work.]
+  [Known gaps]
 
 * Key Design Decisions
-
-* Out-of-Chain Records / Deferred Work
-
-  - TODO 2.1 deliverables live OUTSIDE this directory, in the =bxexamples/aiTemplates-DE= git
-    repo (so they serve ALL =--activity=lcnt= projects, not just this one):
-    - =lcnt/AI-Activity.org= --- rewritten/expanded (3 sections -> 10).
-    - =mother/_skills/lcnt-{build-and-release,info-authoring,ttytex-authoring,new-document,multimedia}/=
-      --- 5 new skills.
-    Git-versioned (revert path exists); commit pending (Mohsen commits).
-  - ACTIVATED 2026-10-23 (both steps done): (1) =aiActivityAssemble.cs -i assemblyUpdate= linked
-    the 5 skills into the base =mother/_skills= (link=5, conflict=0); (2) this sub now has
-    =.claude/skills -> /bisos/apps/defaults/ai-templates/mother/_skills= (created by hand --- the
-    known 2026-10-19 =initiateSub= gap where it is not auto-installed). The =lcnt-*= skills are now
-    visible through that link. Note: Claude Code in-session skill discovery fires only after
-    Read/Edit touches in this sub, so a fresh session started here loads them; mid-session they may
-    lag. The =.claude/skills= symlink is not under git (this dir isn't a repo).
+  [Non-obvious choices and their rationale]
 
 # Local Variables:
 # eval: (setq-local toc-org-max-depth 4)

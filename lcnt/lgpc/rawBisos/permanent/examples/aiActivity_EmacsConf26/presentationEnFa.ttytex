@@ -21,7 +21,7 @@
 
 %%%#+BEGIN: bx:dblock:global:this-file :disabledP "false" :mode "auto"
 \begin{whenOrg}
-*  #This File: /lcnt/lgpc/bystar/permanent/engineering/aiActivity_EmacsConf26/presentationEnFa.ttytex
+*  #This File: /bxRepos/bxlcnt/bro_lcntBases-rawBisos/lcnt/lgpc/rawBisos/permanent/examples/aiActivity_EmacsConf26/presentationEnFa.ttytex
 
 \end{whenOrg}
 %%%#+END:
@@ -30,9 +30,9 @@
 \begin{whenOrg}
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:bx:dblock:lcnt:latex:inputed-title)][dbf]]
 *  [[elisp:(beginning-of-buffer)][Top]] ################  [[elisp:(delete-other-windows)][(1)]]   /*PLPC-180072 -- LCNT Panel -- lcntProc.sh, presProc.sh and Mailings*/
-*  [[elisp:(beginning-of-buffer)][Top]] ################  [[elisp:(delete-other-windows)][(1)]]   *aiActivity_EmacsConf26*
+*  [[elisp:(beginning-of-buffer)][Top]] ################  [[elisp:(delete-other-windows)][(1)]]   *Beyond the Chatbot: Team-Oriented AI in Emacs*
 *  [[elisp:(beginning-of-buffer)][Top]] ################  [[elisp:(delete-other-windows)][(1)]]   http://www.by-star.net/PLPC/180072
-*  [[elisp:(beginning-of-buffer)][Top]] ################  [[elisp:(delete-other-windows)][(1)]]   [[elisp:(find-file "presentationEnFa.ttytex")][Visit ./presentationEnFa.ttytex]] || [[elisp:(find-file "articleEnFa.ttytex")][Visit ./articleEnFa.ttytex]] || [[elisp:(find-file "presArtEnFa.ttytex")][Visit ./presArtEnFa.ttytex]] ||
+*  [[elisp:(beginning-of-buffer)][Top]] ################  [[elisp:(delete-other-windows)][(1)]]   [[elisp:(find-file "presentationEnFa.ttytex")][Visit ./presentationEnFa.ttytex]] || [[elisp:(find-file "articleEnFa.ttytex")][Visit ./articleEnFa.ttytex]] || [[elisp:(find-file "presArtEnFa.ttytex")][Visit ./presArtEnFa.ttytex]] || 
 
 * [[elisp:(org-shifttab)][<)]] [[elisp:(describe-function 'org-dblock-write:bx:dblock:lcnt:latex:inputed-title)][dbFunc)]]  E|
 
@@ -66,6 +66,23 @@
 ** TODO [[elisp:(org-cycle)][| ]]  Idea      ::  Description   [[elisp:(org-cycle)][| ]]
 \end{comment}
 
+\begin{comment}
+*  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(blee:ppmm:org-mode-toggle)][|N]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]  /Conditionals: Inculde And Excludes/  ::  [[elisp:(org-cycle)][| ]]
+\end{comment}
+
+
+\excludecomment{whenHeveaIgnore}
+
+%%%#+BEGINNOT: b:lcnt:file:when/essentialOrDerived :mode "auto"
+\begin{comment}
+*  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_ _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_ [[elisp:(outline-show-branches+toggle)][|=]] [[elisp:(bx:orgm:indirectBufOther)][|>]] *[[elisp:(blee:ppmm:org-mode-toggle)][|N]]*  whenSpec   [[elisp:(outline-show-subtree+toggle)][||]] whenEssential
+\end{comment}
+
+% \excludecomment{whenDocIsEssential}
+% \includecomment{whenDocIsDerived}
+
+%%%#+END:
+
 %%%#+BEGIN: bx:dblock:lcnt:latex:early-common-packages :class "pres+art" :langs "en+fa"
 %%% Args: :class "pres+art" :langs "en+fa" :toggle "enabled|disabled|hide" :curBuild nil|t :paperSize "8.5x11|6x9" :spacing nil|t :curBuild nil|t :paperSize "8.5x11|6x9" :when "main|mailing"
 
@@ -80,7 +97,7 @@
 %%%\setbeameroption{show notes}
 %%%\documentclass[aspectratio=169,ignorenonframetext]{beamer}
 
-\usepackage{hevea}
+\usepackage{hevea} 
 %HEVEA\usepackage[utf8]{inputenc}
 
 \htmlhead{
@@ -134,7 +151,16 @@
 
 %%%#+END:
 
-%%%#+BEGIN: bx:dblock:lcnt:latex:common-packages-style-settings :class "pres+art" :langs "en+fa"
+% NOTYET
+\usepackage{qrcode}  %%% Must come after beamerarticleEnveloping our own Autonomy Directed Digital Ecosystem With Emacs
+
+\usepackage{booktabs}
+
+\usepackage{paracol}
+\usepackage{changepage}
+
+
+%%%#+BEGINNOT: bx:dblock:lcnt:latex:common-packages-style-settings :class "pres+art" :langs "en+fa"
 %%% Args: :class "pres+art" :langs "en+fa" :pageNu nil|t :style "bystar"
 
 \begin{whenOrg}
@@ -148,21 +174,26 @@
   % or whatever (possibly just delete it)
 }
 
-\title[aiActivity_EmacsConf26]
-{aiActivity_EmacsConf26}
+\title[Beyond the Chatbot]
+{Beyond the Chatbot:\\ Team-Oriented AI in Emacs}
 
-\author[Neda Communications, Inc.]
-{Neda Communications, Inc.\\
-Email: \href{http://www.by-star.net}{http://www.by-star.net}\\
+\subtitle[Durable, Transferable AI Context with bisos.aiActivity]
+{Durable, Transferable AI Context with the Org-Based bisos.aiActivity}
+
+\author[Mohsen Banan --- \fa{محسن بنان}]
+{\textit{Emacs Conference 2026}\\
+  \vspace{0.1in}
+  Mohsen Banan --- \fa{محسن بنان}\\
+Email: \href{emacs@mohsen.1.banan.byname.net}{emacs@mohsen.1.banan.byname.net}\\
 }
 
 \institute[PLPC-180072]
 {\href{http://www.by-star.net/PLPC/180072}{http://www.by-star.net/PLPC/180072}}
 
-\date[October 23, 2026]
-{October 23, 2026}
+\date[December 2026]
+{December 2026}
 
-\subject{aiActivity_EmacsConf26}
+\subject{bisos.aiActivity}
 
 \defbeamertemplate*{footline}{shadow theme}
 {%
@@ -211,11 +242,11 @@ Email: \href{http://www.by-star.net}{http://www.by-star.net}\\
 %%%#+END:
 
 
-%%%#+BEGIN: bx:dblock:lcnt:latex:title-page :class "pres+art" :langs "en+fa"  :coverPage "derived"
-%%%% Args:  :form "priv|std" :coverPage "blank|std|derived"
-\begin{whenOrg}
+%%%#+BEGINNOT: bx:dblock:lcnt:latex:title-page :class "pres+art" :langs "en+fa"
+%%%% Args:  :form "priv|std" :coverPage "blank|std"
+\begin{comment}
 *  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(blee:ppmm:org-mode-toggle)][|N]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]  /DBLOCK: title-page/  ::  [[elisp:(org-cycle)][| ]]
-\end{whenOrg}
+\end{comment}
 
 \mode<all>  % Important -- Must Be Here
 
@@ -224,7 +255,7 @@ Email: \href{http://www.by-star.net}{http://www.by-star.net}\\
 % No Blank Cover Page -- Select dblock :coverPage blank if desired
 
 
-  \begin{frame}[label=titlePage]
+  \begin{frame}[fragile,plain,label=titlePage]
     \titlepage
     \frameaudio{"audio/titlePage.mp3"}
 %BxPy: impressiveFrameParSet('titlePage', 'always', 'True')
@@ -234,11 +265,12 @@ Email: \href{http://www.by-star.net}{http://www.by-star.net}\\
 \end{latexonly}
 
 \begin{htmlonly}
-  \begin{frame}[label=titlePage]
+
+  \begin{frame}[fragile,plain,label=titlePage]
   \frameaudio{"audio/titlePage.mp3"}
-  \frametitle{}
-  \framesubtitle{}
-  \begin{rawhtml}
+    \frametitle{}
+    \framesubtitle{}
+    \begin{rawhtml}
 <div class="center">
 <img src="./disposition.gened/titlePage/slide-1.png" height="500">
 </div>
@@ -247,6 +279,10 @@ Email: \href{http://www.by-star.net}{http://www.by-star.net}\\
 \end{htmlonly}
 
 %%%#+END:
+
+\pnote{
+}
+
 
 %%%#+BEGIN: bx:dblock:lcnt:latex:toc  :class "pres+art" :langs "en+fa"
 \begin{whenOrg}

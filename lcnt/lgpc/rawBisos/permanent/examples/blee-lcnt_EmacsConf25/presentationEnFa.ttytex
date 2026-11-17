@@ -21,7 +21,7 @@
 
 %%%#+BEGIN: bx:dblock:global:this-file :disabledP "false" :mode "auto"
 \begin{whenOrg}
-*  #This File: /lcnt/lgpc/rawBisos/permanent/examples/blee-lcnt_EmacsConf25/presentationEnFa.ttytex
+*  #This File: /bxRepos/bxlcnt/bro_lcntBases-rawBisos/lcnt/lgpc/rawBisos/permanent/examples/blee-lcnt_EmacsConf25/presentationEnFa.ttytex
 
 \end{whenOrg}
 %%%#+END:
@@ -32,7 +32,7 @@
 *  [[elisp:(beginning-of-buffer)][Top]] ################  [[elisp:(delete-other-windows)][(1)]]   /*PLPC-180068 -- LCNT Panel -- lcntProc.sh, presProc.sh and Mailings*/
 *  [[elisp:(beginning-of-buffer)][Top]] ################  [[elisp:(delete-other-windows)][(1)]]   *Blee-LCNT: An Emacs-Centered Content Production Framework*
 *  [[elisp:(beginning-of-buffer)][Top]] ################  [[elisp:(delete-other-windows)][(1)]]   http://www.by-star.net/PLPC/180068
-*  [[elisp:(beginning-of-buffer)][Top]] ################  [[elisp:(delete-other-windows)][(1)]]   [[elisp:(find-file "presentationEnFa.ttytex")][Visit ./presentationEnFa.ttytex]] || [[elisp:(find-file "articleEnFa.ttytex")][Visit ./articleEnFa.ttytex]] || [[elisp:(find-file "presArtEnFa.ttytex")][Visit ./presArtEnFa.ttytex]] ||
+*  [[elisp:(beginning-of-buffer)][Top]] ################  [[elisp:(delete-other-windows)][(1)]]   [[elisp:(find-file "presentationEnFa.ttytex")][Visit ./presentationEnFa.ttytex]] || [[elisp:(find-file "articleEnFa.ttytex")][Visit ./articleEnFa.ttytex]] || [[elisp:(find-file "presArtEnFa.ttytex")][Visit ./presArtEnFa.ttytex]] || 
 
 * [[elisp:(org-shifttab)][<)]] [[elisp:(describe-function 'org-dblock-write:bx:dblock:lcnt:latex:inputed-title)][dbFunc)]]  E|
 
@@ -97,7 +97,7 @@
 %%%\setbeameroption{show notes}
 %%%\documentclass[aspectratio=169,ignorenonframetext]{beamer}
 
-\usepackage{hevea}
+\usepackage{hevea} 
 %HEVEA\usepackage[utf8]{inputenc}
 
 \htmlhead{

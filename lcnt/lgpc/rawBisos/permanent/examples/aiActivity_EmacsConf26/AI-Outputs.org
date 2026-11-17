@@ -1,1 +1,1 @@
-/bisos/git/auth/bxRepos/bxexamples/aiActivityTemplates/mother/AI-Outputs.org
+/bisos/apps/defaults/ai-templates/mother/AI-Outputs.org

@@ -340,6 +340,173 @@ authorship and generation and their federated re-publication.
 \end{frame}
 \end{verblatex}
 
+%%% Not derivedVideo
+
+%%%#+BEGIN: b:lcnt:pres:frame/derivedImage :title "Prior Art Beyond Emacs" :subtitle "" :label "priorArtBeyondEmacs" :beamer "plain" :comment "body=table" :transition "default"
+\begin{whenOrg}
+*****  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_ _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_ [[elisp:(outline-show-branches+toggle)][|=]] [[elisp:(bx:orgm:indirectBufOther)][|>]] *[[elisp:(blee:ppmm:org-mode-toggle)][|N]]*  derivedImage [[elisp:(outline-show-subtree+toggle)][||]] Label=priorArtBeyondEmacs Prior Art Beyond Emacs body=table
+\end{whenOrg}
+
+\begin{htmlonly}
+
+\begin{frame}[fragile,plain,label=priorArtBeyondEmacs]
+    \transition{default}
+    \frameaudio{"audio/priorArtBeyondEmacs.mp3"}
+    \frametitle{}
+    \framesubtitle{}
+    \begin{rawhtml}
+<div class="center">
+<img src="./disposition.gened/priorArtBeyondEmacs/slide-1.png" height="500">
+</div>
+    \end{rawhtml}
+\end{frame}
+\end{htmlonly}
+
+\begin{verblatex}
+
+\begin{frame}[fragile,plain,label=priorArtBeyondEmacs]
+    \transition{default}
+    \frameaudio{"audio/priorArtBeyondEmacs.mp3"}
+    \frametitle{Prior Art Beyond Emacs}
+    \framesubtitle{}
+%%BxPy: impressiveFrameParSet('priorArtBeyondEmacs', 'always', 'True')
+%%BxPy: impressiveFrameParSet('priorArtBeyondEmacs', 'transition', 'default')
+%%%#+END:
+
+{\footnotesize \renewcommand{\arraystretch}{1.35}
+\begin{tabular}{|p{1.4in}|p{2.1in}|p{1.55in}|}
+  \hline
+  \textbf{Tool} & \textbf{Source $\rightarrow$ Outputs} & \textbf{Relation} \\
+  \hline
+  \textcolor{violet}{Quarto (Posit, 2022)} & \textcolor{violet}{Markdown $\rightarrow$ Reveal, Beamer, PDF, sites}
+  & \textcolor{violet}{Closest; Markdown primary} \\
+  \hline
+  Pandoc, R Markdown & Markdown $\rightarrow$ many formats & Quarto's foundation \\
+  \hline
+  Jupyter Book, MyST & Notebooks $\rightarrow$ HTML, PDF & Executable documents \\
+  \hline
+  Typst + Touying & Typst $\rightarrow$ PDF slides & A newer LaTeX alternative \\
+  \hline
+  \textcolor{teal}{Beamer article mode} & \textcolor{teal}{LaTeX $\rightarrow$ slides + article}
+  & \textcolor{teal}{Used by Blee-LCNT} \\
+  \hline
+  \textcolor{teal}{HeVeA}, tex4ht, LaTeXML & LaTeX $\rightarrow$ HTML & \textcolor{teal}{Blee-LCNT uses HeVeA} \\
+  \hline
+  Manubot, Zenodo & Git $\rightarrow$ scholarly publication, DOI & The publication side \\
+  \hline
+  PowerPoint, Keynote & Narrated slides $\rightarrow$ video & Proprietary, single purpose \\
+  \hline
+\end{tabular}
+}
+
+\pnote{
+
+  Beyond Emacs, the closest relative of Blee-LCNT is Quarto, from Posit, shown in violet ink.
+  Quarto builds on Pandoc. From a single Markdown source it produces Reveal.js slides,
+  Beamer, PDF, books and web sites. Pandoc and R Markdown before it, Jupyter Book,
+  and the newer Typst share that same idea: one source, many outputs.
+
+  Blee-LCNT shares that idea, but it goes in the other direction. Instead of a light markup
+  that is converted to everything, LaTeX itself is primary, and Org-Mode surrounds it.
+  Beamer's article mode gives us the slides and the article from the same frames,
+  and HeVeA gives us HTML. These are in teal ink.
+
+  For Reveal, each frame chooses. When I record a talk, a frame is the image of the Beamer frame,
+  because no HTML looks as good as Beamer. Where links need to be clickable,
+  the same frame follows as native HTML.
+
+  Manubot and Zenodo cover scholarly self-publication. PowerPoint and Keynote
+  produce narrated videos, but they are closed and single purpose.
+
+  What Blee-LCNT adds is the integration: all of this, libre, on your own BISOS.
+}
+
+\end{frame}
+\end{verblatex}
+
+%%% Not derivedVideo
+
+%%%#+BEGIN: b:lcnt:pres:frame/derivedImage :title "Quarto and Blee-LCNT: Same Goal, Opposite Directions" :subtitle "" :label "quartoAndBleeLcnt" :beamer "plain" :comment "body=table" :transition "default"
+\begin{whenOrg}
+*****  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_ _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_ [[elisp:(outline-show-branches+toggle)][|=]] [[elisp:(bx:orgm:indirectBufOther)][|>]] *[[elisp:(blee:ppmm:org-mode-toggle)][|N]]*  derivedImage [[elisp:(outline-show-subtree+toggle)][||]] Label=quartoAndBleeLcnt Quarto and Blee-LCNT: Same Goal, Opposite Directions body=table
+\end{whenOrg}
+
+\begin{htmlonly}
+
+\begin{frame}[fragile,plain,label=quartoAndBleeLcnt]
+    \transition{default}
+    \frameaudio{"audio/quartoAndBleeLcnt.mp3"}
+    \frametitle{}
+    \framesubtitle{}
+    \begin{rawhtml}
+<div class="center">
+<img src="./disposition.gened/quartoAndBleeLcnt/slide-1.png" height="500">
+</div>
+    \end{rawhtml}
+\end{frame}
+\end{htmlonly}
+
+\begin{verblatex}
+
+\begin{frame}[fragile,plain,label=quartoAndBleeLcnt]
+    \transition{default}
+    \frameaudio{"audio/quartoAndBleeLcnt.mp3"}
+    \frametitle{Quarto and Blee-LCNT: Same Goal, Opposite Directions}
+    \framesubtitle{}
+%%BxPy: impressiveFrameParSet('quartoAndBleeLcnt', 'always', 'True')
+%%BxPy: impressiveFrameParSet('quartoAndBleeLcnt', 'transition', 'default')
+%%%#+END:
+
+{\footnotesize
+\textcolor{teal}{\textbf{Shared:}} one source, many outputs (Reveal.js, Beamer, PDF, HTML, books);
+plain-text sources in Git; libre; reproducible builds.
+
+\medskip
+
+\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{|p{1.1in}|p{1.6in}|p{2.35in}|}
+  \hline
+  \textbf{Aspect} & \textbf{\textcolor{violet}{Quarto}} & \textbf{\textcolor{teal}{Blee-LCNT}} \\
+  \hline
+  Primary source & Markdown (Pandoc) & LaTeX within Org-Mode (COMEEGA) \\
+  \hline
+  HTML & Rendered natively & HeVeA; per frame: Beamer image or HTML \\
+  \hline
+  Voice-overs & Per slide, by hand & Keyed by frame label, across all outputs \\
+  \hline
+  Bilingual, RTL & Partial & Integral (English+Farsi, two editions) \\
+  \hline
+  Authoring & Any editor; many co-authors & Emacs (Blee) \\
+  \hline
+  Runs on & One binary, any OS & A BISOS Capability Bundle on Debian \\
+  \hline
+\end{tabular}
+}
+
+\pnote{
+
+  Since Quarto is the closest relative, let me compare the two directly.
+
+  First, what we share. Both produce many outputs from one source: Reveal.js, Beamer, PDF, HTML
+  and books. Both keep plain-text sources in Git, both are libre, and both build reproducibly.
+  That a widely used tool arrived at the same goal tells us the need is real.
+
+  The difference is direction. Quarto starts from Markdown and renders each output natively.
+  Blee-LCNT starts from LaTeX, surrounded by Org-Mode, and derives the rest. So in Reveal, each frame
+  is either the Beamer image or HTML, and each voice-over is keyed to its frame's label across all
+  outputs. In Quarto, narration is added slide by slide, by hand.
+
+  Bilingual, right-to-left documents with two editions are integral to Blee-LCNT;
+  the Nature of Polyexistentials book was produced this way.
+
+  Quarto is easier to share: any editor, many co-authors, one binary on any operating system.
+  Blee-LCNT asks you to live in Emacs and BISOS, and in return it is integrated with everything else
+  you have there.
+}
+
+\end{frame}
+\end{verblatex}
+
 
 %%%#+BEGIN: bx:dblock:lcnt:latex-section :mode "auto" :seg-title "LaTeX-Beamer + Reveal.js With Blee and BISOS"
 %%% Args: :class "book|pres+art" :langs "en+fa" :disabledP "false" :seg-title "str" :short-title "str" :label "auto"

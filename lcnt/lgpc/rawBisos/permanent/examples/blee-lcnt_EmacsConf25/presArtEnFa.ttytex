@@ -15,12 +15,14 @@
 *  /Maintain/ ::  [[elisp:(call-interactively (quote cvs-update))][cvs-update]] | [[elisp:(bx:org:agenda:this-file-otherWin)][Agenda-This]] [[elisp:(bx:org:todo:this-file-otherWin)][ToDo-This]] | [[elisp:(bx:org:agenda:these-files-otherWin)][Agenda-These]] [[elisp:(bx:org:todo:these-files-otherWin)][ToDo-These]]
 
 * [[elisp:(org-shifttab)][<)]] [[elisp:(describe-function 'org-dblock-write:bx:dblock:global:org-controls)][dbFunc)]]  E|
+
 \end{whenOrg}
 %%%#+END:
 
 %%%#+BEGIN: bx:dblock:global:this-file :disabledP "false" :mode "auto"
 \begin{whenOrg}
-*  #This File: /lcnt/lgpc/bystar/permanent/engineering/blee-lcnt_EmacsConf25/presArtEnFa.ttytex
+*  #This File: /bxRepos/bxlcnt/bro_lcntBases-rawBisos/lcnt/lgpc/rawBisos/permanent/examples/blee-lcnt_EmacsConf25/presArtEnFa.ttytex
+
 \end{whenOrg}
 %%%#+END:
 
@@ -30,9 +32,10 @@
 *  [[elisp:(beginning-of-buffer)][Top]] ################  [[elisp:(delete-other-windows)][(1)]]   /*PLPC-180068 -- LCNT Panel -- lcntProc.sh, presProc.sh and Mailings*/
 *  [[elisp:(beginning-of-buffer)][Top]] ################  [[elisp:(delete-other-windows)][(1)]]   *Blee-LCNT: An Emacs-Centered Content Production Framework*
 *  [[elisp:(beginning-of-buffer)][Top]] ################  [[elisp:(delete-other-windows)][(1)]]   http://www.by-star.net/PLPC/180068
-*  [[elisp:(beginning-of-buffer)][Top]] ################  [[elisp:(delete-other-windows)][(1)]]   [[elisp:(find-file "presentationEnFa.ttytex")][Visit ./presentationEnFa.ttytex]] || [[elisp:(find-file "articleEnFa.ttytex")][Visit ./articleEnFa.ttytex]] || [[elisp:(find-file "presArtEnFa.ttytex")][Visit ./presArtEnFa.ttytex]] ||
+*  [[elisp:(beginning-of-buffer)][Top]] ################  [[elisp:(delete-other-windows)][(1)]]   [[elisp:(find-file "presentationEnFa.ttytex")][Visit ./presentationEnFa.ttytex]] || [[elisp:(find-file "articleEnFa.ttytex")][Visit ./articleEnFa.ttytex]] || [[elisp:(find-file "presArtEnFa.ttytex")][Visit ./presArtEnFa.ttytex]] || 
 
 * [[elisp:(org-shifttab)][<)]] [[elisp:(describe-function 'org-dblock-write:bx:dblock:lcnt:latex:inputed-title)][dbFunc)]]  E|
+
 \end{whenOrg}
 %%%#+END:
 
@@ -46,6 +49,7 @@
 *      Build & Preview   ::  [[elisp:(bx:iimBash:cmndLineExec :wrapper "" :name "lcntProc.sh" :iif "buildPdfPreview" :iifArgs "presArtEnFa.ttytex")][lcntProc.sh -i buildPdfPreview presArtEnFa.ttytex]] || [[elisp:(bx:iimBash:cmndLineExec :wrapper "" :name "lcntProc.sh" :iif "buildHtmlPreview" :iifArgs "presArtEnFa.ttytex")][lcntProc.sh -i buildHtmlPreview presArtEnFa.ttytex]]
 
 * [[elisp:(org-shifttab)][<)]] [[elisp:(describe-function 'org-dblock-write:bx:dblock:lcnt:latex:commands)][dbFunc)]]  E|
+
 \end{whenOrg}
 %%%#+END:
 
@@ -196,7 +200,7 @@ An Emacs-Centered Content Production and Self-Publication Framework\\
 \begin{center}
 {\large Document \#PLPC-180068\\
 Version 0.1\\
-December 8, 2024}
+December 6, 2025}
 \end{center}
 \vspace{0.05in}
 
@@ -257,7 +261,7 @@ December 8, 2024}
 
 %%%#+BEGIN: bx:dblock:org:latex-input :disabledP "false" :input-file "./bodyPresArtEnFa.tex"
 \begin{whenOrg}
-*  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(blee:ppmm:org-mode-toggle)][|N]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]  /Input/  [[elisp:(blee:file-goto-contents "./bodyPresArtEnFa.tex")][Goto ./bodyPresArtEnFa.tex]] When=Always::  [[elisp:(org-cycle)][| ]]
+*  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_ _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_ [[elisp:(outline-show-branches+toggle)][|=]] [[elisp:(bx:orgm:indirectBufOther)][|>]] *[[elisp:(blee:ppmm:org-mode-toggle)][|N]]*  INPUT      [[elisp:(outline-show-subtree+toggle)][||]]   [[elisp:(blee:file-goto-contents "./bodyPresArtEnFa.tex")][Goto ./bodyPresArtEnFa.tex]] When=Always ::  [[elisp:(org-cycle)][| ]]
 \end{whenOrg}
 \input{./bodyPresArtEnFa.tex}
 %%%#+END:

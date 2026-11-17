@@ -21,7 +21,7 @@
 
 %%%#+BEGIN: bx:dblock:global:this-file :disabledP "false" :mode "auto"
 \begin{whenOrg}
-*  #This File: /lcnt/lgpc/bystar/permanent/engineering/aiActivity_EmacsConf26/presArtEnFa.ttytex
+*  #This File: /bxRepos/bxlcnt/bro_lcntBases-rawBisos/lcnt/lgpc/rawBisos/permanent/examples/aiActivity_EmacsConf26/presArtEnFa.ttytex
 
 \end{whenOrg}
 %%%#+END:
@@ -30,9 +30,9 @@
 \begin{whenOrg}
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:bx:dblock:lcnt:latex:inputed-title)][dbf]]
 *  [[elisp:(beginning-of-buffer)][Top]] ################  [[elisp:(delete-other-windows)][(1)]]   /*PLPC-180072 -- LCNT Panel -- lcntProc.sh, presProc.sh and Mailings*/
-*  [[elisp:(beginning-of-buffer)][Top]] ################  [[elisp:(delete-other-windows)][(1)]]   *aiActivity_EmacsConf26*
+*  [[elisp:(beginning-of-buffer)][Top]] ################  [[elisp:(delete-other-windows)][(1)]]   *Blee-LCNT: An Emacs-Centered Content Production Framework*
 *  [[elisp:(beginning-of-buffer)][Top]] ################  [[elisp:(delete-other-windows)][(1)]]   http://www.by-star.net/PLPC/180072
-*  [[elisp:(beginning-of-buffer)][Top]] ################  [[elisp:(delete-other-windows)][(1)]]   [[elisp:(find-file "presentationEnFa.ttytex")][Visit ./presentationEnFa.ttytex]] || [[elisp:(find-file "articleEnFa.ttytex")][Visit ./articleEnFa.ttytex]] || [[elisp:(find-file "presArtEnFa.ttytex")][Visit ./presArtEnFa.ttytex]] ||
+*  [[elisp:(beginning-of-buffer)][Top]] ################  [[elisp:(delete-other-windows)][(1)]]   [[elisp:(find-file "presentationEnFa.ttytex")][Visit ./presentationEnFa.ttytex]] || [[elisp:(find-file "articleEnFa.ttytex")][Visit ./articleEnFa.ttytex]] || [[elisp:(find-file "presArtEnFa.ttytex")][Visit ./presArtEnFa.ttytex]] || 
 
 * [[elisp:(org-shifttab)][<)]] [[elisp:(describe-function 'org-dblock-write:bx:dblock:lcnt:latex:inputed-title)][dbFunc)]]  E|
 
@@ -185,11 +185,15 @@
 
 %%\vfill
 
-\title{aiActivity_EmacsConf26}
+\title{Beyond the Chatbot: Team-Oriented AI in Emacs}
 
 \begin{center}
-  {\huge {\bf aiActivity_EmacsConf26\\
+  {\huge {\bf Beyond the Chatbot:\\
+Team-Oriented AI in Emacs\\
+\vspace{0.3in}
 }}
+{\Large Durable, Transferable AI Context with the Org-Based bisos.aiActivity\\
+}
 \end{center}
 
 \vspace{0.2in}
@@ -198,7 +202,7 @@
 \begin{center}
 {\large Document \#PLPC-180072\\
 Version 0.1\\
-October 23, 2026}
+December 2026}
 \end{center}
 \vspace{0.05in}
 
@@ -210,8 +214,8 @@ October 23, 2026}
 \vspace{0.3in}
 
 \begin{center}
-{\large {\bf Neda Communications, Inc.}\\
-  Email: \href{http://www.by-star.net}{http://www.by-star.net}\\
+{\large {\bf Mohsen Banan --- \fa{محسن بنان}}\\
+  Email: \href{emacs@mohsen.1.banan.byname.net}{emacs@mohsen.1.banan.byname.net}\\
 }\end{center}
 
 \vspace{0.1in}
