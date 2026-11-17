@@ -1,0 +1,130 @@
+#+title: Work Plan
+#+DATE: <2026-06-10 Wed 13:54>
+#+AUTHOR: Mohsen BANAN
+#+OPTIONS: toc:4
+#+TAGS: me ai aiAndMe
+
+# Provenance (installed once by aiActivity.cs --- not regenerated):
+#   Date:      2026-10-23T19:58:31-07:00
+#   User:      bystar
+#   Templates: /bisos/git/auth/bxRepos/bisos/defaults/ai-templates
+#   Command:   /bisos/venv/py3/devbin/aiActivity.cs -i initiateSub --activity=lcnt
+
+####+BEGIN: b:ai:file/particulars
+* AI Working Context
+  Working Directory: /bxo/r3/iso/pip_lcnt_bystarCommon/lcntVideo_aiActivity/lgpc/bystar/permanent/engineering/aiActivity_EmacsConf26
+  File: /bxo/r3/iso/pip_lcnt_bystarCommon/lcntVideo_aiActivity/lgpc/bystar/permanent/engineering/aiActivity_EmacsConf26/AI-WorkPlan.org
+  Activity: lcnt
+  Companion Docs: AI-Activity.org, AI-DevStatus.org
+####+END:
+
+This Work Plan file drives the AI collaborative development.
+Interactions are broken down into "Stages". Each Stage has a set
+of TODOs that I work with Claude to accomplish.
+
+Note to a fresh Claude: read this file together with AI-WORKFLOW.org,
+AI-Activity.org and AI-DevStatus.org to orient yourself. The =<<Context Confirmation>>=
+TODO below is the standard first step, or use =/bx-confirm0= as the automated equivalent.
+TODOs tagged =:ai:= are assigned to Claude. After completing a TODO, summarize results
+under =----- Results: ------= and mark it DONE.
+
+* Stage 0: Confirm AI's Understanding of This Repo's Context
+
+Goal: Confirm AI's understanding of the context and capture that in [[Context Confirmation]] TODO.
+
+
+* Stage 0 TODOs
+** +
+** LOOP [#A] <<Context Confirmation>> for AI (typically triggered by /bx-confirm0) :aiAndMe:
+SCHEDULED: <2026-06-09 Tue>
+Must be repeated each time a new Claude instance is started here.
+Based on the series of files starting from CLAUDE.md in this repo,
+describe succinctly what you have understood.
+Enumerate explicitly which files you have imported and which you have considered.
+Prompt the user to confirm that the desired/appropriate model (/model) is being used for this project.
+Since this is to be repeated, leave the todo tag as LOOP.
+** -
+
+* Stage 1: Misc Ideas and TODOs Place Holder
+
+Goal: A placeholder for misc ideas and TODOs
+
+
+* Stage 1 TODOs (Misc)
+** +
+** TODO Something to be done or an idea to be captured
+** -
+
+
+* Stage 2: Improve the lcnt AI-Activity.org  add additional skills when needed
+
+Goal: LCNT Development is well codified in ByStar, BISOS and Blee. These need to be captured as AI-Activity.org s and skills
+
+- Most relevant scripts  are in  /bisos/core/lcnt/bin
+- Most relevant BISOS Panles are in /bisos/panels/bisos-apps/lcnt/_nodeBase_/fullUsagePanel-en.org
+- A description of LCNT is ../blee-lcnt_EmacsConf25/
+- An example of an LCNT presentation is at ./blee-lcnt_EmacsConf25/
+- An example of an LCNT book is at /lcnt/lgpc/mohsen/permanent/polyexistentials/usEditionEnFa
+
+
+* Stage 2 TODOs  -- In Progress
+** +
+** TODO [#A] <<2.1>> Read the above mentioned stage 2 pointers and documents and summarize :aiAndMe:
+SCHEDULED: <2026-10-23 Fri 20:24>
+:PROPERTIES:
+:ORIGIN: Mohsen
+:IMPORTANCE: Medium
+:REPO: this
+:BASE: this
+:FOUND: <2026-10-23 Fri 20:23>
+:END:
+Summarize your understanding and suggest how ./AI-Activity.org can be updated
+and what skils should be created.
+----- Results: ------
+Read all Stage-2 pointers: the /bisos/core/lcnt/bin toolchain (seedLcntProc.sh +
+lcnLcnt*Lib.sh), the /bisos/panels/bisos-apps/lcnt fullUsagePanel-en.org tree, the
+EmacsConf25 presentation example (in sibling ISO checkouts lcnt/ and lcntVideo_Blee-Lcnt/;
+the ./ and ../ pointers in the Stage-2 text are stale), and the usEditionEnFa book.
+
+Understanding: LCNT = XeLaTeX/HeVeA/Reveal layer; seeded-command architecture (lcntProc.sh is
+a stub over seedLcntProc.sh); metadata-driven via LCNT-INFO/ (file-vars + Builds/enabledList +
+Exports + curBuild/curExport); content type = a build decision (buildDocClass) over shared
+body*.tex; bilingual EnFa via \includecomment{when*} conditionals; MmUnite + aeneas .vtt for
+recorded talks.
+
+Deliverables (both in the bxexamples/aiTemplates-DE git tree = the lcnt activity source, so
+they propagate to ALL --activity=lcnt projects):
+- Rewrote lcnt/AI-Activity.org: 3 thin sections -> 10 (what LCNT is, seeded architecture,
+  LCNT-INFO model, command cheat-sheet, content types, bilingual, multimedia, authoritative
+  docs, skills index, unchanged "I do commits myself" rule).
+- Created 5 skills under mother/_skills/: lcnt-build-and-release, lcnt-info-authoring,
+  lcnt-ttytex-authoring (builds on dblock-authoring + comeega-authorship), lcnt-new-document,
+  lcnt-multimedia.
+
+ACTIVATION STILL NEEDED: skills exist only in DE source. (a) assemble into
+aiActivityTemplates/mother/_skills via aiActivityAssemble.cs; (b) this sub has NO
+.claude/skills -- link  .claude/skills -> <tree>/mother/_skills  by hand (known 2026-10-19 gap:
+initiateSub does not install it). Until then not loadable in a session here. All files
+git-versioned; commits left to Mohsen.
+
+** TODO [#A] <<2.2>> Content of th
+SCHEDULED: <2026-10-23 Fri 20:24>
+:PROPERTIES:
+:ORIGIN: Mohsen
+:IMPORTANCE: Medium
+:REPO: this
+:BASE: this
+:FOUND: <2026-10-23 Fri 20:23>
+:END:
+Summarize your understanding and suggest how ./AI-Activity.org can be updated
+and what skils should be created.
+----- Results: ------
+
+
+** -
+
+
+# Local Variables:
+# eval: (setq-local toc-org-max-depth 4)
+# eval: (setq-local org-log-done 'time)
+# End:
