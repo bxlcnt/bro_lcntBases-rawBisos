@@ -1,0 +1,80 @@
+Title: Beyond the Chatbot: Team-Oriented AI in Emacs
+Sub-Title: Durable, transferable AI context with the org-based bisos.aiActivity
+
+
+In these early days, none of us can claim to have figured out the right way to
+collaborate with our AI-Assistants (Claude, etc.). The common workflows are
+rudimentary: a back-and-forth chat that produces some result, which you then try
+to preserve in a CLAUDE.md; or "make a Plan, then build it." Integration of AI
+into our digital ecosystems and our usage environments remains primitive,
+individualistic, and experimental.
+
+Emacs is omni-moded. Over the past 40+ years people have added a mode for
+anything and everything, so layering AI-Assistants on top of all of those modes
+is the natural and instinctive model for Emacs. This omni-context,
+editor-centered, integrated usage environment now supports AI across all work
+contexts --- software development (in any language), content creation and
+publishing (such as LaTeX), sophisticated email management (like Gnus), and task
+and time management (using org-mode) --- consistently, naturally, and
+intuitively. The richness of this convivial aspect of Emacs is unique; those who
+think only in terms of the likes of VS-Code don't know what they are missing.
+
+Integration of AI into Emacs has multiple dimensions. This talk organizes them
+into three:
+
+1. Emacs packages, modes, and interfaces for talking to existing LLM-AIs ---
+   gptel, aidermacs, claude-code.el, and many more.
+
+2. MCPs that expose Emacs' editing-oriented capabilities, and MCPs that give AIs
+   full or partial access to the Lisp engine (and to Emacs applications) ---
+   e.g. claude-code-ide.el and monet.
+
+3. AI-Workflows for establishing transferable, team-oriented long contexts that
+   survive across sessions, machines, and even a change of AI-Assistant.
+
+First I survey (1) and (2) --- the fast-moving landscape of Emacs AI packages ---
+and make the case that we do not yet have a framework for layering and
+modularizing these efforts. A great deal of duplicated and disjoint work is in
+progress. At this stage, that is not necessarily a bad thing.
+
+The emphasis of this presentation is on (3). Here the real problem is continuity
+across a discontinuity: Claude doesn't remember yesterday, and a colleague can
+read your code but not how you collaborated with your AI to produce it. I
+introduce an org-mode-based set of tools centered on bisos.aiActivity --- a move
+beyond the chatbot toward AI that is convivial (shaped by its user, not the
+reverse), collaborative (many sessions and many colleagues toward shared goals),
+and cumulative (each participant profits from the others' AI interactions).
+
+aiActivity has two parts:
+
+1) bisos.aiActivity --- a PyPI package (the thin execution engine), installed with:
+
+       pipx install bisos.aiActivity
+
+   Sources:  https://github.com/bisos-pip/aiActivity
+
+2) A set of templates --- where the compounding value lives. The reference
+   templates tree is public and meant to be forked and adapted:
+
+       https://github.com/bxexamples/aiActivityTemplates
+
+The templates encode:
+    - AI-Activity --- the kind of work being done (e.g. bisos-pip, lcnt),
+      symlinked from a shared tree so refinements propagate to every project.
+    - AI-WorkPlan --- this specific effort, broken into Stages and TODOs.
+    - AI-DevStatus --- a working-state handoff to the next AI-session or colleague.
+    - A set of Skills and a set of Commands.
+
+The model rests on org-mode, deliberately, not Markdown: real TODO state
+machines, scheduling, cross-referencing anchors, archiving, and dynamic blocks.
+Projects are decomposed with a hierarchical, tree-and-siblings model
+(initiate / initiateSub), so a base repo and its subprojects each carry their own
+plan while inheriting shared conventions. For Emacs package development, we can
+build directly on this.
+
+bisos.aiActivity originates in --- and its default templates encode the
+conventions of --- the Libre-Halaal ByStar/BISOS (ByStar Internet Services OS)
+digital ecosystem (https://github.com/bisos, https://www.by-star.net), whose
+Emacs-based usage environment is Blee (https://github.com/bx-blee). None of
+that is a prerequisite: the tool is org-mode based and the templates are open.
+Take them, adapt them --- and if you try it, let me know what breaks.
