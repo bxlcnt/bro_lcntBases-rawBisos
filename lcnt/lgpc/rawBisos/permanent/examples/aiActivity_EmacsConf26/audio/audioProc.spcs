@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+
+""" #+begin_org
+* audioProc.spcs --- the audio of this LCNT document (the parent directory).
+* tts-<label>.* are written by ttsGenerate, rec-<label>.* are your recordings, and
+* <label>.mp3 / <label>.length (what Reveal plays) are links selected with audioSelect.
+#+end_org """
+
+from bisos.lcnt import lcntAudio_seed  # noqa: F401  _atExit_
+
+from bisos.lcnt import lcntAudio_seedInfo
+lcntAudio_seedInfo.setup(
+    docSrc=None,      # None: the docSrc of ../curBuild
+    voice=None,       # None: the default voice of lcntTtsInfo
+)

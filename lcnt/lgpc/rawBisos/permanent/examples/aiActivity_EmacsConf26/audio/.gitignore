@@ -1,0 +1,8 @@
+# Audio is regenerated (tts-) or kept elsewhere (rec-); the links say what plays.
+*.mp3
+*.wav
+*.length
+*.textHash
+.*.tmp*
+.tts-*
+__pycache__/

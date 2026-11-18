@@ -205,6 +205,55 @@ Not done / open:
 - The observations part is a stub, to be developed with Mohsen.
 - The slides were written by a generator (scratch, not kept); further edits go to the body file.
 
+** TODO [#A] <<3.2>> Narration to audio: =audio/<label>.mp3= per frame by text-to-speech :aiAndMe:
+:PROPERTIES:
+:ORIGIN: Mohsen
+:IMPORTANCE: Medium
+:REPO: this
+:BASE: this
+:FOUND: <2026-11-17 Tue>
+:END:
+Fill =./audio= from the narrations, so the Reveal deck plays the talk as it develops (each frame
+already names =audio/<label>.mp3= through =\frameaudio=). Synthetic voice is the scaffold; recorded
+voice replaces a frame's mp3, by the same label, when the talk is final.
+The engine is Piper with public-domain voices only, installed by =piperTts-sbom.pcs= of bisos.lcnt
+(its WorkPlan 4.14 holds the decisions: Piper over Kokoro, and which voices).
+
+Plan, agreed with Mohsen 2026-11-17 (the first draft proposed a narration file per frame and an mp3
+written straight to =<label>.mp3=; both changed):
+- The full narration is the =\pnote= of each frame.
+- TTS and recordings coexist; the player is not changed. Per frame, =audio/= holds
+  =tts-<label>.mp3 .length .textHash= (always written by the tool) and =rec-<label>.wav .mp3 .length
+  .textHash= (Mohsen's recording). What Reveal plays, =<label>.mp3= and =<label>.length=, are relative
+  symlinks to one of them, so switching tts to rec is relinking: no rebuild, chosen per frame.
+- The tool is in bisos.lcnt, not a Bash ICM: a spread-planted =audio/audioProc.spcs= (seed
+  =lcntAudio-seed.cs=). The old =audio/mmUniteAudio.sh= (seed =/bisos/core/lcnt/bin/seedAudioProc.sh=)
+  stays for older documents and is not planted here: it records straight into =<label>.wav=.
+- A recording's =.textHash= holds the hash of the narration it was made from: a recording older than its
+  =\pnote= is reported stale (still played, until reselected).
+- A pronunciation lexicon, =audio/ttsLexicon=, applied to the tts only.
+- =audio/= media stays out of git (its =.gitignore=); =audioProc.spcs=, =.gitignore= and =ttsLexicon=
+  are kept.
+- An export must copy the link targets, not the links (=cp -L=, =rsync -L=).
+- Listening is on another machine (this container has no sound device).
+----- Results: ------
+2026-11-17 Built in bisos.lcnt (its WorkPlan 4.15) and planted here; all frames have tts audio.
+- =lcntAudio-seed.cs -i audioPlant .= planted =audio/audioProc.spcs=, =audio/.gitignore= and an empty
+  =audio/ttsLexicon=. These three are the only files git sees in =audio/=.
+- =./audioProc.spcs -i ttsGenerate= (2 min 17 s): 31 frames, voice ljspeech-high, each linked
+  =<label>.mp3 -> tts-<label>.mp3=. =audioReport=: tts 31 frames, 9:03 in all; =titlePage= has an empty
+  =\pnote= and plays nothing. The estimate was 9:37 (1348 words at 140 a minute): the talk is about
+  9 minutes of narration against the 20 to 40 minute target.
+- Tested on a scratch copy of this document: rerun is "unchanged"; a fake =rec-greetings.wav= through
+  =recFinalize= and =audioSelect rec=; an edited =\pnote= regenerated the tts and reported the
+  recording stale; =audioSelect tts greetings= switched back; a real =<label>.mp3= is left alone.
+- Not done or not tested: nobody has listened (no sound here); the Reveal deck has not been rebuilt and
+  played with the audio. The build links =revealJsBase/audio -> ../audio=, so a local view finds the
+  links; the release step (=seedLcntProc.sh=, =cp -r=) copies links as links, so a release does not
+  carry the audio yet. The lexicon is empty: the names to fix are heard first.
+- Next, Mohsen's: listen to a few frames on another machine, fill =ttsLexicon=, and write the narration
+  out to the target length.
+
 ** -
 
 

@@ -26,19 +26,48 @@ Note to a fresh Claude: this file is intentionally sparse at project start.
 Fill in the sections below when asked to update, following the structure provided.
 
 * Current State
-  [To be filled in by Claude after first substantive interaction]
+  As of 2026-11-17. The EmacsConf 2026 talk (PLPC 180072, "Beyond the Chatbot: Team-Oriented AI in
+  Emacs") has a first cut of 31 frames in eight parts, each with a terse =\pnote= (WorkPlan 3.1, a
+  LOOP). Mohsen rebuilt the PDF and Reveal from them, and committed the sources (commit 1f518b9).
+  Every narrated frame has text-to-speech audio in =audio/= (WorkPlan 3.2): 31 frames, 9:03 against a
+  20 to 40 minute target, so the narration is still to be written out.
 
 * Architecture
-  [Key components, file structure, entry points]
+  - Sources: =presentationEnFa.ttytex= (Beamer and Reveal), =presArtEnFa.ttytex= (the slides as an
+    article), both inputting =bodyPresArtEnFa.tex=, where every frame and its =\pnote= live.
+    =articleEnFa.ttytex= is untouched. =figures/= holds copies (not links) of the aiActivity,
+    vscode-claude and EmacsConf25 figures.
+  - =LCNT-INFO/Builds/enabledList=: presPdf, pres-reveal, presArt-8.5x11, presArt-html.
+  - Reveal shows each frame as an image, =disposition.gened/<label>/slide-1.png= (the =derivedImage=
+    dblock), made from the PDF by =lcntProc.sh -i beamerDerivedFullBuild=. The =pres-reveal= build
+    (=results= = =html=) does not make them; =revealJsBase/= links =disposition.gened= and =audio=
+    from here. Build outputs are in =.gitignore=; =Release/= is kept, as in EmacsConf25.
+  - =audio/=: =audioProc.spcs= (seed =lcntAudio-seed.cs=, bisos.lcnt), =ttsLexicon=, =.gitignore=.
+    =tts-<label>.*= by =ttsGenerate=, =rec-<label>.*= for recordings, and =<label>.mp3= / =.length=
+    links to one of them, which Reveal plays (=\frameaudio= -> =data-audio-src=, the audio-slideshow
+    plugin).
 
 * What Works
-  [Verified functionality]
+  - presPdf and presArt-8.5x11 build (Claude, 3.1); the Reveal build works once
+    =beamerDerivedFullBuild= has made =disposition.gened/= (Mohsen).
+  - =audioProc.spcs=: =narrationList= finds the 32 frames (1348 words); =ttsGenerate= made all 31
+    narrated ones and reruns as "unchanged"; selection, staleness and =ttsClean= tested on a scratch
+    copy of this document.
 
 * What Is Untested
-  [Known gaps]
+  - Nobody has listened to the audio (the container has no sound device), and the Reveal deck has not
+    been played with it.
+  - A release does not carry the audio: the release step copies =revealJsBase/audio= as a link.
+  - Open from 3.1: dense portrait figures on 16:9 slides; the templates URL (=bxexamples= in the
+    abstract, =bxObjects= in the slides); the observations stub; the date placeholder "December 2026".
 
 * Key Design Decisions
-  [Non-obvious choices and their rationale]
+  - Mohsen: 20 to 40 minutes; the abstract's three dimensions shape the survey; English only, with the
+    name in Farsi. EmacsConf25's style and tuned =.ttytex= files.
+  - The full narration is the =\pnote= of each frame. TTS (Piper, a public-domain voice) is the
+    scaffold; Mohsen's recordings replace it frame by frame by relinking, without a rebuild.
+  - =disposition.gened/= and the audio media are not in git: both are regenerated (=fullClean ForGit=
+    deletes =disposition.gened/=; rerun =beamerDerivedFullBuild= after it, and after editing frames).
 
 # Local Variables:
 # eval: (setq-local toc-org-max-depth 4)

@@ -1,0 +1,261 @@
+#+title: Work Plan
+#+DATE: <2026-06-10 Wed 13:54>
+#+AUTHOR: Mohsen BANAN
+#+OPTIONS: toc:4
+#+TAGS: me ai aiAndMe
+
+# Provenance (installed once by aiActivity.cs --- not regenerated):
+#   Date:      2026-11-16T06:48:04+00:00
+#   User:      bystar
+#   Templates: /bisos/apps/defaults/ai-templates
+#   Command:   /bisos/venv/py3/devbin/aiActivity.cs -i initiate --activity=lcnt
+
+####+BEGIN: b:ai:workflow/driver
+*  [[elisp:(revert-buffer)][revert-buffer]] | [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]] [[elisp:(magit)][Magit]]
+*  [[elisp:(org-cycle)][AI Workflow Driver :: /bx- commands]]    *After |S|: submitted*
+  newStart :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/bisos-pip/bisos.aiActivity/newStart/_nodeBase_")][Panel]] | [[bashRun:vscodeClaude-assemble.cs -i fullCheck][setup-check]] | [[bashRun:vscodeClaude-assemble.cs -i fullUpdate][setup]] | [[elisp:(b:vscode/init)][partner-init]] | [[elisp:(b:vscode/partnerShow)][partner-show]] | [[aiActivity:session-start][session-start]]
+  VS Code  :: [[elisp:(b:vscode/fileOpen)][Visit]] | [[elisp:(b:vscode/rootOpen)][root-window]] | [[elisp:(b:vscode:claude/dispatch)][Transient]]
+  Session  :: [[elisp:(b:vscode:claude/sessionSelect)][select-session]] | [[aiActivity:session-start][session-start]] | [[aiActivity:session-report][session-report]]  *|S|*  [[aiActivity:S=session-start][session-start]]
+  Activity :: [[aiActivity:activity-reach][activity-reach]] | [[aiActivity:activity-report][activity-report]]  *|S|*  [[aiActivity:S=activity-reach][activity-reach]]
+  Read     :: [[aiActivity:status-read][status-read]] | [[aiActivity:archive-read][archive-read]] | [[aiActivity:ai-outputs][ai-outputs]]  *|S|*  [[aiActivity:S=status-read][status-read]] | [[aiActivity:S=archive-read][archive-read]] | [[aiActivity:S=ai-outputs][ai-outputs]]
+  Work     :: [[aiActivity:todo-do][todo-do]] | [[aiActivity:todo-done][todo-done]]  *|S|*  [[aiActivity:S=todo-do][todo-do]] | [[aiActivity:S=todo-done][todo-done]]
+  Record   :: [[aiActivity:status-update][status-update]] | [[aiActivity:archive-update][archive-update]]  *|S|*  [[aiActivity:S=status-update][status-update]] | [[aiActivity:S=archive-update][archive-update]]
+  Git      :: [[aiActivity:git-commit-msg][git-commit-msg]] | [[aiActivity:git-commit-walk][git-commit-walk]]  *|S|*  [[aiActivity:S=git-commit-msg][git-commit-msg]]
+  Close    :: [[aiActivity:git-uncommitted-list][git-uncommitted-list]] | [[aiActivity:session-verify][session-verify]]  *|S|*  [[aiActivity:S=git-uncommitted-list][git-uncommitted-list]] | [[aiActivity:S=session-verify][session-verify]]
+
+####+END:
+
+####+BEGIN: b:ai:file/particulars
+* AI Working Context
+  Working Directory: /bisos/git/auth/bxRepos/bxlcnt/bro_lcntBases-rawBisos/lcnt/lgpc/rawBisos/permanent/examples/blee-lcnt_EmacsConf25
+  File: /bisos/git/auth/bxRepos/bxlcnt/bro_lcntBases-rawBisos/lcnt/lgpc/rawBisos/permanent/examples/blee-lcnt_EmacsConf25/AI-WorkPlan.org
+  Activity: lcnt
+  Companion Docs: AI-WORKFLOW.org, AI-Activity.org, AI-DevStatus.org
+####+END:
+
+This Work Plan file drives the AI collaborative development.
+Interactions are broken down into "Stages". Each Stage has a set
+of TODOs that I work with Claude to accomplish.
+
+Note to a fresh Claude: read this file together with AI-WORKFLOW.org,
+AI-Activity.org and AI-DevStatus.org to orient yourself. The =<<Context Confirmation>>=
+TODO below is the standard first step, or use =/bx-session-start= as the automated equivalent.
+TODOs tagged =:ai:= are assigned to Claude. After completing a TODO, summarize results
+under =----- Results: ------= and mark it DONE.
+
+
+* Overview, Purpose and Context
+
+<<Overview>>
+
+Description of the specifics of this particular AI-Activity comes here.
+
+
+* Stage 0: Confirm AI's Understanding of This Repo's Context
+
+Goal: Confirm AI's understanding of the context and capture that in [[Context Confirmation]] TODO.
+
+
+* Stage 0 TODOs
+** +
+** LOOP [#A] <<Context Confirmation>> for AI (typically triggered by /bx-session-start) :aiAndMe:
+SCHEDULED: <2026-06-09 Tue>
+Must be repeated each time a new Claude instance is started here.
+Based on the series of files starting from CLAUDE.md in this repo,
+describe succinctly what you have understood.
+Enumerate explicitly which files you have imported and which you have considered.
+Prompt the user to confirm that the desired/appropriate model (/model) is being used for this project.
+Since this is to be repeated, leave the todo tag as LOOP.
+** -
+
+* Stage 1: Misc Place Holder 
+
+<<Stage 1>>
+
+Goal: A placeholder for misc ideas and TODOs
+
+
+* Stage 1 TODOs (Misc)
+** +
+** TODO [#C] A Placeholder
+** -
+
+
+* Stage 2: Recreate the reveal-pres format on this system which does not have reveal and add on packages installed
+
+<<Stage 2>>
+
+Goal: Convert the old binsPrep  (/bisos/core/bsip//bin/lcaJsRevealBinsPrep.sh) into an revealJs-sbom.pcs
+Then do what is needed for the presentation to bring up the full presentation in a browser
+
+
+* Stage 2 TODOs  -- In Progress
+** +
+** DONE [#A] <<2.1>> Convert to -sbom.pcs :aiAndMe:
+CLOSED: [2026-11-16 Mon 18:14] SCHEDULED: <2026-11-16 Mon 06:53>
+:PROPERTIES:
+:ORIGIN: Mohsen
+:IMPORTANCE: Medium
+:REPO: this
+:BASE: this
+:FOUND: <2026-10-01 Thu 10:32>
+:END:
+Similar to other node packages
+----- Results: ------
+2026-11-16 plan, agreed with the user:
+- reveal.js is a library that HTML loads by path, not a command: unlike reactPlus's CLIs it does not go
+  into the user's nvm. It stays global under =/usr/local= (stable across Node versions, readable by
+  nginx; BISOS is not multi-user in the traditional sense), installed with the system's =/usr/bin/npm=
+  under sudo, never with nvm's npm.
+- The latest versions, pinned: reveal.js 6.0.2, reveal.js-plugins 4.6.0, reveal.js-menu 2.1.0 (new: the
+  old script's examples did it by hand), with the link =reveal.js-plugins/menu= -> =../reveal.js-menu=.
+- Files, all in =bisos-pip/lcnt=: =py3/bin/revealJs-sbom.pcs= (new); =lcntMultiMediaInfo.py= (versions
+  and paths); =lcntMultiMedia-sbom.pcs= nests it in place of =lcaJsRevealBinsPrep.sh=;
+  =lcntMultiMedia-assemble.cs -i toolchainCheck= checks the versions and the menu link.
+- Not here (2.2): reveal.js 6 moved =plugin/*= to =dist/plugin/=, so the HTML generator in
+  =/bisos/core/lcnt= must change; HTML built before then breaks. Copying reveal into a published release
+  is later work.
+
+2026-11-16 done, uncommitted in =bisos-pip/lcnt=:
+- =py3/bin/revealJs-sbom.pcs= (new): apt =npm=, then the three pinned packages by
+  =sudo /usr/bin/npm install --global --prefix=/usr/local=, each skipped when its version is there, then
+  the menu link (a real file there is refused). =readme=, =npmPkgs_list=, =sbom_fullUpdate=.
+- =lcntMultiMediaInfo.py=: =revealSbom=, =revealNpm=, =revealPrefix=, =revealNpmPkgs= (name, version),
+  =revealMenuLink=, =revealInstalledVersion()=, =revealPresent()= (name, wanted, installed),
+  =revealMenuLinkOk()=; =revealScript= removed.
+- =lcntMultiMedia-sbom.pcs= nests it (=sbomsList=, by the path beside itself); its =lcntMmRevealJs= is
+  removed.
+  =lcntMultiMedia-cbs.pcs=: its description line. =lcntMultiMedia-assemble.cs -i toolchainCheck=: each
+  version and the link. README.org and AI-DevStatus.org of bisos.lcnt updated.
+Tested on this container: =toolchainCheck= first failed on the missing reveal.js-menu and link; the sbom
+installed reveal.js-menu 2.1.0 and made the link (reveal.js 6.0.2 and plugins 4.6.0 were there); a re-run
+changed nothing; =toolchainCheck= then said complete;
+=lcntMultiMedia-sbom.pcs -i sbomSpecs_fullUpdate all= reaches it. The HTML's two menu references now resolve; seven =reveal.js/plugin/...= ones do not (2.2).
+Not done:
+- =revealJs-sbom.pcs= is not on PATH from the venv: =pypiProc.sh= must regenerate =setup.py='s scripts.
+- bisos.sbom's own "installed?" check asks nvm's npm, so it prints an error trace for each package before
+  the func checks =/usr/local= itself; noise, not a failure.
+- The whole =lcntMultiMedia-sbom.pcs -i sbom_fullUpdate= (apt update and packages) was not re-run.
+- reveal.js-plugins 4.6.0 and reveal.js-menu 2.1.0 with reveal.js 6: not yet seen working (2.2).
+2026-11-16 later: the user regenerated =setup.py= (=revealJs-sbom.pcs= is in its scripts, and on PATH
+from devbin) and saw the presentation working with reveal.js 6 (2.2). Marked DONE at the user's request.
+
+** DONE [#A] <<2.2>> Do the needed adjustments so that this presentation uses the installed reveal :aiAndMe:
+CLOSED: [2026-11-16 Mon 18:14] SCHEDULED: <2026-11-16 Mon 06:53>
+:PROPERTIES:
+:ORIGIN: Mohsen
+:IMPORTANCE: Medium
+:REPO: this
+:BASE: this
+:FOUND: <2026-10-01 Thu 10:32>
+:END:
+The pdf generation that is a prerequisit works. Verify that the html is generated and has needed symlinks to get to reveal.
+----- Results: ------
+2026-11-16 (partial; uncommitted in =bisos/defaults=):
+- Templates =bisos/defaults/web/revealJs/bxDblock/revealJsHead.html= and =revealJsTail.html=: the seven
+  =reveal.js/plugin/...= paths now point to reveal.js 6's =dist/plugin/= (=zoom.js=, =notes.js=,
+  =search.js=, =markdown.js=, =highlight.js=, =highlight/{monokai,zenburn}.css=); every file they name
+  exists in =/usr/local/lib/node_modules=. Plugin globals (=RevealZoom= ...) are unchanged in 6.
+- =lcntProc.sh -p extent=build -i lcntBuild cur= (pres-reveal) from a shell outside Blee: rc=0, the PDF
+  (51 pages) and HeVeA HTML are built, but =revealJsBase/presentationEnFa.html= is left as the unfilled
+  start file. Three causes, all older than this work (the 06:40 HTML had no slides either):
+  1. =seedLcntProc.sh= =vis_heveaRevealFixups= runs =${opBinBase}/elispFilterHtml.sh= (=/bisos/core/bsip/bin=);
+     the script and its =.el= are in =/bisos/blee/bin=. So =revealSlides.html= is never made.
+  2. =bx-dblock= needs an Emacs server; outside Blee it finds none (the =emacsSocket= parameter, set in
+     the environment, did not reach it). Run from Blee it should work.
+  3. The slide images (=disposition.gened/*/slide-1.png=, 42 referenced) are not made:
+     =./disposition= is missing, =beamerExternalExtensions.py= (bisos.lcnt) imports =PyPDF4=, not
+     installed, and =beamerPdfPages.cs= imports =blee.icmPlayer.bleep=, which imports the legacy =unisos=.
+- By hand (no code changed): =elispFilterHtml.sh= from =/bisos/blee/bin= made =revealSlides.html= (51
+  =<section>=s); the start file was filled through the user's Emacs (=org-dblock-update-file-bx=).
+  Result: =revealJsBase/presentationEnFa.html=, 51 slides, all 16 =node_modules= references resolve; the
+  42 slide images do not.
+- Seen in a browser by the user (2026-11-16): the native HTML slides work on reveal.js 6; only the slide
+  images are missing.
+- Next, proposed and not yet agreed: fix cause 1 in =seedLcntProc.sh= (take =elispFilterHtml.sh= and its
+  =.el= from PATH), rebuild from Blee; cause 3 (=PyPDF4= -> =pypdf=, =unisos=) as a new TODO 2.3.
+2026-11-16 later (cause 3 resolved by the user):
+- Correction: =./disposition= missing was not a cause; the build deletes it on purpose and works in
+  =./disposition.gened=.
+- =beamerExternalExtensions.py -i latexSrcToDispositionUpdate= only maps each slide to its frame name
+  (=disposition.gened/slideN/value=). The images come from =beamerPdfPages.cs -i updatePages= (=pdftk=
+  one page, =pdftoppm= to =<frameName>/slide-1.png=), which failed on the =bleep= import; the build
+  runs it with =lpDo=, so the failure was silent.
+- The user installed =PyPDF4= and removed the obsolete =bleep= / =unisos= from =beamerPdfPages.cs=
+  (uncommitted in =bisos-pip/lcnt=). All 51 =slide-1.png= are made; the user saw the presentation,
+  images included, in a browser. Marked DONE at the user's request.
+- Still open: cause 1 (=${opBinBase}/elispFilterHtml.sh= in =seedLcntProc.sh=), cause 2 (build outside
+  Blee), PyPDF4 being abandoned, and the silent =lpDo=; no full build from Blee yet: the current HTML is
+  the one assembled by hand at 07:26.
+- 2026-11-16, cause 1 fixed with the user (uncommitted in =bisos/lcnt=): =seedLcntProc.sh=
+  =vis_heveaRevealFixups= now calls =elispFilterHtml.sh= from PATH with
+  =el=/bisos/blee/bin/elispFilterHtml.el= (the user had fixed only the script's own functions; this
+  caller passed both paths itself); =vis_resultsRelease= no longer calls =/opt/public/osmt/bin/=.
+  Rebuilt by the user from Blee (19:02): =revealSlides.html= is now made by the build. The fill was
+  refused: =org-dblock-update-file-bx= refuses a file whose Emacs buffer is out of date with it, and
+  Claude's hand fill of 07:26 had left that buffer open; the build ignored the refusal and kept the
+  479-byte start file. Claude killed the stale (unmodified) buffer and re-ran the fill: 51 slides, all
+  =node_modules= and slide-image references resolve. Not there: =audio/*.mp3= and =video/*.mp4=
+  (MmUnite outputs, not made on this host).
+
+** TODO [#B] <<2.3>> Co-develop the presentation: a "Prior Art Beyond Emacs" slide :aiAndMe:
+SCHEDULED: <2026-11-17 Tue>
+:PROPERTIES:
+:ORIGIN: Mohsen
+:IMPORTANCE: Medium
+:REPO: this
+:BASE: this
+:FOUND: <2026-11-17 Tue>
+:END:
+The prior-art slide covers EmacsConf talks only. Add one that goes beyond Emacs (Quarto and others),
+decide where it goes, and write its narration. Also an example of co-developing a presentation.
+----- Results: ------
+2026-11-17 (uncommitted in =bodyPresArtEnFa.tex=):
+- Discussed first: what Quarto has over the LCNT model beyond packaging and mindshare. Converting a
+  small structured source (Markdown) to each output is easier and more faithful than LaTeX -> HTML
+  (HeVeA approximates); one structure (cross-refs, citations) rendered natively in every output; raw
+  LaTeX passes through to PDF/Beamer there too; co-authors without Emacs/LaTeX/BISOS; one binary, CI
+  builds anywhere; maintained by others; adaptive, accessible HTML. LCNT optimizes for one author,
+  Beamer/LaTeX fidelity and integration with a self-hosted BISOS; Quarto for many authors and native
+  outputs. The "slides as images" objection does not hold: each frame chooses image or HTML (recorded
+  in =aiTemplates-DE='s lcnt =AI-Activity.org= and the =lcnt-multimedia=, =lcnt-ttytex-authoring= and
+  =lcnt-build-and-release= skills).
+- Placement: right after =priorArt= (Emacs prior art), before =beamerPlusReveal=: Emacs prior art, then
+  beyond Emacs, then the combination; =novelConcepts= contrasts with both. Slide 5 of 52.
+- Frame =priorArtBeyondEmacs= (=frame/derivedImage=, =body=table=, dblock written in =priorArt='s form):
+  a table Tool / Source -> Outputs / Relation, =\footnotesize=: Quarto (violet, the closest), Pandoc and
+  R Markdown, Jupyter Book and MyST, Typst + Touying, Beamer article mode and HeVeA (teal, used by
+  Blee-LCNT), Manubot and Zenodo, PowerPoint and Keynote. Narration in its =\pnote= (about a minute):
+  one source, many outputs is shared; LCNT goes the other direction (LaTeX primary, Org surrounding);
+  per-frame image or HTML in Reveal; the integration on one's own BISOS is what LCNT adds.
+- Tested: the PDF only (=lcnLcntInputProc.sh ... -i buildDocs presentationEnFa.ttytex=, from a shell);
+  the frame renders on one page (two earlier layouts overflowed or were too small).
+Not done:
+- The Reveal deck is not rebuilt (=pres-reveal= from Blee makes its image and adds the frame); the
+  build's dblock pass may rewrite the hand-written frame dblock: check it.
+- =audio/priorArtBeyondEmacs.mp3=: to be recorded by the user.
+- For the user to decide: shortened header "Relation"; Camtasia and bookdown left out; whether the
+  narration should name Quarto's strengths (co-authors, native HTML).
+2026-11-17 later: the user rebuilt Reveal from Blee; =priorArtBeyondEmacs= came out fine there.
+Then, agreed with the user, a second slide (uncommitted in =bodyPresArtEnFa.tex=):
+- Frame =quartoAndBleeLcnt=, "Quarto and Blee-LCNT: Same Goal, Opposite Directions" (not "versus":
+  the similarities count), right after =priorArtBeyondEmacs= (the survey names Quarto; this zooms in).
+  Slide 6 of 53. A "Shared" line (one source, many outputs; plain text in Git; libre; reproducible),
+  then a table Aspect / Quarto / Blee-LCNT: primary source, HTML, voice-overs, bilingual RTL,
+  authoring, runs on. Narration (about 50 seconds) gives the shared goal as evidence the need is real,
+  the difference of direction, per-frame image or HTML and label-keyed voice-overs, the bilingual
+  book, and Quarto's strengths (any editor, co-authors, any OS) against LCNT's integration.
+- Discussed: Quarto Books handle complex technical books (parts, cross-references, citations; HTML,
+  PDF, EPUB, Word; e.g. R for Data Science 2e); multi-edition, print-SKU, bilingual RTL books lean on
+  raw LaTeX there. Quarto has no built-in label-keyed voice-overs (per-slide =data-audio-src= or
+  =<audio>= by hand, or a Lua filter); not checked for anything newer than mid-2026.
+- Tested: PDF only; the slide renders on one page after one layout fix. Reveal not rebuilt;
+  =audio/quartoAndBleeLcnt.mp3= to be recorded.
+
+** -
+
+
+# Local Variables:
+# eval: (setq-local toc-org-max-depth 4)
+# eval: (setq-local org-log-done 'time)
+# End:
